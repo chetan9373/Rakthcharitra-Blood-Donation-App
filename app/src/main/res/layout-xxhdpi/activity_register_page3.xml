@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcgn"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_10sdp"
+            android:text="REGISTRATION  DETAILS"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+            </Space>
+
+            <TextView
+
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/_10sdp"
+                android:text="Any Existing Diseases?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textviewbg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5.00dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                    android:paddingTop="5dp"
+
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/diseasesspinners"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/_10sdp"
+                android:text="Any Operation in Last one year?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textviewbg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5.00dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/operationspinners"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/_10sdp"
+                android:text="Do you have any Allergy?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textviewbg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5.00dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                    android:paddingTop="5dp"
+
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/allergyspinners"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next3"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginBottom="72dp"
+                android:background="@drawable/inpuut_bg"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:backgroundTint="@color/design_default_color_error"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phonenumberLabel"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

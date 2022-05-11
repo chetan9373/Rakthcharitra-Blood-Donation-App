@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp">
+
+
+        <TextView
+
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/textviewbg"
+            android:backgroundTint="#F6F7FA"
+            android:drawableLeft="@drawable/ic_login_email_24"
+            android:drawablePadding="5dp"
+            android:ems="20"
+            android:hint="EMAIL:"
+            android:includeFontPadding="true"
+            android:inputType="textWebEmailAddress|textPersonName"
+            android:padding="@dimen/_10sdp"
+            android:paddingLeft="5dp"
+            android:shadowColor="#FBFBFB"
+            android:textColor="#000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#000"
+            android:textColorLink="#FAF3F3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="@dimen/_5sdp"
+            app:passwordToggleEnabled="true"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="238dp">
+
+            <EditText
+                android:id="@+id/loginpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewbg"
+                android:backgroundTint="#F4F4F6"
+                android:drawableLeft="@drawable/ic_password"
+                android:ems="20"
+                android:fontFamily="@font/roboto"
+                android:hint="PASSWORD:"
+
+                android:inputType="number|numberPassword|textWebPassword"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/inpuut_bg"
+            android:text="LOGIN"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/design_default_color_error"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxp"
+            app:layout_constraintStart_toStartOf="@+id/remember2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxp"
+            app:rippleColor="@color/teal_200"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <TextView
+            android:id="@+id/donthaveacnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+
+            android:text="Don't have an Account?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="Forgot Password?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

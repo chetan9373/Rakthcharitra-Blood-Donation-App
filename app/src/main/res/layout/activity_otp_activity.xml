@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bcgn">
@@ -10,10 +11,10 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+
         <Space
             android:layout_width="match_parent"
-            android:layout_height="56dp"></Space>
-
+            android:layout_height="45dp"></Space>
 
         <ImageView
             android:id="@+id/imageView5"
@@ -79,6 +80,7 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold"/>
+
             <EditText
                 android:id="@+id/input_mobile_number"
                 android:layout_width="wrap_content"
@@ -92,7 +94,7 @@
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold"
 
-                />
+                tools:ignore="TouchTargetSizeCheck" />
 
 
         </LinearLayout>
@@ -111,7 +113,7 @@
             android:textColorLink="@color/red"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:backgroundTint="@color/red" />
+            app:backgroundTint="@color/design_default_color_error" />
     </LinearLayout>
 
 

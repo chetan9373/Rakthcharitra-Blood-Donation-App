@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search"
+    tools:context=".Searchfragement">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:backgroundTint="#C31B1B"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="323dp"></Space>
+
+                <LinearLayout
+                    android:layout_width="384dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/textviewbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="176dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.00dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                        android:paddingTop="5dp"
+                        android:text=" Blood Group:"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/sgrpspinner"
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"></Space>
+
+                <EditText
+                    android:id="@+id/spincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/textviewbg"
+                    android:backgroundTint="#fff"
+                    android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                    android:drawablePadding="5dp"
+                    android:ems="20"
+                    android:hint="Pincode :"
+
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_10sdp"
+                    android:shadowColor="#FBFBFB"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textColorLink="#FAF3F3"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:drawableTint="#EF0707" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"></Space>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/searchbtn"
+
+                    android:layout_width="166dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginBottom="72dp"
+                    android:background="@drawable/inpuut_bg"
+                    android:backgroundTint="#8C0B0B"
+                    android:text="Search"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/red" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

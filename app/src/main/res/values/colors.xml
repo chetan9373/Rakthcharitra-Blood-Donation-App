@@ -10,4 +10,6 @@
     <color name="red">#E53935</color>
     <color name="pink">#E91E63</color>
     <color name="blue">#04869A</color>
+    <color name="grey">#3F3D3C</color>
+    <color name="grey1">#525151</color>
 </resources>
