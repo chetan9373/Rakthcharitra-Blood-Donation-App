@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcgn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="237dp"></Space>
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textviewbg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5.00dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                    android:paddingTop="5dp"
+                    android:text="Status:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sspinners"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></Space>
+
+
+            <EditText
+                android:id="@+id/daterange1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/inpuut_bg"
+                android:backgroundTint="#fff"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Date Range:"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp"
+                android:shadowColor="#fff"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textColorLink="#FAF3F3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:drawableTint="#E10E0E" />
+
+            <EditText
+                android:id="@+id/reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/textviewbg"
+                android:backgroundTint="#fff"
+                android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                android:drawablePadding="5dp"
+                android:ems="20"
+                android:hint="Reasons:"
+
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp"
+                android:shadowColor="#FBFBFB"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textColorLink="#FAF3F3"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:orientation="horizontal" />
+
+            <Button
+                android:id="@+id/ssave"
+
+                android:layout_width="166dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginBottom="72dp"
+                android:background="@drawable/inpuut_bg"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:backgroundTint="@color/design_default_color_error" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

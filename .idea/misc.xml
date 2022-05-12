@@ -3,117 +3,158 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-anydpi/activity_forgot__password.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-anydpi/activity_login_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-anydpi/activity_otp_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-anydpi/activity_register_page.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-anydpi/activity_register_page1.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-anydpi/activity_verify_otp.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-anydpi/blood_grpspineer.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-anydpi/fragment_profilefragement.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/activity_forgot__password.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/activity_login_activity.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/activity_otp_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/activity_register_page.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/activity_register_page1.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/activity_register_page3.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/activity_registration4.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/activity_verify_otp.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/fragment_profilefragement.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-hdpi/fragment_searchfragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-land/fragment_ourteamfragement.xml" value="0.15555555555555556" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-large/fragment_ourteamfragement.xml" value="0.1" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-ldpi/activity_forgot__password.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-ldpi/activity_otp_activity.xml" value="0.6893939393939394" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-ldpi/activity_registration4.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-ldpi/activity_verify_otp.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-ldpi/fragment_profilefragement.xml" value="0.6893939393939394" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-ldpi/fragment_searchfragement.xml" value="0.6893939393939394" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-mdpi/activity_forgot__password.xml" value="0.5290697674418605" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-mdpi/activity_login_activity.xml" value="0.5290697674418605" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-mdpi/activity_otp_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-mdpi/activity_register_page.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-mdpi/activity_register_page1.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-mdpi/activity_registration4.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-mdpi/activity_verify_otp.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-mdpi/fragment_profilefragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_forgot__password.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_login_activity.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_plasma.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_register_page.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_register_page1.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_register_page3.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_registration4.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_splash__screen.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_update__status.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/activity_verify_otp.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/blood_grpspineer.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/fragment_faqfrag.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/fragment_ourteamfragement.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/genderspinner.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-night/listofdonors.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-nodpi/activity_register_page.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-normal/fragment_ourteamfragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-small/fragment_ourteamfragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-sw600dp/activity_verify_otp.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xhdpi/activity_login_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xhdpi/activity_register_page.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xhdpi/activity_register_page1.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xhdpi/activity_register_page3.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xhdpi/fragment_profilefragement.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xhdpi/fragment_searchfragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/activity_forgot__password.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/activity_login_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/activity_otp_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/activity_register_page.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/activity_register_page1.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/activity_register_page3.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/activity_registration4.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/activity_verify_otp.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/fragment_profilefragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxhdpi/fragment_searchfragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/activity_forgot__password.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/activity_login_activity.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/activity_otp_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/activity_register_page.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/activity_register_page1.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/activity_register_page3.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/activity_registration4.xml" value="0.2" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/activity_verify_otp.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/blood_grpspineer.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/fragment_ourteamfragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/fragment_profilefragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout-xxxhdpi/fragment_searchfragement.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_donorprofile.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_forgot__password.xml" value="0.176" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_last__screen.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_login_activity.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_main.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_main2.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_notificationactivity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_otp_activity.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_ourteam.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_plasma.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_profileofdonors.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_register_page.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_register_page1.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_register_page3.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_registration4.xml" value="0.152" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_splash__screen.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_update__status.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/activity_verify_otp.xml" value="0.1" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/blood_grpspineer.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/fragment_faqfrag.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/fragment_ourteamfragement.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/fragment_profilefragement.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/fragment_searchfragement.xml" value="0.12431693989071038" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/genderspinner.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/listofdonors.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/cheta/RakkktCharitr1/app/src/main/res/layout/listofplasma.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_forgot__password.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_plasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/blood_grpspineer.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page3.xml" value="0.1014344262295082" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_searchfragement.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_forgot__password.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_plasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_searchfragement.xml" value="0.5625" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_plasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page3.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/blood_grpspineer.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/fragment_ourteamfragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_plasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-normal/fragment_ourteamfragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-small/fragment_ourteamfragement.xml" value="0.48848684210526316" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/activity_profileofdonors.xml" value="0.1014344262295082" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/fragment_faqfrag.xml" value="0.1014344262295082" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_plasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page3.xml" value="0.19959677419354838" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_searchfragement.xml" value="0.19959677419354838" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_plasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page3.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_searchfragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_plasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page3.xml" value="0.1014344262295082" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/blood_grpspineer.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_ourteamfragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_searchfragement.xml" value="0.1014344262295082" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_donorprofile.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_last__screen.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main2.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_notificationactivity.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_otp_activity.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_ourteam.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_plasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page3.xml" value="0.4316860465116279" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_splash__screen.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_update__status.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/blood_grpspineer.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_faqfrag.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_ourteamfragement.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_searchfragement.xml" value="0.4316860465116279" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/genderspinner.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofplasma.xml" value="0.13451086956521738" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="14">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="3" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="5" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="7" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="13">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="2" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="5" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="10" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

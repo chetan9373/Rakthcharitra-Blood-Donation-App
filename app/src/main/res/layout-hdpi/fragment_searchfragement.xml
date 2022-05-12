@@ -36,11 +36,11 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="251dp"></Space>
+                    android:layout_height="579dp"></Space>
 
                 <LinearLayout
-                    android:layout_width="384dp"
-                    android:layout_height="47dp"
+                    android:layout_width="890dp"
+                    android:layout_height="112dp"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/textviewbg"
                     android:orientation="horizontal">
@@ -51,11 +51,12 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5.00dp"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-                        android:paddingTop="5dp"
+                        android:drawableLeft="@drawable/ic_baseline_add_circlee_24"
+                        android:paddingStart="10dp"
+                        android:paddingTop="20dp"
                         android:text=" Blood Group:"
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="38sp"
                         android:textStyle="bold" />
 
                     <Spinner
@@ -68,16 +69,16 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="11dp"></Space>
+                    android:layout_height="27dp"></Space>
 
                 <EditText
                     android:id="@+id/spincode"
-                    android:layout_width="wrap_content"
+                    android:layout_width="886dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_5sdp"
                     android:background="@drawable/textviewbg"
                     android:backgroundTint="#fff"
-                    android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                    android:drawableLeft="@drawable/ic_baseline_add_locations_24"
                     android:drawablePadding="5dp"
                     android:ems="20"
                     android:hint="Pincode :"
@@ -90,7 +91,7 @@
                     android:textColorHighlight="@color/black"
                     android:textColorHint="@color/black"
                     android:textColorLink="#FAF3F3"
-                    android:textSize="22sp"
+                    android:textSize="40sp"
                     android:textStyle="bold"
                     app:drawableTint="#EF0707" />
 
@@ -99,17 +100,16 @@
                     android:layout_height="12dp"></Space>
 
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="16dp"
+                    android:layout_height="67dp"
                     android:orientation="horizontal" />
 
                 <Button
                     android:id="@+id/searchbtn"
 
-                    android:layout_width="166dp"
-                    android:layout_height="58dp"
+                    android:layout_width="372dp"
+                    android:layout_height="111dp"
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/_5sdp"
                     android:layout_marginBottom="72dp"
@@ -117,7 +117,7 @@
                     android:backgroundTint="#8C0B0B"
                     android:text="Search"
                     android:textColor="@color/white"
-                    android:textSize="16sp"
+                    android:textSize="38sp"
                     android:textStyle="bold"
                     android:visibility="visible"
                     app:backgroundTint="@color/red" />

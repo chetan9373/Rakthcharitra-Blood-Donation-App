@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="131dp"
+
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="28dp"
+        android:background="@drawable/textviewbg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dpbfrpicon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:drawableLeft="@drawable/fblood1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dpbfrptext"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dplocicon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:drawableLeft="@drawable/floc"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dploctext"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dpnameicon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:drawableLeft="@drawable/blood22"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dpnametext"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dpcontacticon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:drawableLeft="@drawable/fcon"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dpcontacttext"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dpallergyicon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:drawableLeft="@drawable/proob"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dpallergytext"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dpmedicon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:drawableLeft="@drawable/fmed"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dpmedtext"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dpgendericon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_baseline_group_24"
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+
+                android:textStyle="bold"
+                app:drawableTint="#E41414" />
+
+            <TextView
+                android:id="@+id/dpgendertext"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dpavailabilityicon"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_baseline_pan_tool_24"
+                android:padding="@dimen/_3sdp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dpavailabilitytext"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dpincode"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/did"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

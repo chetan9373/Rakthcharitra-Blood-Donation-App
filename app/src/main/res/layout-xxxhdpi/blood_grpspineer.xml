@@ -11,16 +11,18 @@
 
     <TextView
         android:id="@+id/text_view_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="32dp"
         android:layout_alignBottom="@+id/image_view_flag"
         android:layout_alignParentTop="true"
-        android:layout_margin="16dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+
         android:layout_toEndOf="@+id/image_view_flag"
         android:gravity="center"
         android:text="O+"
-        android:textColor="@android:color/black"
-
-         />
+        android:textColor="@android:color/black" />
 
 </RelativeLayout>

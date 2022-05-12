@@ -58,7 +58,7 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/textviewbg"
@@ -94,8 +94,9 @@
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/textviewbg"
@@ -130,8 +131,9 @@
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/textviewbg"
