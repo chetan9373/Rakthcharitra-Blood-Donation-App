@@ -1,116 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_forgot__password.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_plasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/blood_grpspineer.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_profilefragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page3.xml" value="0.1014344262295082" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_searchfragement.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_forgot__password.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_plasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_profilefragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_searchfragement.xml" value="0.5625" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_plasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page3.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/blood_grpspineer.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/fragment_ourteamfragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_plasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-normal/fragment_ourteamfragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-small/fragment_ourteamfragement.xml" value="0.48848684210526316" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/activity_profileofdonors.xml" value="0.1014344262295082" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/fragment_faqfrag.xml" value="0.1014344262295082" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_plasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page3.xml" value="0.19959677419354838" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_searchfragement.xml" value="0.19959677419354838" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_plasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page3.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_searchfragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_plasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page3.xml" value="0.1014344262295082" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/blood_grpspineer.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_ourteamfragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_searchfragement.xml" value="0.1014344262295082" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofplasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_donorprofile.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_last__screen.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main2.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_notificationactivity.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_otp_activity.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_ourteam.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_plasma.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_profileofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page3.xml" value="0.4316860465116279" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_splash__screen.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_update__status.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/blood_grpspineer.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_faqfrag.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_ourteamfragement.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_searchfragement.xml" value="0.4316860465116279" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/genderspinner.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofdonors.xml" value="0.13451086956521738" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofplasma.xml" value="0.13451086956521738" />
-      </map>
-    </option>
-  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
     <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
@@ -154,7 +43,7 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
