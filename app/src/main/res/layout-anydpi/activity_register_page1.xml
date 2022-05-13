@@ -55,11 +55,12 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5.00dp"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-                    android:paddingTop="5dp"
+
                     android:text="Profession:"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <Spinner
