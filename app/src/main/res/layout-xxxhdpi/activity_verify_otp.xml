@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/submit3"
     android:layout_width="match_parent"
@@ -49,11 +49,9 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginStart="@dimen/_50sdp"
-            android:layout_marginLeft="@dimen/_50sdp"
-            android:layout_marginTop="@dimen/_4sdp"
             android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/textviewbg"
-
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="@dimen/_14sdp"
@@ -96,4 +94,4 @@
             android:textStyle="bold"
             app:backgroundTint="@color/red" />
     </LinearLayout>
-</ScrollView>
+</RelativeLayout>

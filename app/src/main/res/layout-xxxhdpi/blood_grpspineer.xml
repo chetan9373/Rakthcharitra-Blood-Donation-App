@@ -2,24 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp">
-
     <ImageView
         android:id="@+id/image_view_flag"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:src="@drawable/grpimg" />
 
     <TextView
         android:id="@+id/text_view_name"
-        android:layout_width="44dp"
-        android:layout_height="32dp"
-        android:layout_alignBottom="@+id/image_view_flag"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="-4dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="6dp"
-
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
         android:layout_toEndOf="@+id/image_view_flag"
         android:gravity="center"
         android:text="O+"
