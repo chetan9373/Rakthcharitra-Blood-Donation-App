@@ -34,6 +34,7 @@
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/genderspinner.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofdonors.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_forgot__password.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_plasma.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_update__status.xml" value="0.13451086956521738" />
@@ -70,6 +71,7 @@
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/genderspinner.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofdonors.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_forgot__password.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_plasma.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page3.xml" value="0.13451086956521738" />
@@ -80,6 +82,7 @@
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/genderspinner.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofdonors.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofplasma.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_forgot__password.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_plasma.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page3.xml" value="0.1014344262295082" />
@@ -102,6 +105,7 @@
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_ourteam.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_plasma.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_profileofdonors.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page1.xml" value="0.1" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page3.xml" value="0.4316860465116279" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_splash__screen.xml" value="0.13451086956521738" />
