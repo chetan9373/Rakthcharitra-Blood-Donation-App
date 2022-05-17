@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="357dp"
+            android:layout_height="287dp"
 
             android:orientation="vertical"
             android:paddingLeft="@dimen/_5sdp"
@@ -27,17 +27,17 @@
                 android:layout_width="35dp"
                 android:layout_height="25dp"
                 android:background="@drawable/ic_baseline_arrow_back_24"
-                app:backgroundTint="@color/design_default_color_error" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
 
             <LinearLayout
-                android:layout_width="233dp"
-                android:layout_height="229dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
                 android:layout_marginLeft="82dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginEnd="30dp"
                 android:background="@drawable/img12"
                 android:orientation="horizontal">
 
@@ -69,27 +69,8 @@
                     />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/dprofession"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
 
         </LinearLayout>
-
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Space>
 
 
         <LinearLayout
@@ -116,10 +97,6 @@
 
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -127,24 +104,21 @@
                 android:orientation="horizontal" />
 
 
-            <ImageButton
+            <Button
                 android:id="@+id/logoutbtn"
-                android:layout_width="77dp"
-                android:layout_height="70dp"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/_5sdp"
                 android:layout_marginBottom="72dp"
-                android:src="@drawable/fflog"
-                android:textColor="@color/black"
+                android:text="LOG OUT"
+                android:textColor="@color/white"
                 android:textColorHint="@color/black"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:visibility="visible" />
+                android:visibility="visible"
+                app:backgroundTint="?attr/colorPrimarySurface" />
 
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
 
             <LinearLayout
                 android:layout_width="355dp"
@@ -170,10 +144,6 @@
                     android:paddingLeft="15dp" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
-
             <LinearLayout
                 android:layout_width="355dp"
                 android:layout_height="37dp"
@@ -196,10 +166,6 @@
                     android:background="@drawable/textviewbg"
                     android:paddingLeft="15dp" />
             </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
 
             <LinearLayout
                 android:layout_width="355dp"
@@ -225,10 +191,6 @@
                     android:paddingLeft="13dp" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
-
             <LinearLayout
                 android:layout_width="355dp"
                 android:layout_height="37dp"
@@ -252,10 +214,6 @@
                     android:background="@drawable/textviewbg"
                     android:paddingLeft="15dp" />
             </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
 
             <LinearLayout
                 android:layout_width="355dp"

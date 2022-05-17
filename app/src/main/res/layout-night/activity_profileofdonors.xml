@@ -15,8 +15,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="357dp"
+            android:layout_height="287dp"
 
+            android:layout_gravity="center"
             android:orientation="vertical"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp">
@@ -27,28 +28,27 @@
                 android:layout_width="35dp"
                 android:layout_height="30dp"
                 android:background="@drawable/ic_baseline_arrow_back_24"
-                app:backgroundTint="@color/design_default_color_error" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
 
             <LinearLayout
-                android:layout_width="233dp"
-                android:layout_height="229dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
                 android:layout_marginLeft="82dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="30dp"
                 android:background="@drawable/img12"
                 android:orientation="horizontal">
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/dprof1"
-                    android:layout_width="205dp"
-                    android:layout_height="180dp"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
                     android:layout_marginTop="25dp"
                     android:layout_weight="1"
-                    android:src="@drawable/search"
-                    />
+                    android:src="@drawable/search" />
             </LinearLayout>
 
             <LinearLayout
@@ -67,26 +67,9 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/dproff"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
 
         </LinearLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Space>
 
 
         <LinearLayout
@@ -105,7 +88,7 @@
 
                 <TextView
                     android:id="@+id/dtype1"
-
+                    android:layout_marginTop="3dp"
                     android:layout_width="307dp"
                     android:layout_height="31dp"
                     android:layout_weight="1"
@@ -118,9 +101,7 @@
 
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
+
 
 
             <LinearLayout
@@ -131,22 +112,19 @@
             <Button
                 android:id="@+id/sendmsg"
 
-                android:layout_width="165dp"
-                android:layout_height="36dp"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/_5sdp"
                 android:layout_marginBottom="72dp"
-                android:background="@android:color/holo_red_light"
                 android:text="Send Message"
                 android:textColor="@color/white"
                 android:textColorHint="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:visibility="visible"
-                app:backgroundTint="@color/design_default_color_error" />
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
+                app:backgroundTint="?attr/colorPrimary" />
+
 
             <LinearLayout
                 android:layout_width="355dp"
@@ -175,9 +153,6 @@
                     android:paddingBottom="5dp" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
 
             <LinearLayout
                 android:layout_width="355dp"
@@ -205,9 +180,7 @@
                     android:paddingBottom="5dp" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
+
 
             <LinearLayout
                 android:layout_width="355dp"
@@ -235,9 +208,7 @@
                     android:paddingBottom="5dp" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
+
 
             <LinearLayout
                 android:layout_width="355dp"
@@ -265,9 +236,7 @@
                     android:paddingBottom="5dp" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Space>
+
 
             <LinearLayout
                 android:layout_width="355dp"
