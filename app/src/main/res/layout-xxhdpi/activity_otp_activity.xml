@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bcgn">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="30dp"></Space>
-
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="221dp"
             android:layout_height="168dp"
-            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
             app:srcCompat="@drawable/tsrf2" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Space>
-
 
         <TextView
             android:layout_width="202dp"
             android:layout_height="48dp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:text="OTP Verification"
+            android:layout_marginTop="6dp"
+            android:text="OTP VERIFICATION"
             android:textColor="@color/red"
-            android:textSize="@dimen/_20sdp"
+            android:textSize="22dp"
             android:textStyle="bold" />
 
         <TextView
@@ -42,7 +35,7 @@
             android:layout_height="56dp"
             android:layout_marginStart="@dimen/_50sdp"
             android:layout_marginLeft="@dimen/_50sdp"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="6dp"
             android:layout_marginEnd="@dimen/_50sdp"
             android:gravity="center"
             android:text="We will send you an one time OTP on this given number"
@@ -55,7 +48,7 @@
             android:layout_height="48dp"
             android:layout_marginStart="@dimen/_30sdp"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:gravity="center"
@@ -104,19 +97,19 @@
         <Button
             android:id="@+id/buttonget_otp"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:layout_margin="@dimen/_20sdp"
-            android:background="@drawable/background_box"
-
-            android:text="Get OTP"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/inpuut_bg"
+            android:text="GET OTP"
             android:textColor="@color/white"
-            android:textColorHighlight="@color/red"
-            android:textColorHint="@color/red"
-            android:textColorLink="@color/red"
-            android:textSize="18sp"
+            android:textSize="20dp"
             android:textStyle="bold"
             app:backgroundTint="@color/design_default_color_error" />
     </LinearLayout>
 
 
-</ScrollView>
+</RelativeLayout>

@@ -7,74 +7,56 @@
     android:background="@drawable/bcgn"
     >
 
-
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-
         <TextView
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_marginTop="72dp"
             android:fontFamily="sans-serif-medium"
             android:padding="@dimen/_10sdp"
             android:text="REGISTRATION  DETAILS"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
-            android:textSize="26dp"
+            android:textSize="22dp"
             android:textStyle="bold" />
-
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp">
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="25dp">
-
-            </Space>
-
-
             <TextView
-
-                android:layout_width="@dimen/_300sdp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:layout_marginTop="15dp"
+                android:gravity="center"
                 android:padding="@dimen/_10sdp"
                 android:text="Any Existing Diseases?"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="384dp"
                 android:layout_height="47dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="5dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-                    android:paddingTop="5dp"
+                    android:layout_margin="4.00dp"
+                    android:drawableLeft="@drawable/ic_baseline_add_circlees_24"
+                    android:gravity="center" />
 
-                    android:textColor="@color/black"
-                    android:textSize="19sp"
-                    android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/diseasesspinners"
@@ -85,32 +67,32 @@
 
             <TextView
 
-                android:layout_width="@dimen/_300sdp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:gravity="center"
                 android:padding="@dimen/_10sdp"
                 android:text="Any Operation in Last one year?"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="384dp"
                 android:layout_height="47dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="5dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-                    android:paddingTop="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="19sp"
-                    android:textStyle="bold" />
+                    android:layout_margin="4.00dp"
+                    android:drawableLeft="@drawable/ic_baseline_add_circlees_24"
+                    android:gravity="center" />
+
 
                 <Spinner
                     android:id="@+id/operationspinners"
@@ -121,33 +103,31 @@
 
             <TextView
 
-                android:layout_width="@dimen/_300sdp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:gravity="center"
                 android:padding="@dimen/_10sdp"
                 android:text="Do you have any Allergy?"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="384dp"
                 android:layout_height="47dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="5dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-                    android:paddingTop="5dp"
-
-                    android:textColor="@color/black"
-                    android:textSize="19sp"
-                    android:textStyle="bold" />
+                    android:layout_margin="4.00dp"
+                    android:drawableLeft="@drawable/ic_baseline_add_circlees_24"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/allergyspinners"
@@ -155,9 +135,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
             </LinearLayout>
-
-
-
             <LinearLayout
                 android:layout_width="196dp"
                 android:layout_height="wrap_content"
@@ -169,25 +146,19 @@
 
             <Button
                 android:id="@+id/next3"
-                android:layout_width="163dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/_5sdp"
-                android:layout_marginBottom="72dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/inpuut_bg"
                 android:text="Next"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="20dp"
                 android:textStyle="bold"
-                android:visibility="visible"
-                app:backgroundTint="@color/design_default_color_error"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/phonenumberLabel"
-                app:layout_constraintVertical_bias="1.0" />
-
+                app:backgroundTint="@color/design_default_color_error" />
         </LinearLayout>
 
     </LinearLayout>

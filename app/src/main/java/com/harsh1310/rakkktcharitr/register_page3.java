@@ -43,16 +43,23 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class register_page3 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class register_page3 extends AppCompatActivity //implements AdapterView.OnItemSelectedListener
+ {
 EditText allergy,ifallergy,ifdisease,op,ifop,drop_pick,remark;
 Button next3;
     ArrayList<String>list;
     stored_credentials pref;
-Spinner diseasespinner,opspinner,allergyspinner;
+Spinner diseasespinner,operationspinner,allergyspinner;
 String diseasetext="Yes",allergytext="Yes",optext="Yes";
 String []diseasearray={"Yes","No"};
 String []oparray={"Yes","No"};
 String []allergyarray={"Yes","No"};
+ArrayList<existingmodel>diseaseadlist;
+ArrayAdapter diseaseadapter;
+     ArrayList<operationmodel>operationadapterslist;
+     ArrayAdapter operationadapter;
+     ArrayList<allergymodel>allergymodellist;
+     ArrayAdapter allergyadapter;
 @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,40 +72,68 @@ pref=stored_credentials.getInstance(this);
 //Log.d("check",list.get(10));
         allergyspinner=findViewById(R.id.allergyspinners);
 
-        opspinner=findViewById(R.id.operationspinners);
+        operationspinner=findViewById(R.id.operationspinners);
         diseasespinner=findViewById(R.id.diseasesspinners);
      //   drop_pick=findViewById(R.id.pickup_drop);
 
         next3=findViewById(R.id.next3);
-    ArrayAdapter diseaseadapter
-            = new ArrayAdapter(
-            this,
-            android.R.layout.simple_spinner_item,
-            diseasearray);
-    ArrayAdapter opadapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,oparray);
-    ArrayAdapter allergyadapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,allergyarray);
-    // set simple layout resource file
-    // for each item of spinner
-    diseaseadapter.setDropDownViewResource(
-            android.R.layout
-                    .simple_spinner_dropdown_item);
-    opadapter.setDropDownViewResource(
-            android.R.layout
-                    .simple_spinner_dropdown_item);
 
-    allergyadapter.setDropDownViewResource(
-            android.R.layout
-                    .simple_spinner_dropdown_item);
-
-
-    // Set the ArrayAdapter (ad) data on the
-    // Spinner which binds data to spinner
+    setdisease();
+    diseaseadapter=new existingadapter(this,diseaseadlist);
     diseasespinner.setAdapter(diseaseadapter);
-    opspinner.setAdapter(opadapter);
+    setoperation();
+    operationadapter =new operationadapter(this,operationadapterslist);
+    operationspinner.setAdapter(operationadapter);
+    setallergy();
+    allergyadapter =new allergyadapter(this,allergymodellist);
     allergyspinner.setAdapter(allergyadapter);
-    diseasespinner.setOnItemSelectedListener(this);
-    opspinner.setOnItemSelectedListener(this);
-        allergyspinner.setOnItemSelectedListener(this);
+
+    //opspinner.setAdapter(opadapter);
+    //allergyspinner.setAdapter(allergyadapter);
+    diseasespinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            existingmodel clickedItem = (existingmodel) parent.getItemAtPosition(position);
+            String clickedCountryName = clickedItem.getExisting();
+            diseasetext=clickedCountryName;
+
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    });
+    operationspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            operationmodel clickedItem = (operationmodel) parent.getItemAtPosition(position);
+            String clickedCountryName = clickedItem.getOperation();
+            optext=clickedCountryName;
+
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    });
+    allergyspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            allergymodel clickedItem = (allergymodel) parent.getItemAtPosition(position);
+            String clickedCountryName = clickedItem.getAllergy();
+            allergytext=clickedCountryName;
+
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    });
+  //  opspinner.setOnItemSelectedListener(this);
+    //    allergyspinner.setOnItemSelectedListener(this);
         next3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,7 +171,7 @@ pref=stored_credentials.getInstance(this);
         MimeTypeMap mimeTypeMap=MimeTypeMap.getSingleton();
         return mimeTypeMap.getExtensionFromMimeType(getContentResolver().getType(Uri.parse(list.get(6))));
     }
-
+/*
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         Spinner sp=(Spinner)parent;
@@ -157,6 +192,26 @@ pref=stored_credentials.getInstance(this);
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
-    }
-}
+    }*/
+
+     public void setdisease()
+     {
+         diseaseadlist = new ArrayList<>();
+         diseaseadlist.add(new existingmodel("Yes"));
+         diseaseadlist.add(new existingmodel("No"));
+     }
+     public void setoperation()
+     {
+         diseaseadlist = new ArrayList<>();
+         diseaseadlist.add(new existingmodel("Yes"));
+         diseaseadlist.add(new existingmodel("No"));
+     }
+     public void setallergy()
+     {
+         diseaseadlist = new ArrayList<>();
+         diseaseadlist.add(new existingmodel("Yes"));
+         diseaseadlist.add(new existingmodel("No"));
+     }
+
+ }
 
