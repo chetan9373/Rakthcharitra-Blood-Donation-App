@@ -6,11 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/launching"
-    >
-
-
-
+    android:background="@drawable/launching">
 </LinearLayout>
 
 

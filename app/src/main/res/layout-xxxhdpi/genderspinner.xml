@@ -10,7 +10,7 @@
         android:layout_margin="16dp"
         android:gravity="center"
         android:text="Male"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:layout_centerVertical="true"
         android:textColor="@color/black" />

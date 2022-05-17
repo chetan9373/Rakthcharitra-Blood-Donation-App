@@ -18,25 +18,26 @@
             android:id="@+id/imageView5"
             android:layout_width="221dp"
             android:layout_height="168dp"
-            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="30dp"
             app:srcCompat="@drawable/tsrf2" />
 
         <TextView
-            android:layout_width="202dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:text="OTP Verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="OTP VERIFICATION"
             android:textColor="@color/red"
-            android:textSize="@dimen/_20sdp"
-            android:textStyle="bold" />
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <TextView
             android:layout_width="291dp"
             android:layout_height="56dp"
             android:layout_marginStart="@dimen/_50sdp"
             android:layout_marginLeft="@dimen/_50sdp"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="6dp"
             android:layout_marginEnd="@dimen/_50sdp"
             android:gravity="center"
             android:text="We will send you an one time OTP on this given number"
@@ -49,7 +50,7 @@
             android:layout_height="48dp"
             android:layout_marginStart="@dimen/_30sdp"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:gravity="center"
@@ -101,8 +102,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/inpuut_bg"
             android:text="GET OTP"

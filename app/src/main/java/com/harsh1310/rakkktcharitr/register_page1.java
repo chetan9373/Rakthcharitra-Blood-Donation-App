@@ -37,25 +37,28 @@ import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class register_page1 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class register_page1 extends AppCompatActivity //implements AdapterView.OnItemSelectedListener {
+{
 EditText profession,smokedisease;
 TextView bod;
-Spinner last_bdspinner,last_platelletsspinner,professionspinner,smokespinner;
+Spinner last_bdspinner,last_platelletsspinner,professionspinner,smokespinner,whoknows;
 Button next2;
     String[] yesno = {"Yes","No"};
 String []last_blooddonatedarray={"Yes","No"};
 String []last_platelletarray={"Yes","No"};
 String []profarray={"Govt Employee","Pvt Employee","Professional","Student","Businessman","Others"};
 String []smokearray={"Yes","No"};
-
+ArrayList<professionmodel>mCountryList;
+ArrayList<YesorNomodel>donorynlist;
+ArrayList<plateletmodel>kyapata;
 String bgrp,gender,lastbdstring="Yes",last_ptstring="Yes",smoketext="Yes",professionstring="Govt Employee";
 
-
+professionadapter professionadapter;
+YesorNoadaptor yesorNoadaptor;
     private RequestQueue mRequestQueue;
     String getdata="tt";
     TextView tv;
     private Calendar mcalendar;
-
     private int day,month,year,age=100;
 @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +69,7 @@ String bgrp,gender,lastbdstring="Yes",last_ptstring="Yes",smoketext="Yes",profes
     //    Log.d("check",s);
     mRequestQueue = Volley.newRequestQueue(register_page1.this);
      bod=findViewById(R.id.dateofbirth);
-
+    setKyapata();
      professionspinner=findViewById(R.id.professionspinner);
     // last_bd=findViewById(R.id.lastblooddonation);
       //  last_platellets=findViewById(R.id.lastplateletsdonation);
@@ -81,6 +84,8 @@ smokespinner=findViewById(R.id.smokerspineer);
             android.R.layout.simple_spinner_item,
             last_blooddonatedarray);
 ArrayAdapter lastplateletsadapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,last_platelletarray);
+plateletadapter pa = new plateletadapter(this, kyapata);
+
     // set simple layout resource file
     // for each item of spinner
     ArrayAdapter professionadapter
@@ -94,27 +99,74 @@ ArrayAdapter lastplateletsadapter=new ArrayAdapter(this,android.R.layout.simple_
             this,
             android.R.layout.simple_spinner_item,
             smokearray);
+    initList();
+professionadapter=new professionadapter(this,mCountryList);
+setDonorynlist();
 
-    lastbdadapter.setDropDownViewResource(
-            android.R.layout
-                    .simple_spinner_dropdown_item);
-    lastplateletsadapter.setDropDownViewResource(
-            android.R.layout
-                    .simple_spinner_dropdown_item);
-professionadapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
-    smokeadapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+yesorNoadaptor=new YesorNoadaptor(this,donorynlist);
+//setplateletslist
+  //      setsmokelist
+//    lastbdadapter.setDropDownViewResource(
+  //          a
+    //          ndroid.R.layout
+    //                .simple_spinner_dropdown_item);
+    //lastplateletsadapter.setDropDownViewResource(
+      //      android.R.layout
+        //            .simple_spinner_dropdown_item);
+//professionadapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+  //  smokeadapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+
     // Set the ArrayAdapter (ad) data on the
     // Spinner which binds data to spinner
     last_bdspinner.setAdapter(lastbdadapter);
 last_platelletsspinner.setAdapter(lastplateletsadapter);
 professionspinner.setAdapter(professionadapter);
+whoknows.setAdapter(pa);
+
 smokespinner.setAdapter(smokeadapter);
-last_bdspinner.setOnItemSelectedListener(this);
-smokespinner.setOnItemSelectedListener(this);
-last_platelletsspinner.setOnItemSelectedListener(this);
+    last_bdspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            YesorNomodel clickedItem = (YesorNomodel) parent.getItemAtPosition(position);
+            String clickedCountryName = clickedItem.getblooddonor();
+            lastbdstring=clickedCountryName; }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    });
+//smokespinner.setOnItemSelectedListener(this);
+    last_platelletsspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            YesorNomodel clickedItem = (YesorNomodel) parent.getItemAtPosition(position);
+            String clickedCountryName = clickedItem.getblooddonor();
+            last_ptstring=clickedCountryName; }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    });
+
+//last_platelletsspinner.setOnItemSelectedListener(this);
 bod.setOnClickListener(v->opencal());
 
-professionspinner.setOnItemSelectedListener(this);
+professionspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+       professionmodel clickedItem = (professionmodel) parent.getItemAtPosition(position);
+        String clickedCountryName = clickedItem.getprofession();
+        professionstring=clickedCountryName;
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+});
 //last_bd.setOnClickListener(v->opencal1());
 //last_platellets.setOnClickListener(v->opencal2());
    getDataFromPinCode(list.get(3));
@@ -317,7 +369,7 @@ day=mcalendar.get(Calendar.DAY_OF_MONTH);
 
     }
 
-
+/*
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         Spinner sp1=(Spinner)parent;
@@ -349,5 +401,35 @@ day=mcalendar.get(Calendar.DAY_OF_MONTH);
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
-    }
+    }*/
+private void initList() {
+    mCountryList = new ArrayList<>();
+    mCountryList.add(new professionmodel("Govt Employee"));
+    mCountryList.add(new professionmodel("Private Employee"));
+  //  mCountryList.add(new grpmodel("AB+", R.drawable.grpimg));
+   // mCountryList.add(new grpmodel("AB-", R.drawable.grpimg));
+    //mCountryList.add(new grpmodel("O+", R.drawable.grpimg));
+    //mCountryList.add(new grpmodel("O-", R.drawable.grpimg));
+    //mCountryList.add(new grpmodel("B+", R.drawable.grpimg));
+    //mCountryList.add(new grpmodel("B-", R.drawable.grpimg));
+    mCountryList.add(new professionmodel("Professionals"));
+    mCountryList.add(new professionmodel("Student"));
+    mCountryList.add(new professionmodel("Other"));}
+
+    private void setDonorynlist() {
+        donorynlist = new ArrayList<>();
+       donorynlist.add(new YesorNomodel("Yes"));
+       donorynlist.add(new YesorNomodel("No"));
+
+
+}
+
+public void setKyapata()
+{
+    kyapata = new ArrayList<>();
+    kyapata.add(new plateletmodel("yes"));
+    kyapata.add(new plateletmodel("No"));
+}
+
+
 }
