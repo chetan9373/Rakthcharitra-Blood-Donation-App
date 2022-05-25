@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/submit3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bcgn"
     android:overScrollMode="never"
     android:scrollbars="none">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,18 +16,18 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="140dp"
-            android:layout_marginTop="@dimen/_115sdp"
+            android:layout_width="261dp"
+            android:layout_height="156dp"
+            android:layout_marginTop="80dp"
             app:srcCompat="@drawable/lock" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_21sdp"
-            android:text="OTP Verification"
+            android:layout_marginTop="15dp"
+            android:text="OTP VERIFICATION"
             android:textColor="@color/red"
-            android:textSize="30sp"
+            android:textSize="24dp"
             android:textStyle="bold" />
 
         <TextView
@@ -42,23 +40,21 @@
             android:gravity="center"
             android:text="Please Enter the OTP Sent to you"
             android:textColor="@color/black"
-            android:textSize="19sp"
+            android:textSize="@dimen/_14sdp"
             android:textStyle="normal" />
 
         <EditText
             android:id="@+id/otptext"
-            android:layout_width="370dp"
-            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:layout_marginStart="@dimen/_50sdp"
-            android:layout_marginLeft="@dimen/_50sdp"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="@dimen/_50sdp"
             android:background="@drawable/textviewbg"
             android:gravity="center"
             android:textColor="@color/black"
-            android:textSize="@dimen/_18sdp"
-            android:textStyle="normal"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,28 +68,33 @@
                 android:layout_height="wrap_content"
                 android:text="Didn't receive the OTP?"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/_14sdp" />
 
             <TextView
                 android:id="@+id/resendotp"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:text="RESEND OTP AGAIN"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15sdp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <Button
             android:id="@+id/buttonget_otp"
-            android:layout_width="227dp"
-            android:layout_height="62dp"
-            android:layout_margin="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/inpuut_bg"
             android:text="Submit"
             android:textColor="@color/white"
-            android:textSize="22sp"
+            android:textSize="22dp"
             android:textStyle="bold"
-            app:backgroundTint="@color/red" />
+            app:backgroundTint="@color/design_default_color_error" />
     </LinearLayout>
-</ScrollView>
+</RelativeLayout>

@@ -6,85 +6,75 @@
     android:layout_height="match_parent"
     android:background="@drawable/bcgn"
     android:foregroundTint="#980E0E">
-
-
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_15sdp" />
-
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_marginTop="76dp"
             android:fontFamily="sans-serif-medium"
-            android:padding="@dimen/_8sdp"
+            android:padding="@dimen/_10sdp"
             android:text="REGISTRATION  DETAILS"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:orientation="vertical"
             android:paddingLeft="@dimen/_1sdp">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="19dp"></Space>
-
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-                    android:paddingTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:padding="10dp"
                     android:text="Profession:"
+
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/professionspinner"
-                    android:layout_width="186dp"
+                    android:layout_width="180dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="15dp"></Space>
-
             <TextView
                 android:id="@+id/dateofbirth"
                 android:layout_width="wrap_content"
                 android:layout_height="49dp"
-                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#fff"
-
-
                 android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
                 android:drawablePadding="5dp"
-
                 android:ems="20"
                 android:foregroundTint="#AA1616"
                 android:includeFontPadding="false"
@@ -99,14 +89,13 @@
                 android:textSize="20sp"
                 android:textStyle="normal|bold" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="15dp"></Space>
 
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
@@ -116,27 +105,28 @@
                     android:layout_margin="5.00dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                    android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Last Blood Donation:"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/bloodspinners"
                     android:layout_width="186dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="15dp"></Space>
 
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
@@ -146,64 +136,60 @@
                     android:layout_margin="5.00dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                    android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Last Platelets Donation:"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/plateletsspinners"
                     android:layout_width="186dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="15dp"></Space>
-
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="294dp"
-                    android:layout_height="47dp"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5.00dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                    android:drawablePadding="5dp"
                     android:paddingTop="5dp"
                     android:text="Do you smoke or drink?:"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/smokerspineer"
-                    android:layout_width="178dp"
+                    android:layout_width="186dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
-
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="15dp"></Space>
-
 
             <TextView
                 android:id="@+id/lastblodddonatedate"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_margin="@dimen/_4sdp"
+                android:layout_height="49dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#fff"
-
-
                 android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
                 android:drawablePadding="5dp"
 
@@ -221,24 +207,20 @@
                 android:textSize="20sp"
                 android:textStyle="normal|bold" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp"></Space>
-
-
             <Button
                 android:id="@+id/next2"
-                android:layout_width="135dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/_5sdp"
-                android:layout_marginBottom="72dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/inpuut_bg"
                 android:text="Next"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20dp"
                 android:textStyle="bold"
-                android:visibility="visible"
                 app:backgroundTint="@color/design_default_color_error" />
 
         </LinearLayout>

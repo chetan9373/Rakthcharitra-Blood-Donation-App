@@ -9,19 +9,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="@dimen/_10sdp"
         android:paddingRight="@dimen/_10sdp">
 
-
         <TextView
-
             android:layout_width="117dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_20sdp"
@@ -36,7 +34,10 @@
             android:id="@+id/loginemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:background="@drawable/textviewbg"
             android:backgroundTint="#F6F7FA"
             android:drawableLeft="@drawable/ic_login_email_24"
@@ -45,7 +46,7 @@
             android:hint="EMAIL:"
             android:includeFontPadding="true"
             android:inputType="textPersonName"
-            android:padding="@dimen/_10sdp"
+            android:padding="10dp"
             android:paddingLeft="10dp"
             android:shadowColor="#FBFBFB"
             android:textColor="#000"
@@ -59,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_margin="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_password"
             app:passwordToggleEnabled="true"
             tools:layout_editor_absoluteX="92dp"
             tools:layout_editor_absoluteY="238dp">
@@ -69,14 +71,13 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#F4F4F6"
-                android:drawableLeft="@drawable/ic_password"
                 android:ems="50"
                 android:fontFamily="@font/roboto"
-                android:padding="@dimen/_8sdp"
-                android:text="PASSWORD:"
+                android:hint="PASSWORD:"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -85,21 +86,19 @@
 
         <Button
             android:id="@+id/loginbtn"
-            android:layout_width="199dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/inpuut_bg"
-            android:text="Login"
-
-            android:textAllCaps="true"
+            android:text="LOGIN"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="20dp"
             android:textStyle="bold"
-            app:backgroundTint="@color/design_default_color_error"
-            app:layout_constraintEnd_toEndOf="@+id/checkBoxp"
-            app:layout_constraintStart_toStartOf="@+id/remember2"
-            app:layout_constraintTop_toBottomOf="@+id/checkBoxp"
-            app:rippleColor="@color/teal_200" />
+            app:backgroundTint="@color/design_default_color_error" />
 
 
         <TextView
