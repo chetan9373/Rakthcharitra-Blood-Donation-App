@@ -65,7 +65,6 @@ logout.setOnClickListener(new View.OnClickListener() {
     }
 });
 name=rootview.findViewById(R.id.dname);
-prof=rootview.findViewById(R.id.dprofession);
 userbloodgrp=rootview.findViewById(R.id.dtype);
 usergender=rootview.findViewById(R.id.dpgender);
 userloc=rootview.findViewById(R.id.fLocation1);

@@ -35,7 +35,7 @@ TextView name,prof;
       ArrayList<String> list = (ArrayList<String>) getIntent().getSerializableExtra("key6");
         cimg=findViewById(R.id.dprof1);
         name=findViewById(R.id.dname1);
-        prof=findViewById(R.id.dproff);
+      
         dpgender=findViewById(R.id.dgender1);
         dpcontact=findViewById(R.id.dcontact1);
 
