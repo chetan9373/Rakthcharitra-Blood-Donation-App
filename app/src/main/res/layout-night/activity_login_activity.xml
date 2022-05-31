@@ -78,6 +78,7 @@
                 android:drawablePadding="2dp"
                 android:ems="20"
                 android:hint="Password:"
+
                 android:includeFontPadding="true"
                 android:inputType="textPersonName"
                 android:padding="@dimen/_10sdp"
@@ -88,7 +89,7 @@
                 android:textColorHint="#000"
                 android:textColorLink="#FAF3F3"
                 android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
