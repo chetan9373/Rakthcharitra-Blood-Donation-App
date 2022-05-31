@@ -43,9 +43,10 @@
                 android:layout_height="41dp">
 
             </Space>
+
             <LinearLayout
-                android:layout_width="384dp"
-                android:layout_height="47dp"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
@@ -59,8 +60,9 @@
                     android:paddingTop="5dp"
                     android:text="Pickup/drop required?:"
                     android:textColor="@color/black"
-                    android:textSize="19sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
+
                 <Spinner
                     android:id="@+id/pickdropspineer"
                     android:layout_width="186dp"
@@ -89,7 +91,7 @@
                 android:textColorHighlight="@color/black"
                 android:textColorHint="@color/black"
                 android:textColorLink="#FAF3F3"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 android:textStyle="normal|bold" />
 
 

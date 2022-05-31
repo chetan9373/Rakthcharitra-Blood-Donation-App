@@ -79,14 +79,15 @@
                 android:ems="20"
                 android:hint="Password:"
 
+
                 android:includeFontPadding="true"
                 android:inputType="textPersonName"
                 android:padding="@dimen/_10sdp"
                 android:paddingLeft="5dp"
                 android:shadowColor="#FBFBFB"
                 android:textColor="#000"
-                android:textColorHighlight="#090909"
-                android:textColorHint="#000"
+                android:textColorHighlight="@color/red"
+                android:textColorHint="@color/red"
                 android:textColorLink="#FAF3F3"
                 android:textStyle="bold"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
