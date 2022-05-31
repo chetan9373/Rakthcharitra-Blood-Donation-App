@@ -12,13 +12,11 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class YesorNoadaptor  extends ArrayAdapter<YesorNomodel> {
+public class diseaseadapter  extends ArrayAdapter<diseasemodel> {
 
-
-    public YesorNoadaptor(@NonNull Context context, ArrayList<YesorNomodel> countryList) {
-        super(context,0,countryList);
+    public diseaseadapter(@NonNull Context context, ArrayList<diseasemodel> countryList) {
+        super(context, 0,countryList);
     }
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -33,21 +31,22 @@ public class YesorNoadaptor  extends ArrayAdapter<YesorNomodel> {
     private View initView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.yesornospinner, parent, false
+                    R.layout.diseaselist, parent, false
             );
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.text_view_name1);
+        TextView textViewName = convertView.findViewById(R.id.diseasetext);
 
-        YesorNomodel currentItem = getItem(position);
+        diseasemodel currentItem = getItem(position);
 
         if (currentItem != null) {
 
-            textViewName.setText(currentItem.getblooddonor());
+            textViewName.setText(currentItem.getDisease());
         }
 
         return convertView;
     }
+
 }
 

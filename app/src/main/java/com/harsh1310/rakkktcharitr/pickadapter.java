@@ -1,5 +1,6 @@
 package com.harsh1310.rakkktcharitr;
 
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,13 +13,13 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class professionadapter extends ArrayAdapter<professionmodel> {
+public class pickadapter
+        extends ArrayAdapter<pickupmodel> {
 
 
-    public professionadapter(@NonNull Context context, ArrayList<professionmodel> countryList) {
-        super(context,0,countryList);
+    public pickadapter(@NonNull Context context, ArrayList<pickupmodel> countryList) {
+        super(context, 0,countryList);
     }
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -33,20 +34,21 @@ public class professionadapter extends ArrayAdapter<professionmodel> {
     private View initView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.professionlist, parent, false
+                    R.layout.pickuplist, parent, false
             );
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.text_view_name1);
+        TextView textViewName = convertView.findViewById(R.id.pickuptext);
 
-        professionmodel currentItem = getItem(position);
+        pickupmodel currentItem = getItem(position);
 
         if (currentItem != null) {
 
-            textViewName.setText(currentItem.getprofession());
+            textViewName.setText(currentItem.getpickup());
         }
 
         return convertView;
     }
+
 }

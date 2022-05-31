@@ -3,7 +3,7 @@ package com.harsh1310.rakkktcharitr;
 public class allergymodel {
 
 
-    private String allergy;
+     String allergy;
 
 
     public allergymodel(String countryName) {
@@ -13,5 +13,5 @@ public class allergymodel {
 
     }
 
-    public String getAllergy() { return getAllergy();}
+    public String getAllergy() { return allergy;}
 }

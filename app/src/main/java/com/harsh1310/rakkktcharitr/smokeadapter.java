@@ -1,4 +1,6 @@
 package com.harsh1310.rakkktcharitr;
+
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +13,9 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class allergyadapter  extends ArrayAdapter<allergymodel> {
+public class smokeadapter  extends ArrayAdapter<smokemodel> {
 
-    public allergyadapter(@NonNull Context context, ArrayList<allergymodel> countryList) {
+    public smokeadapter(@NonNull Context context, ArrayList<smokemodel> countryList) {
         super(context, 0,countryList);
     }
     @NonNull
@@ -30,18 +32,18 @@ public class allergyadapter  extends ArrayAdapter<allergymodel> {
     private View initView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.allergylist, parent, false
+                    R.layout.smokelist, parent, false
             );
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.allergytext);
+        TextView textViewName = convertView.findViewById(R.id.smoketext);
 
-        allergymodel currentItem = getItem(position);
+        smokemodel currentItem = getItem(position);
 
         if (currentItem != null) {
 
-            textViewName.setText(currentItem.getAllergy());
+            textViewName.setText(currentItem.getSmoke());
         }
 
         return convertView;
