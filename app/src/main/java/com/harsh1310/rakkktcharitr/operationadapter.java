@@ -1,6 +1,5 @@
 package com.harsh1310.rakkktcharitr;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,12 +11,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+public class operationadapter extends ArrayAdapter <operationmodel> {
 
-public class opadapter extends ArrayAdapter<opmodel> {
 
-    public opadapter(@NonNull Context context, ArrayList<opmodel> countryList) {
-        super(context, 0,countryList);
+    public operationadapter(@NonNull Context context, ArrayList<operationmodel> countryList) {
+        super(context,0,countryList);
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -32,14 +32,14 @@ public class opadapter extends ArrayAdapter<opmodel> {
     private View initView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.oplist, parent, false
+                    R.layout.yesornospinner, parent, false
             );
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.optext);
+        TextView textViewName = convertView.findViewById(R.id.text_view_name1);
 
-        opmodel currentItem = getItem(position);
+        operationmodel currentItem = getItem(position);
 
         if (currentItem != null) {
 
@@ -48,5 +48,4 @@ public class opadapter extends ArrayAdapter<opmodel> {
 
         return convertView;
     }
-
 }
