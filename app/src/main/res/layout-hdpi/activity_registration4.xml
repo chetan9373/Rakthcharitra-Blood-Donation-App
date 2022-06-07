@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bcgn"
@@ -34,6 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:orientation="vertical"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp">
@@ -47,7 +50,9 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
@@ -68,18 +73,21 @@
                     android:id="@+id/pickdropspineer"
                     android:layout_width="168dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
 
             <EditText
                 android:id="@+id/Remarks"
-                android:layout_width="390dp"
+                android:layout_width="379dp"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_margin="10dp"
+                android:layout_marginStart="2dp"
+
+                android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
-
                 android:drawableLeft="@drawable/ic_baseline_message_24"
                 android:drawablePadding="5dp"
                 android:ems="20"
@@ -100,8 +108,9 @@
                 android:id="@+id/password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
                 android:drawableLeft="@drawable/ic_password"
@@ -123,8 +132,9 @@
                 android:id="@+id/ConfirmPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
                 android:drawableLeft="@drawable/ic_password"

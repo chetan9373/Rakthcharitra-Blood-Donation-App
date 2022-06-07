@@ -38,7 +38,7 @@ TextView usergender,userbloodgrp,userloc,userpickup,useravailibility,usercontact
 CircleImageView pimg;
 Button sendmsg;
 TextView name,prof;
-ImageButton logout;
+Button logout;
    // stored_credentials pref;
     public profilefragement() {
         // Required empty public constructor
