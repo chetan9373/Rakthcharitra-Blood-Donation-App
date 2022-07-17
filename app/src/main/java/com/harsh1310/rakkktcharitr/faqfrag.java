@@ -28,27 +28,6 @@ i1=rootview.findViewById(R.id.p1);
         i3=rootview.findViewById(R.id.p3);
         i4=rootview.findViewById(R.id.p4);
 
-        /*BitmapDrawable drawable1 = (BitmapDrawable) i1.getDrawable();
-        Bitmap bmp = drawable1.getBitmap();
-        Bitmap b = Bitmap.createScaledBitmap(bmp, 1200, 1400,true);
-i1.setImageBitmap(b);
-        BitmapDrawable drawable2 = (BitmapDrawable) i1.getDrawable();
-        Bitmap bmp1 = drawable2.getBitmap();
-        Bitmap b1 = Bitmap.createScaledBitmap(bmp1, 1200, 1400,true);
-        i2.setImageBitmap(b1);
-        BitmapDrawable drawable3 = (BitmapDrawable) i1.getDrawable();
-        Bitmap bmp2 = drawable2.getBitmap();
-        Bitmap b2 = Bitmap.createScaledBitmap(bmp2, 1200, 1400,true);
-        i3.setImageBitmap(b2);
-        BitmapDrawable drawable4 = (BitmapDrawable) i1.getDrawable();
-        Bitmap bmp3 = drawable3.getBitmap();
-        Bitmap b3 = Bitmap.createScaledBitmap(bmp3, 1200, 1400,true);
-        i4.setImageBitmap(b3);
-
-         */
-//i2.setImageBitmap(b);
-//i3.setImageBitmap(b);
-//i4.setImageBitmap(b);
-        return rootview;
+              return rootview;
     }
 }

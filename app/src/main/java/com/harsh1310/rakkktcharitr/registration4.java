@@ -55,12 +55,6 @@ public class registration4 extends AppCompatActivity {
         pickist.add(new pickupmodel("Yes"));
         pickist.add(new pickupmodel("No"));
         pkadapter=new pickadapter(this,pickist);
-//dropickupspinner.setOnClickListener(new View.OnClickListener() {
-  //  @Override
-    //public void onClick(View v) {
-      //  Toast.makeText(getApplicationContext(),"click",Toast.LENGTH_LONG).show();
-    //}
-//});
                 dropickupspinner.setAdapter(pkadapter);
         dropickupspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -68,7 +62,6 @@ public class registration4 extends AppCompatActivity {
                 pickupmodel clickedItem = (pickupmodel) parent.getItemAtPosition(position);
                 String clickedCountryName = clickedItem.getpickup();
                 pickdroptext=clickedCountryName;
-                //  Toast.makeText(register_page1.this, clickedCountryName + " selected", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -78,8 +71,6 @@ public class registration4 extends AppCompatActivity {
         });
 
         signup.setOnClickListener(v->createuser());
-//Intent intent=new Intent(registration4.this,Update_Status.class);
-//startActivity(intent);
     }
 
     private void createuser() {
@@ -121,7 +112,6 @@ public class registration4 extends AppCompatActivity {
 
                     hmap.put("id", FirebaseAuth.getInstance().getUid());
 
-                    //  String allergy, String disease, String op, String grp,String pickup,String bgrp,String add
                     StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("PostsImg/"+System.currentTimeMillis()+"."+getextension());
                     storageReference.putFile(Uri.parse(list.get(4))).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                         @Override
@@ -145,19 +135,10 @@ public class registration4 extends AppCompatActivity {
                                 else
                                     s="Blood Donor & Plasma Donor";
                                 DatabaseReference users = FirebaseDatabase.getInstance().getReference("Users").child(hmap.get("id"));
-                                //      String name, String phonenum, String availability, String city, String gender, String pic,
-//String name, String phone, String grp, String add, String gender, String pic, String allergy, String disease, String op, String availability,String pickup,String pincode) {
-
-                                // donorsmodel dm=new donorsmodel();
-                                // dm.setBgrp(list.get(0));
                                 users.setValue(new usermodel(list.get(0),list.get(2),list.get(5),list.get(11),list.get(6), list.get(4),al,ds,list.get(1),"No",pickup,list.get(3),s,hmap.get("id"),list.get(7))).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
-                                            //  progressDialog.dismiss();
-
-                                            // Intent intent = new Intent(register_page3.this, Otp_activity.class);
-                                            // startActivity(intent);
                                         } else {
                                             progressDialog.dismiss();
                                             Toast.makeText(registration4.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
@@ -207,30 +188,10 @@ public class registration4 extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
                                 donorsmodel db1=new donorsmodel();
-                                // db1.setBgrp(list.get(0));
-                            /*    String al=list.get(13).trim();
-                                if(al.length()==0)
-                                    al="No";
-                                String ds=list.get(14).trim();
-                                if(ds.length()==0)
-                                    ds="No";
-                                String op=list.get(15).trim();
-                                if(op.length()==0)
-                                    op="No";
-                                String pickup=list.get(16).trim();
-                                if(pickup.length()==0)
-                                    pickup="No";
-*/
                                 progressDialog.dismiss();
                                 pref.setid(hmap.get("id"));
-                                //                  ArrayList<String>ar=new ArrayList<>();
-                                //                    ar.add(list.get(5));
-                                //                      ar.add(list.get(3));
-                                //                        Log.d("aa",ar.get(0));
-                                //                              Log.d("aa",ar.get(1));
                                 pref.checkupdate("1");
                                 Intent intent = new Intent(registration4.this, Update_Status.class);
-//                            intent.putExtra("key7",ar);
                                 startActivity(intent);
                                 finish();
                             } else {

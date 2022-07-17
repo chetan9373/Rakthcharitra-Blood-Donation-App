@@ -39,7 +39,6 @@ CircleImageView pimg;
 Button sendmsg;
 TextView name,prof;
 ImageButton logout;
-   // stored_credentials pref;
     public profilefragement() {
         // Required empty public constructor
     }
@@ -53,11 +52,9 @@ pref=stored_credentials.getInstance(getActivity());
 View rootview=inflater.inflate(R.layout.fragment_profilefragement, container, false);
 logout=rootview.findViewById(R.id.logoutbtn);
 logout.setOnClickListener(new View.OnClickListener() {
-    //stored_credentials pref=stored_credentials.getInstance(getActivity());
-    //pref=stored_credentials.getIn(this);
     @Override
     public void onClick(View v) {
-        Toast.makeText(getActivity(),"Click",Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getActivity(),"Click",Toast.LENGTH_SHORT).show();
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(getActivity(),Login_activity.class));
         pref.checkforlogin("0");
@@ -74,12 +71,6 @@ pimg=rootview.findViewById(R.id.dpimg);
 usercontact=rootview.findViewById(R.id.dcontact1);
 String uid= pref.getuserid();
 
-//logout.setOnClickListener(v->signout());
-       // mGoogleApiClient = new GoogleApiClient.Builder(getActivity())
-         //       .enableAutoManage(getActivity()/* FragmentActivity */, (GoogleApiClient.OnConnectionFailedListener) this /* OnConnectionFailedListener */)
-           //     .addApi(Auth.GOOGLE_SIGN_IN_API)
-             //   .build();
-  //      Toast.makeText(getActivity(),uid,Toast.LENGTH_SHORT).show();
 DatabaseReference db= FirebaseDatabase.getInstance().getReference("Users");
         db.child(uid).addValueEventListener(new ValueEventListener() {
             @Override
@@ -116,18 +107,6 @@ DatabaseReference db= FirebaseDatabase.getInstance().getReference("Users");
     }
 
     private void signout() {
-
-        //Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
-                //new ResultCallback<Status>() {
-                  //  @Override
-                    //public void onResult(Status status) {
-               //         FirebaseAuth.getInstance().signOut();
-                 //       Intent i1 = new Intent(getActivity(), Login_activity.class);
-          //              startActivity(i1);
-            //            Toast.makeText(getActivity(), "Logout Successfully!", Toast.LENGTH_SHORT).show();
-              //          pref.checkforlogin("0");
-                //    }
-                //});
 
     }
 }

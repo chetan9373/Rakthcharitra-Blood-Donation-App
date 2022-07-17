@@ -49,10 +49,6 @@ Button resetbut;
                         f=true;
                   String s=   resettext.getText().toString().trim();
 
-                  //boolean x=false;
-              //    if(s.equals("hygosavi9834@gmail.com"))
-                //      x=true;
-                  //      Log.d("hhh","dd"+x);
                         auth.sendPasswordResetEmail(s).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {

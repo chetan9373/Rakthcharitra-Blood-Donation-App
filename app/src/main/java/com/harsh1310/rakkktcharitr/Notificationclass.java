@@ -30,9 +30,6 @@ public class Notificationclass extends FirebaseMessagingService {
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
         if (remoteMessage.getNotification() != null) {
-            // Since the notification is received directly from
-            // FCM, the title and the body can be fetched
-            // directly as below.
             FirebaseMessaging.getInstance().getToken()
                     .addOnCompleteListener(new OnCompleteListener<String>() {
                         @Override
@@ -42,7 +39,6 @@ public class Notificationclass extends FirebaseMessagingService {
                                 return;
                             }
 
-                            // Get new FCM registration token
                             String token = task.getResult();
                         showNotification(remoteMessage.getNotification().getTitle(),remoteMessage.getNotification().getBody());
 
@@ -71,19 +67,12 @@ public class Notificationclass extends FirebaseMessagingService {
                 = new Intent(this, MainActivity.class);
         // Assign channel ID
         String channel_id = "notification_channel";
-        // Here FLAG_ACTIVITY_CLEAR_TOP flag is set to clear
-        // the activities present in the activity stack,
-        // on the top of the Activity that is to be launched
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        // Pass the intent to PendingIntent to start the
-        // next Activity
         PendingIntent pendingIntent
                 = PendingIntent.getActivity(
                 this, 0, intent,
                 PendingIntent.FLAG_ONE_SHOT);
 
-        // Create a Builder object using NotificationCompat
-        // class. This will allow control over all the flags
         NotificationCompat.Builder builder
                 = new NotificationCompat
                 .Builder(getApplicationContext(),
@@ -95,28 +84,18 @@ public class Notificationclass extends FirebaseMessagingService {
                 .setOnlyAlertOnce(true)
                 .setContentIntent(pendingIntent);
 
-        // A customized design for the notification can be
-        // set only for Android versions 4.1 and above. Thus
-        // condition for the same is checked here.
         if (Build.VERSION.SDK_INT
                 >= Build.VERSION_CODES.JELLY_BEAN) {
             builder = builder.setContent(
                     getCustomDesign(title, message));
-        } // If Android Version is lower than Jelly Beans,
-        // customized layout cannot be used and thus the
-        // layout is set as follows
-        else {
+        }else {
             builder = builder.setContentTitle(title)
                     .setContentText(message)
                     .setSmallIcon(R.drawable.ic_baseline_email_24);
         }
-        // Create an object of NotificationManager class to
-        // notify the
-        // user of events that happen in the background.
         NotificationManager notificationManager
                 = (NotificationManager) getSystemService(
                 Context.NOTIFICATION_SERVICE);
-        // Check if the Android Version is greater than Oreo
         if (Build.VERSION.SDK_INT
                 >= Build.VERSION_CODES.O) {
             NotificationChannel notificationChannel

@@ -45,41 +45,16 @@ TextView name,prof;
 
         dppickp=findViewById(R.id.drop1);
         dplocation=findViewById(R.id.dLocation1);
-        // dpgender.setText(list.get(1));
 
         sendmsg=findViewById(R.id.sendmsg);
-//Log.d("check",list.get(0));
- //       Log.d("check",list.get(1));
-   //     Log.d("check",list.get(2));
     cimg.setImageURI(Uri.parse(list.get(0)));
      name.setText(list.get(1));
-//     prof.setText(list.get(2));
      dtype.setText(list.get(3));
      dpgender.setText(list.get(4));
      dpcontact.setText(list.get(5));
      dpavailability.setText(list.get(6));
      dplocation.setText(list.get(7));
      dppickp.setText(list.get(8));
-      /*DatabaseReference db= FirebaseDatabase.getInstance().getReference().child(list.get(0)).child(list.get(1)).child(list.get(2));
-db.addListenerForSingleValueEvent(new ValueEventListener() {
-    @Override
-    public void onDataChange(@NonNull DataSnapshot snapshot) {
-        cimg.setImageURI(Uri.parse(snapshot.child(Constants.pimg).getValue().toString()));
-        name.setText(snapshot.child(Constants.name).getValue().toString());
-        prof.setText(snapshot.child(Constants.profession).getValue().toString());
-        dpavailability.setText(snapshot.child(Constants.name).getValue().toString());
-        dpcontact.setText(snapshot.child(Constants.name).getValue().toString());
-        dppickp.setText(snapshot.child(Constants.name).getValue().toString());
-        dplocation.setText(snapshot.child(Constants.name).getValue().toString());
-        dtype.setText(snapshot.child(Constants.name).getValue().toString());
-    }
-
-    @Override
-    public void onCancelled(@NonNull DatabaseError error) {
-
-    }
-});
-*/
 sendmsg.setOnClickListener(v->sendmsgfn());
     }
 

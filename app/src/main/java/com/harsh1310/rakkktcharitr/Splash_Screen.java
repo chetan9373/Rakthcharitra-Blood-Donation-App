@@ -20,15 +20,11 @@ public class Splash_Screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash__screen);
-        //img =(View)findViewById(R.id.image);
-        //animation= AnimationUtils.loadAnimation(this,R.anim.zoom);
-      //  img.setAnimation(animation);
         int timeset=2900;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent i=new Intent(Splash_Screen.this,Login_activity.class);
-                //Intent is used to switch from one activity to another.
 
                 startActivity(i);
 
