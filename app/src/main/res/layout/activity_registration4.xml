@@ -94,50 +94,68 @@
                 android:textColorLink="#FAF3F3"
                 android:textSize="18sp"
                 android:textStyle="normal|bold" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="@dimen/_5sdp"
+                app:passwordToggleEnabled="true"
+                >
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textviewbg"
+                    android:backgroundTint="#F4F4F6"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:ems="50"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Password:"
+
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="wrap_content"
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="@dimen/_5sdp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/ConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textviewbg"
+                    android:backgroundTint="#F4F4F6"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:ems="50"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Confirm Password:"
+
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="196dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/textviewbg"
-                android:backgroundTint="#FFF"
-                android:drawableLeft="@drawable/ic_password"
-                android:drawablePadding="5dp"
-                android:ems="20"
-                android:hint="Password:"
-                android:includeFontPadding="false"
-                android:inputType="textPersonName"
-                android:padding="@dimen/_10sdp"
-                android:shadowColor="#FBFBFB"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/black"
-                android:textColorHint="@color/black"
-                android:textColorLink="#FAF3F3"
-                android:textSize="18sp"
-                android:textStyle="normal|bold" />
-            <EditText
-                android:id="@+id/ConfirmPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/textviewbg"
-                android:backgroundTint="#FFF"
-                android:drawableLeft="@drawable/ic_password"
-                android:drawablePadding="5dp"
-                android:ems="20"
-                android:hint="Confirm Password:"
-                android:includeFontPadding="false"
-                android:inputType="textPersonName"
-                android:padding="@dimen/_10sdp"
-                android:shadowColor="#FBFBFB"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/black"
-                android:textColorHint="@color/black"
-                android:textColorLink="#FAF3F3"
-                android:textSize="18sp"
-                android:textStyle="normal|bold" />
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
 
             <Button
                 android:id="@+id/signup"
@@ -149,7 +167,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/inpuut_bg"
-                android:text="Sign in"
+                android:text="Sign Up"
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold"

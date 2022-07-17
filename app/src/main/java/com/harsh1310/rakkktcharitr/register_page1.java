@@ -83,7 +83,7 @@ public class register_page1 extends AppCompatActivity //implements AdapterView.O
         isbloodlist.add(new isbloodmodel("No"));
         isplasmalist=new ArrayList<>();
         isplasmalist.add(new isplasmamodel("Yes"));
-        isplasmalist.add(new isplasmamodel("Yes"));
+        isplasmalist.add(new isplasmamodel("No"));
         smokelist=new ArrayList<>();
         smokelist.add(new smokemodel("Yes"));
         smokelist.add(new smokemodel("No"));

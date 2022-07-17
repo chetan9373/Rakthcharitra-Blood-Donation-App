@@ -13,5 +13,5 @@ public class allergymodel {
 
     }
 
-    public String getAllergy() { return getAllergy();}
+    public String getAllergy() { return allergy;}
 }
