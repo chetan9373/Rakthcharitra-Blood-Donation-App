@@ -80,7 +80,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
 
-                />
+                tools:ignore="TouchTargetSizeCheck" />
 
 
             <EditText
@@ -196,7 +196,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="222dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1"

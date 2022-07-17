@@ -1,6 +1,5 @@
 package com.harsh1310.rakkktcharitr;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,12 +12,13 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class isbdadapter  extends ArrayAdapter<isbloodmodel> {
+public class professionadapter extends ArrayAdapter<professionmodel> {
 
 
-    public isbdadapter(@NonNull Context context, ArrayList<isbloodmodel> countryList) {
-        super(context, 0,countryList);
+    public professionadapter(@NonNull Context context, ArrayList<professionmodel> countryList) {
+        super(context,0,countryList);
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -33,21 +33,20 @@ public class isbdadapter  extends ArrayAdapter<isbloodmodel> {
     private View initView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.isbdlistlyt, parent, false
+                    R.layout.professionlist, parent, false
             );
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.isbdtext);
+        TextView textViewName = convertView.findViewById(R.id.text_view_name1);
 
-        isbloodmodel currentItem = getItem(position);
+        professionmodel currentItem = getItem(position);
 
         if (currentItem != null) {
 
-            textViewName.setText(currentItem.getblood());
+            textViewName.setText(currentItem.getprofession());
         }
 
         return convertView;
     }
-
 }

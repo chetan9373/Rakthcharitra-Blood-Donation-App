@@ -88,16 +88,18 @@
 
                 <TextView
                     android:id="@+id/dtype1"
-                    android:layout_marginTop="3dp"
                     android:layout_width="307dp"
                     android:layout_height="31dp"
+                    android:layout_marginTop="3dp"
                     android:layout_weight="1"
                     android:background="@drawable/textviewbg"
 
 
                     android:paddingLeft="15dp"
                     android:paddingTop="5dp"
-                    android:paddingBottom="5dp" />
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -150,7 +152,9 @@
                     android:paddingLeft="15dp"
                     android:paddingTop="5dp"
 
-                    android:paddingBottom="5dp" />
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
@@ -177,7 +181,9 @@
                     android:background="@drawable/textviewbg"
                     android:paddingLeft="15dp"
                     android:paddingTop="5dp"
-                    android:paddingBottom="5dp" />
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
@@ -205,7 +211,9 @@
                     android:background="@drawable/textviewbg"
                     android:paddingLeft="15dp"
                     android:paddingTop="5dp"
-                    android:paddingBottom="5dp" />
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
@@ -233,7 +241,9 @@
                     android:background="@drawable/textviewbg"
                     android:paddingLeft="15dp"
                     android:paddingTop="5dp"
-                    android:paddingBottom="5dp" />
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
@@ -261,7 +271,9 @@
                     android:background="@drawable/textviewbg"
                     android:paddingLeft="15dp"
                     android:paddingTop="5dp"
-                    android:paddingBottom="5dp" />
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
