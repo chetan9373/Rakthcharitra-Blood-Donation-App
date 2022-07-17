@@ -33,7 +33,7 @@
         <EditText
             android:id="@+id/loginemail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_5sdp"
@@ -41,13 +41,13 @@
             android:background="@drawable/textviewbg"
             android:backgroundTint="#F6F7FA"
             android:drawableLeft="@drawable/ic_login_email_24"
-            android:drawablePadding="2dp"
+            android:drawablePadding="5dp"
             android:ems="20"
             android:hint="EMAIL:"
             android:includeFontPadding="true"
             android:inputType="textPersonName"
-            android:padding="@dimen/_10sdp"
-            android:paddingLeft="5dp"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
             android:shadowColor="#FBFBFB"
             android:textColor="#000"
             android:textColorHighlight="#090909"
@@ -68,30 +68,18 @@
             <EditText
                 android:id="@+id/loginpass"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="48dp"
                 android:background="@drawable/textviewbg"
-                android:backgroundTint="#F6F7FA"
-                android:drawablePadding="2dp"
-                android:ems="20"
-                android:hint="Password:"
-
-
-                android:includeFontPadding="true"
-                android:inputType="textPersonName"
-                android:padding="@dimen/_10sdp"
-                android:paddingLeft="5dp"
-                android:shadowColor="#FBFBFB"
-                android:textColor="#000"
-                android:textColorHighlight="@color/red"
-                android:textColorHint="@color/red"
-                android:textColorLink="#FAF3F3"
+                android:backgroundTint="#F4F4F6"
+                android:ems="50"
+                android:fontFamily="@font/roboto"
+                android:hint="PASSWORD:"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
                 android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,7 +87,7 @@
         <Button
             android:id="@+id/loginbtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"

@@ -11,24 +11,29 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="140dp"
             android:fontFamily="sans-serif-medium"
+            android:gravity="center"
             android:padding="@dimen/_10sdp"
-            android:text="REGISTRATION  DETAILS"
+            android:text="REGISTRATiON  DETAILS"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
-            android:textSize="22dp"
+            android:textSize="24sp"
             android:textStyle="bold" />
+
         <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="477dp"
             android:orientation="vertical"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,11 +47,11 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="370dp"
+                android:layout_width="330dp"
                 android:layout_height="47dp"
                 android:layout_marginStart="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
@@ -61,7 +66,9 @@
                 <Spinner
                     android:id="@+id/diseasesspinners"
                     android:layout_width="186dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1" />
             </LinearLayout>
 
@@ -78,11 +85,12 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="370dp"
+                android:layout_width="330dp"
                 android:layout_height="47dp"
                 android:layout_marginStart="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
@@ -97,7 +105,9 @@
                 <Spinner
                     android:id="@+id/operationspinners"
                     android:layout_width="186dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1" />
             </LinearLayout>
 
@@ -114,11 +124,11 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="370dp"
+                android:layout_width="330dp"
                 android:layout_height="47dp"
                 android:layout_marginStart="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
@@ -132,9 +142,12 @@
                 <Spinner
                     android:id="@+id/allergyspinners"
                     android:layout_width="186dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="196dp"
                 android:layout_height="wrap_content"
@@ -147,7 +160,7 @@
             <Button
                 android:id="@+id/next3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"

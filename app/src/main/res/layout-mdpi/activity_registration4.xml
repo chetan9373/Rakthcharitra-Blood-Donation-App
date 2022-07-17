@@ -57,22 +57,23 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="275dp"
+                    android:layout_width="257dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5.00dp"
                     android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
                     android:paddingTop="5dp"
                     android:text=" Pickup/drop required?:"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/pickdropspineer"
                     android:layout_width="168dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
@@ -80,18 +81,17 @@
 
             <EditText
                 android:id="@+id/Remarks"
-                android:layout_width="379dp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="2dp"
-
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
                 android:drawableLeft="@drawable/ic_baseline_message_24"
                 android:drawablePadding="5dp"
                 android:ems="20"
-                android:hint=" Any other Special Remarks:"
+                android:hint="Any other Special Remarks:"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
                 android:padding="@dimen/_10sdp"
@@ -107,9 +107,9 @@
             <EditText
                 android:id="@+id/password"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="2dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
@@ -131,9 +131,9 @@
             <EditText
                 android:id="@+id/ConfirmPassword"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="2dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
@@ -168,6 +168,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/_5sdp"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="72dp"
                 android:background="@drawable/inpuut_bg"
                 android:text="Sign Up"

@@ -33,7 +33,7 @@
         <EditText
             android:id="@+id/loginemail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_5sdp"
@@ -68,7 +68,7 @@
             <EditText
                 android:id="@+id/loginpass"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="48dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#F4F4F6"
                 android:ems="50"
@@ -87,7 +87,7 @@
         <Button
             android:id="@+id/loginbtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"

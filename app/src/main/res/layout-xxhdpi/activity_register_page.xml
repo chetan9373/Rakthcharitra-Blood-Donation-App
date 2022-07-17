@@ -16,7 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+
+            android:layout_marginTop="35dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -24,6 +25,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5.00dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginEnd="150dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="REGISTRATION"
@@ -37,7 +40,7 @@
         <LinearLayout
 
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="130dp"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -45,7 +48,7 @@
                 android:layout_width="109dp"
                 android:layout_height="107dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="150dp"
+                android:layout_marginStart="140dp"
                 android:layout_marginEnd="150dp"
                 android:background="@drawable/ic_baseline_perm_identity_24"></de.hdodenhof.circleimageview.CircleImageView>
         </LinearLayout>
@@ -60,7 +63,7 @@
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="5dp"
@@ -86,7 +89,7 @@
             <EditText
                 android:id="@+id/emailadd"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -112,7 +115,7 @@
             <EditText
                 android:id="@+id/phonenumber"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -135,7 +138,7 @@
             <EditText
                 android:id="@+id/pincode"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -167,7 +170,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_group_24"
@@ -182,7 +185,7 @@
                 <Spinner
                     android:id="@+id/genderspinner"
                     android:layout_width="180dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
                     android:layout_weight="1" />
             </LinearLayout>
 
@@ -196,8 +199,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="219dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="212dp"
+                    android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
@@ -211,14 +214,14 @@
                 <Spinner
                     android:id="@+id/bloodgrpspinner"
                     android:layout_width="186dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
                     android:layout_weight="1" />
             </LinearLayout>
 
             <Button
                 android:id="@+id/next1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
