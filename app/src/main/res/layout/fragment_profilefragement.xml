@@ -104,7 +104,7 @@
             <Button
                 android:id="@+id/logoutbtn"
                 android:layout_width="138dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/_5sdp"
                 android:layout_marginBottom="72dp"
