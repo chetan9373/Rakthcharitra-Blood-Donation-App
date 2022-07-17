@@ -49,4 +49,3 @@ public class diseaseadapter  extends ArrayAdapter<diseasemodel> {
     }
 
 }
-

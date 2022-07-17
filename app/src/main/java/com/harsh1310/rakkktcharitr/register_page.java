@@ -63,8 +63,6 @@ Spinner genderspineer,grpspinner;
       pimg=findViewById(R.id.profimg);
         name=findViewById(R.id.name);
         emailaddres=findViewById(R.id.emailadd);
-      //  pass=findViewById(R.id.password);
-       // confirmpass=findViewById(R.id.confirmPassword);
 
         pincode=findViewById(R.id.pincode);
         phonenum=findViewById(R.id.phonenumber);
@@ -87,7 +85,6 @@ Spinner genderspineer,grpspinner;
                 grpmodel clickedItem = (grpmodel) parent.getItemAtPosition(position);
                 String clickedCountryName = clickedItem.getCountryName();
                 bgrp=clickedCountryName;
-                //  Toast.makeText(register_page1.this, clickedCountryName + " selected", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -102,7 +99,6 @@ Spinner genderspineer,grpspinner;
                 String clickedCountryName = clickedItem.getgender();
                 gender=clickedCountryName;
 
-                //  Toast.makeText(register_page1.this, clickedCountryName + " selected", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -145,18 +141,15 @@ else if(uri==null)
                 }
                else{
                     getDataFromPinCode(pincode.getText().toString());
-              // Log.d("check",getdata);
 
                 list.add(name.getText().toString().trim());
                 list.add(emailaddres.getText().toString().trim());
                 list.add(phonenum.getText().toString());
 
                 list.add(pincode.getText().toString().trim());
-//                list.add(pass.getText().toString().trim());
                 list.add(uri.toString());
                list.add(bgrp);
              list.add(gender);
-                //    FirebaseDatabase.getInstance().getReference().child("O").child("123456").push().setValue()
                 Intent intent=new Intent(register_page.this,register_page1.class);
                 intent.putExtra("key1",list);
                 startActivity(intent);}
@@ -200,20 +193,11 @@ else if(uri==null)
 
         Pattern p = Pattern.compile("(0|91)?[7-9][0-9]{9}");
 
-        // Pattern class contains matcher() method
-        // to find matching between given number
-        // and regular expression
         Matcher m = p.matcher(s);
         return (m.find() && m.group().equals(s));
     }
     public boolean emailValidator(String emailToText) {
 
-        // extract the entered data from the EditText
-
-        // Android offers the inbuilt patterns which the entered
-        // data from the EditText field needs to be compared with
-        // In this case the the entered data needs to compared with
-        // the EMAIL_ADDRESS, which is implemented same below
         if (!emailToText.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(emailToText).matches()) {
             return  true;
         } else {
@@ -224,57 +208,25 @@ else if(uri==null)
 
     private void getDataFromPinCode(String pinCode) {
         mRequestQueue.getCache().clear();
-        // clearing our cache of request queue.
-        //  mRequestQueue.getCache().clear();
-
-        // below is the url from where we will be getting
-        // our response in the json format.
         String url = "http://www.postalpincode.in/api/pincode/" + pinCode;
 
-        // below line is use to initialize our request queue.
         RequestQueue queue = Volley.newRequestQueue(register_page.this);
-        // private void updateAndroidSecurityProvider() { try { ProviderInstaller.installIfNeeded(this); } catch (Exception e) { e.getMessage(); } }
-        // in below line we are creating a
-        // object request using volley.
         JsonObjectRequest objectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                // inside this method we will get two methods
-                // such as on response method
-                // inside on response method we are extracting
-                // data from the json format.
                 try {
-                    // we are getting data of post office
-                    // in the form of JSON file.
                     JSONArray postOfficeArray = response.getJSONArray("PostOffice");
                     if (response.getString("Status").equals("Error")) {
-                        // validating if the response status is success or failure.
-                        // in this method the response status is having error and
-                        // we are setting text to TextView as invalid pincode.
                         Toast.makeText(register_page.this, "Invalid pincode", Toast.LENGTH_SHORT).show();
                     } else {
-                        // if the status is success we are calling this method
-                        // in which we are getting data from post office object
-                        // here we are calling first object of our json array.
                         JSONObject obj = postOfficeArray.getJSONObject(0);
-                        // inside our json array we are getting district name,
-                        // state and country from our data.
                         String district = obj.getString("District");
                         String city = obj.getString("Taluk");
                         String country = obj.getString("Country");
-                      //  tv.setText(district);
                           getdata=city+" "+district;
-                        //// Log.d("ash",getdata);
 
-                        // list1.add(state);
-                        // after getting all data we are setting this data in
-                        // our text view on below line.
-                      //  Toast.makeText(register_page.this, "Details of pin code is : \n" + "District is : " + district + "\n" + "State : "
-                        //        + "\n" + "Country : " + country, Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
-                    // if we gets any error then it
-                    // will be printed in log cat.
                     e.printStackTrace();
                     Toast.makeText(register_page.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -282,14 +234,10 @@ else if(uri==null)
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                // below method is called if we get
-                // any error while fetching data from API.
-                // below line is use to display an error message.
                 Toast.makeText(register_page.this, error.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
-        //  Log.d("ash",getdata);
         queue.add(objectRequest);
 
 
@@ -297,7 +245,6 @@ else if(uri==null)
     public  boolean isValidPinCode(String pinCode)
     {
 
-        // Regex to check valid pin code of India.
         String regex
                 = "^[1-9][0-9]{5}$";
 

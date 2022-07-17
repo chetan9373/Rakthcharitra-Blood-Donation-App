@@ -57,14 +57,6 @@ stored_credentials pref;
         forgotpass=findViewById(R.id.forgotpassword);
 
 
-    //    if (ActivityCompat.checkSelfPermission(Login_activity.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-//
-  //          ActivityCompat.requestPermissions(Login_activity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 101);
-    //    }
-      //  else {
-//            Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+919011527806"));
-  //          startActivity(intent);
-       // }
        auth=FirebaseAuth.getInstance();
 
        loginbtn.setOnClickListener(v->login());

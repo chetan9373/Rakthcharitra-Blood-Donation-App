@@ -13,9 +13,11 @@ import java.util.ArrayList;
 
 public class allergyadapter  extends ArrayAdapter<allergymodel> {
 
+
     public allergyadapter(@NonNull Context context, ArrayList<allergymodel> countryList) {
-        super(context, 0,countryList);
+        super(context,0,countryList);
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -30,12 +32,12 @@ public class allergyadapter  extends ArrayAdapter<allergymodel> {
     private View initView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.allergylist, parent, false
+                    R.layout.yesornospinner, parent, false
             );
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.allergytext);
+        TextView textViewName = convertView.findViewById(R.id.text_view_name1);
 
         allergymodel currentItem = getItem(position);
 
@@ -46,5 +48,5 @@ public class allergyadapter  extends ArrayAdapter<allergymodel> {
 
         return convertView;
     }
-
 }
+

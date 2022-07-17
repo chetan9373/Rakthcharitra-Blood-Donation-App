@@ -56,7 +56,6 @@ public class stored_credentials {
     {
         return sharedPreferences.getString("otpcheck","");
     }
-
     public void setlastdate(String value)
     {
         sharedPreferences.edit().putString("lastdate",value).apply();
@@ -73,4 +72,5 @@ public class stored_credentials {
     {
         return  sharedPreferences.getString("update","");
     }
+
 }

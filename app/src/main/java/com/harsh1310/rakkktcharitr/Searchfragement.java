@@ -42,7 +42,6 @@ public class Searchfragement extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
 
         View rootview = inflater.inflate(R.layout.fragment_searchfragement, container, false);
 
@@ -85,20 +84,15 @@ return  rootview;
                 {
                     if(snapshot.child(bgrp).hasChild(searchpin.getText().toString().trim()))
                     {
-                       // if(snapshot.child(bgrp).child(searchpin.getText().toString().tri)
-                        {
-                            //.hasChild(pref.getuserid())) {
+                       {
                             ArrayList<String> list = new ArrayList<>();
                             list.add(bgrp);
                             list.add(searchpin.getText().toString());
-                        //list.add(pref.getuserid());
                             Intent intent = new Intent(getActivity(), MainActivity2.class);
                             intent.putExtra("key5", list);
                             startActivity(intent);
 
                         }
-                       // else
-                         //   Toast.makeText(getActivity(),"No data Found",Toast.LENGTH_SHORT).show();
                     }
                     else
                         Toast.makeText(getActivity(),"No data Found",Toast.LENGTH_SHORT).show();

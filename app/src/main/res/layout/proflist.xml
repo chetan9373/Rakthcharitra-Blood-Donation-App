@@ -14,7 +14,7 @@
         android:layout_margin="16dp"
         android:layout_toEndOf="@+id/image_view_flag"
         android:gravity="center"
-        android:text="Male"
+        android:text="Govt Employee"
         android:layout_marginLeft="40dp"
         android:textStyle="bold"
         android:layout_centerVertical="true"

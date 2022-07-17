@@ -1,6 +1,5 @@
 package com.harsh1310.rakkktcharitr;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,4 +49,3 @@ public class isplasmaadapter  extends ArrayAdapter<isplasmamodel> {
     }
 
 }
-

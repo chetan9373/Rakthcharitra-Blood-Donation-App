@@ -17,11 +17,7 @@ public class AlertReceiver extends BroadcastReceiver {
     private static final String CHANNEL_ID = "this.is.my.channelId";//you can add
     @Override
     public void onReceive(Context context, Intent intent) {
-/*
-        NotificationHelper notificationHelper = new NotificationHelper(context);
-        NotificationCompat.Builder nb = notificationHelper.getChannelNotification();
-        notificationHelper.getManager().notify(1, nb.build());
-*/
+
         Intent notificationIntent = new Intent(context, Update_Status.class);//on tap this activity will open
 
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);

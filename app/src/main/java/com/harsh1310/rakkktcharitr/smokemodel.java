@@ -1,6 +1,5 @@
 package com.harsh1310.rakkktcharitr;
 
-
 public class smokemodel {
     String smoke;
 
@@ -12,4 +11,3 @@ public class smokemodel {
         return smoke;
     }
 }
-
