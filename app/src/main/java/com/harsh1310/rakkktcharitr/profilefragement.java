@@ -70,29 +70,69 @@ userpickup=rootview.findViewById(R.id.fdrop1);
 pimg=rootview.findViewById(R.id.dpimg);
 usercontact=rootview.findViewById(R.id.dcontact1);
 String uid= pref.getuserid();
-
+/*
 DatabaseReference db= FirebaseDatabase.getInstance().getReference("Users");
+
+        db.child("Users").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.hasChild(uid))
+                {
+                    String dtpe=  snapshot.child(Constants.dtype).getValue().toString();
+                    userbloodgrp.setText(dtpe);
+                    String gender=snapshot.child(Constants.gender).getValue().toString();
+                    usergender.setText(gender);
+                    String loc=snapshot.child(Constants.add).getValue().toString();
+                    userloc.setText(loc);
+                    String avail=snapshot.child(Constants.avail).getValue().toString();
+                    useravailibility.setText(avail);
+                    String pickup=snapshot.child(Constants.pickup).getValue().toString();
+                    userpickup.setText(pickup);
+                    usercontact.setText(snapshot.child(Constants.phone).getValue().toString());
+                    String img=snapshot.child(Constants.pimg).getValue().toString();
+//pimg.setImageURI(Uri.parse(img));
+
+                    Glide.with(getActivity()).load(img).into(pimg);
+                    name.setText(snapshot.child(Constants.name).getValue().toString());
+
+
+
+                }
+                else
+                {
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(getActivity(), "User not exist", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+*/
+        DatabaseReference db= FirebaseDatabase.getInstance().getReference("Users");
         db.child(uid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
 
-         String dtpe=  snapshot.child(Constants.dtype).getValue().toString();
-           userbloodgrp.setText(dtpe);
-           String gender=snapshot.child(Constants.gender).getValue().toString();
-           usergender.setText(gender);
-           String loc=snapshot.child(Constants.add).getValue().toString();
-           userloc.setText(loc);
-           String avail=snapshot.child(Constants.avail).getValue().toString();
-           useravailibility.setText(avail);
-           String pickup=snapshot.child(Constants.pickup).getValue().toString();
-           userpickup.setText(pickup);
-           usercontact.setText(snapshot.child(Constants.phone).getValue().toString());
-           String img=snapshot.child(Constants.pimg).getValue().toString();
+                String dtpe=  snapshot.child(Constants.dtype).getValue().toString();
+                userbloodgrp.setText(dtpe);
+                String gender=snapshot.child(Constants.gender).getValue().toString();
+                usergender.setText(gender);
+                String loc=snapshot.child(Constants.add).getValue().toString();
+                userloc.setText(loc);
+                String avail=snapshot.child(Constants.avail).getValue().toString();
+                useravailibility.setText(avail);
+                String pickup=snapshot.child(Constants.pickup).getValue().toString();
+                userpickup.setText(pickup);
+                usercontact.setText(snapshot.child(Constants.phone).getValue().toString());
+                String img=snapshot.child(Constants.pimg).getValue().toString();
 //pimg.setImageURI(Uri.parse(img));
 
                 Glide.with(getActivity()).load(img).into(pimg);
-           name.setText(snapshot.child(Constants.name).getValue().toString());
+                name.setText(snapshot.child(Constants.name).getValue().toString());
 
 
             }

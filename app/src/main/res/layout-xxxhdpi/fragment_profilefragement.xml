@@ -106,7 +106,7 @@
                 android:orientation="horizontal" />
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/logoutbtn"
                 android:layout_width="138dp"
                 android:layout_height="wrap_content"
