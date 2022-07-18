@@ -1,0 +1,818 @@
+Index: app/src/main/res/layout-xxxhdpi/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-xxxhdpi/professionlist.xml b/app/src/main/res/layout-xxxhdpi/professionlist.xml
+new file mode 100644
+--- /dev/null	(date 1654927184495)
++++ b/app/src/main/res/layout-xxxhdpi/professionlist.xml	(date 1654927184495)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="55dp"
++   >
++    <TextView
++        android:id="@+id/text_view_name1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:gravity="center"
++        android:text="Govt.Employee"
++        android:textSize="17sp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@color/black" />
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"55dp\"\r\n    android:background=\"@color/white\">>\r\n    <TextView\r\n        android:id=\"@+id/text_view_name1\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_alignParentTop=\"true\"\r\n        android:layout_margin=\"16dp\"\r\n        android:gravity=\"center\"\r\n        android:text=\"Govt Employee\"\r\n        android:textSize=\"16sp\"\r\n        android:textStyle=\"bold\"\r\n\r\n        android:layout_centerVertical=\"true\"\r\n        android:textColor=\"@color/black\" />\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/professionlist.xml b/app/src/main/res/layout/professionlist.xml
+--- a/app/src/main/res/layout/professionlist.xml	(revision 16fd298a8643a10dfa7a58a00271f4aa2df151ba)
++++ b/app/src/main/res/layout/professionlist.xml	(date 1654757746248)
+@@ -2,7 +2,7 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="55dp"
+-    android:background="@color/white">>
++   >
+     <TextView
+         android:id="@+id/text_view_name1"
+         android:layout_width="wrap_content"
+@@ -10,10 +10,9 @@
+         android:layout_alignParentTop="true"
+         android:layout_margin="16dp"
+         android:gravity="center"
+-        android:text="Govt Employee"
+-        android:textSize="16sp"
++        android:text="Govt.Employee"
++        android:textSize="17sp"
+         android:textStyle="bold"
+-
+         android:layout_centerVertical="true"
+         android:textColor="@color/black" />
+ </RelativeLayout>
+\ No newline at end of file
+Index: .idea/deploymentTargetDropDown.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"deploymentTargetDropDown\">\r\n    <targetSelectedWithDropDown>\r\n      <Target>\r\n        <type value=\"QUICK_BOOT_TARGET\" />\r\n        <deviceKey>\r\n          <Key>\r\n            <type value=\"VIRTUAL_DEVICE_PATH\" />\r\n            <value value=\"C:\\Users\\Radhika\\.android\\avd\\Nexus_4_API_30.avd\" />\r\n          </Key>\r\n        </deviceKey>\r\n      </Target>\r\n    </targetSelectedWithDropDown>\r\n    <timeTargetWasSelectedWithDropDown value=\"2022-05-31T16:23:05.958234500Z\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/deploymentTargetDropDown.xml b/.idea/deploymentTargetDropDown.xml
+--- a/.idea/deploymentTargetDropDown.xml	(revision 16fd298a8643a10dfa7a58a00271f4aa2df151ba)
++++ b/.idea/deploymentTargetDropDown.xml	(date 1654880342467)
+@@ -7,11 +7,11 @@
+         <deviceKey>
+           <Key>
+             <type value="VIRTUAL_DEVICE_PATH" />
+-            <value value="C:\Users\Radhika\.android\avd\Nexus_4_API_30.avd" />
++            <value value="C:\Users\Radhika\.android\avd\Pixel_4_API_30_2.avd" />
+           </Key>
+         </deviceKey>
+       </Target>
+     </targetSelectedWithDropDown>
+-    <timeTargetWasSelectedWithDropDown value="2022-05-31T16:23:05.958234500Z" />
++    <timeTargetWasSelectedWithDropDown value="2022-06-10T16:57:46.383893Z" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: app/src/main/res/layout-night/proflist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-night/proflist.xml b/app/src/main/res/layout-night/proflist.xml
+new file mode 100644
+--- /dev/null	(date 1654929017745)
++++ b/app/src/main/res/layout-night/proflist.xml	(date 1654929017745)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="50dp"
++    android:background="@color/white">
++
++
++
++    <TextView
++        android:id="@+id/proftext"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignBottom="@+id/image_view_flag"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:layout_toEndOf="@+id/image_view_flag"
++        android:gravity="center"
++        android:text="Male"
++        android:layout_marginLeft="40dp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@android:color/black"
++
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-night/smokelist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-night/smokelist.xml b/app/src/main/res/layout-night/smokelist.xml
+new file mode 100644
+--- /dev/null	(date 1654929017741)
++++ b/app/src/main/res/layout-night/smokelist.xml	(date 1654929017741)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="50dp"
++    android:background="@color/white">
++
++
++
++    <TextView
++        android:id="@+id/smoketext"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignBottom="@+id/image_view_flag"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:layout_toEndOf="@+id/image_view_flag"
++        android:gravity="center"
++        android:text="Male"
++        android:layout_marginLeft="40dp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@android:color/black"
++
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-night/pickuplist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-night/pickuplist.xml b/app/src/main/res/layout-night/pickuplist.xml
+new file mode 100644
+--- /dev/null	(date 1654928870010)
++++ b/app/src/main/res/layout-night/pickuplist.xml	(date 1654928870010)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="50dp"
++    android:background="@color/white">
++
++
++
++    <TextView
++        android:id="@+id/pickuptext"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignBottom="@+id/image_view_flag"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:layout_toEndOf="@+id/image_view_flag"
++        android:gravity="center"
++        android:text="Male"
++        android:layout_marginLeft="40dp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@android:color/black"
++
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_login_activity.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_profileofdonors.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_register_page1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/blood_grpspineer.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_profilefragement.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page3.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_registration4.xml\" value=\"0.10416666666666667\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_searchfragement.xml\" value=\"0.14666666666666667\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_registration4.xml\" value=\"0.14666666666666667\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_searchfragement.xml\" value=\"0.5625\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_register_page1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_registration4.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_forgot__password.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_login_activity.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page3.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_registration4.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/blood_grpspineer.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/fragment_ourteamfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/fragment_profilefragement.xml\" value=\"0.11820652173913043\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/professionlist.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-normal/fragment_ourteamfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-notnight-xxxhdpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-small/fragment_ourteamfragement.xml\" value=\"0.48848684210526316\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/activity_profileofdonors.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/fragment_faqfrag.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page3.xml\" value=\"0.19959677419354838\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_searchfragement.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page3.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_registration4.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_searchfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page3.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_registration4.xml\" value=\"0.10416666666666667\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/blood_grpspineer.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_ourteamfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_searchfragement.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_donorprofile.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_last__screen.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_login_activity.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main2.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_notificationactivity.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_otp_activity.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_ourteam.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_profileofdonors.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page3.xml\" value=\"0.12\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_registration4.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_splash__screen.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/allergylist.xml\" value=\"0.15989583333333332\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/blood_grpspineer.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_ourteamfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_profilefragement.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_searchfragement.xml\" value=\"0.4316860465116279\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/professionlist.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/proflist.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/smokelist.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"NullableNotNullManager\">\r\n    <option name=\"myDefaultNullable\" value=\"org.jetbrains.annotations.Nullable\" />\r\n    <option name=\"myDefaultNotNull\" value=\"androidx.annotation.NonNull\" />\r\n    <option name=\"myNullables\">\r\n      <value>\r\n        <list size=\"14\">\r\n          <item index=\"0\" class=\"java.lang.String\" itemvalue=\"org.jetbrains.annotations.Nullable\" />\r\n          <item index=\"1\" class=\"java.lang.String\" itemvalue=\"edu.umd.cs.findbugs.annotations.Nullable\" />\r\n          <item index=\"2\" class=\"java.lang.String\" itemvalue=\"android.support.annotation.Nullable\" />\r\n          <item index=\"3\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.Nullable\" />\r\n          <item index=\"4\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.RecentlyNullable\" />\r\n          <item index=\"5\" class=\"java.lang.String\" itemvalue=\"com.android.annotations.Nullable\" />\r\n          <item index=\"6\" class=\"java.lang.String\" itemvalue=\"javax.annotation.Nullable\" />\r\n          <item index=\"7\" class=\"java.lang.String\" itemvalue=\"javax.annotation.CheckForNull\" />\r\n          <item index=\"8\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.qual.Nullable\" />\r\n          <item index=\"9\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NullableDecl\" />\r\n          <item index=\"10\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NullableType\" />\r\n          <item index=\"11\" class=\"java.lang.String\" itemvalue=\"org.eclipse.jdt.annotation.Nullable\" />\r\n          <item index=\"12\" class=\"java.lang.String\" itemvalue=\"io.reactivex.annotations.Nullable\" />\r\n          <item index=\"13\" class=\"java.lang.String\" itemvalue=\"io.reactivex.rxjava3.annotations.Nullable\" />\r\n        </list>\r\n      </value>\r\n    </option>\r\n    <option name=\"myNotNulls\">\r\n      <value>\r\n        <list size=\"13\">\r\n          <item index=\"0\" class=\"java.lang.String\" itemvalue=\"org.jetbrains.annotations.NotNull\" />\r\n          <item index=\"1\" class=\"java.lang.String\" itemvalue=\"edu.umd.cs.findbugs.annotations.NonNull\" />\r\n          <item index=\"2\" class=\"java.lang.String\" itemvalue=\"android.support.annotation.NonNull\" />\r\n          <item index=\"3\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.NonNull\" />\r\n          <item index=\"4\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.RecentlyNonNull\" />\r\n          <item index=\"5\" class=\"java.lang.String\" itemvalue=\"com.android.annotations.NonNull\" />\r\n          <item index=\"6\" class=\"java.lang.String\" itemvalue=\"javax.annotation.Nonnull\" />\r\n          <item index=\"7\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.qual.NonNull\" />\r\n          <item index=\"8\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NonNullDecl\" />\r\n          <item index=\"9\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NonNullType\" />\r\n          <item index=\"10\" class=\"java.lang.String\" itemvalue=\"org.eclipse.jdt.annotation.NonNull\" />\r\n          <item index=\"11\" class=\"java.lang.String\" itemvalue=\"io.reactivex.annotations.NonNull\" />\r\n          <item index=\"12\" class=\"java.lang.String\" itemvalue=\"io.reactivex.rxjava3.annotations.NonNull\" />\r\n        </list>\r\n      </value>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n  <component name=\"VisualizationToolProject\">\r\n    <option name=\"state\">\r\n      <ProjectState>\r\n        <option name=\"scale\" value=\"0.16666666666666666\" />\r\n      </ProjectState>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 16fd298a8643a10dfa7a58a00271f4aa2df151ba)
++++ b/.idea/misc.xml	(date 1658046563632)
+@@ -5,69 +5,94 @@
+       <map>
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_forgot__password.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_login_activity.xml" value="0.1381340579710145" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_otp_activity.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_plasma.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_profileofdonors.xml" value="0.16666666666666666" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_register_page.xml" value="0.1381340579710145" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_register_page1.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_update__status.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_verify_otp.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/blood_grpspineer.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_profilefragement.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/genderspinner.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/professionlist.xml" value="0.1286231884057971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/yesornospinner.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_forgot__password.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_login_activity.xml" value="0.1311965811965812" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_otp_activity.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page.xml" value="0.1381340579710145" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page1.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page3.xml" value="0.1014344262295082" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_registration4.xml" value="0.10416666666666667" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_registration4.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_update__status.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_verify_otp.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_searchfragement.xml" value="0.14666666666666667" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_searchfragement.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/genderspinner.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/professionlist.xml" value="0.1286231884057971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/yesornospinner.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_forgot__password.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_otp_activity.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_plasma.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_registration4.xml" value="0.14666666666666667" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_registration4.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_update__status.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_verify_otp.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_searchfragement.xml" value="0.5625" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/genderspinner.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/professionlist.xml" value="0.1286231884057971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_forgot__password.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_login_activity.xml" value="0.1311965811965812" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_otp_activity.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_plasma.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_register_page.xml" value="0.1381340579710145" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_register_page1.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_registration4.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_update__status.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_verify_otp.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_profilefragement.xml" value="0.13333333333333333" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/genderspinner.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/professionlist.xml" value="0.1286231884057971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_forgot__password.xml" value="0.1381340579710145" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_login_activity.xml" value="0.1381340579710145" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_otp_activity.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_profileofdonors.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page.xml" value="0.1381340579710145" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page3.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_registration4.xml" value="0.1381340579710145" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page1.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page3.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_registration4.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_update__status.xml" value="0.1311965811965812" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_verify_otp.xml" value="0.1311965811965812" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/allergylist.xml" value="0.128739800543971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/blood_grpspineer.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/diseaselist.xml" value="0.128739800543971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/fragment_ourteamfragement.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/fragment_profilefragement.xml" value="0.11820652173913043" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/genderspinner.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/isbdlistlyt.xml" value="0.128739800543971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/oplist.xml" value="0.128739800543971" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/pickuplist.xml" value="0.128739800543971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/professionlist.xml" value="0.12771739130434784" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/yesornospinner.xml" value="0.12771739130434784" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/proflist.xml" value="0.128739800543971" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/smokelist.xml" value="0.128739800543971" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/yesornospinner.xml" value="0.16666666666666666" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_plasma.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_register_page.xml" value="0.1381340579710145" />
+@@ -80,11 +105,14 @@
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-notnight-xxxhdpi/yesornospinner.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-small/fragment_ourteamfragement.xml" value="0.48848684210526316" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/activity_profileofdonors.xml" value="0.1014344262295082" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/activity_verify_otp.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/fragment_faqfrag.xml" value="0.1014344262295082" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_login_activity.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_plasma.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page.xml" value="0.1381340579710145" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page3.xml" value="0.19959677419354838" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page1.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page3.xml" value="0.16666666666666666" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_update__status.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+@@ -92,28 +120,38 @@
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/genderspinner.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/professionlist.xml" value="0.1286231884057971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/yesornospinner.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_forgot__password.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_login_activity.xml" value="0.1311965811965812" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_otp_activity.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_plasma.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page.xml" value="0.1381340579710145" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page3.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_registration4.xml" value="0.1381340579710145" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page1.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page3.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_registration4.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_update__status.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_verify_otp.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_profilefragement.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_searchfragement.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_searchfragement.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/genderspinner.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/professionlist.xml" value="0.1286231884057971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/yesornospinner.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_forgot__password.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_login_activity.xml" value="0.1311965811965812" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_otp_activity.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_plasma.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_profileofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page.xml" value="0.1381340579710145" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page1.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page3.xml" value="0.1014344262295082" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_registration4.xml" value="0.10416666666666667" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_registration4.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_update__status.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_verify_otp.xml" value="0.1311965811965812" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/blood_grpspineer.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_faqfrag.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_ourteamfragement.xml" value="0.13451086956521738" />
+@@ -122,10 +160,11 @@
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/genderspinner.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/professionlist.xml" value="0.1286231884057971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_donorprofile.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_forgot__password.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_last__screen.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_login_activity.xml" value="0.1381340579710145" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_login_activity.xml" value="0.10666666666666667" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main2.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_notificationactivity.xml" value="0.13451086956521738" />
+@@ -133,21 +172,26 @@
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_ourteam.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_plasma.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_profileofdonors.xml" value="0.16666666666666666" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page1.xml" value="0.1" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page3.xml" value="0.12" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_registration4.xml" value="0.16666666666666666" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page.xml" value="0.10666666666666667" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page1.xml" value="0.14666666666666667" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page3.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_registration4.xml" value="0.14666666666666667" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_splash__screen.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_update__status.xml" value="0.13451086956521738" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/allergylist.xml" value="0.15989583333333332" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_verify_otp.xml" value="0.1" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/allergylist.xml" value="0.16666666666666666" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/blood_grpspineer.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/diseaselist.xml" value="0.1" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_faqfrag.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_ourteamfragement.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_profilefragement.xml" value="0.16666666666666666" />
+-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_searchfragement.xml" value="0.4316860465116279" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_searchfragement.xml" value="0.12" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/genderspinner.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/isbdlistlyt.xml" value="0.128739800543971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofdonors.xml" value="0.13451086956521738" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofplasma.xml" value="0.13451086956521738" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/oplist.xml" value="0.128739800543971" />
++        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/pickuplist.xml" value="0.128739800543971" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/professionlist.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/proflist.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/smokelist.xml" value="0.12771739130434784" />
+@@ -207,7 +251,7 @@
+   <component name="VisualizationToolProject">
+     <option name="state">
+       <ProjectState>
+-        <option name="scale" value="0.16666666666666666" />
++        <option name="scale" value="0.10666666666666667" />
+       </ProjectState>
+     </option>
+   </component>
+Index: app/src/main/res/layout-night/oplist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-night/oplist.xml b/app/src/main/res/layout-night/oplist.xml
+new file mode 100644
+--- /dev/null	(date 1654928870015)
++++ b/app/src/main/res/layout-night/oplist.xml	(date 1654928870015)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="50dp"
++    android:background="@color/white">
++
++
++
++    <TextView
++        android:id="@+id/optext"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignBottom="@+id/image_view_flag"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:layout_toEndOf="@+id/image_view_flag"
++        android:gravity="center"
++        android:text="Male"
++        android:layout_marginLeft="40dp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@android:color/black"
++
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-night/allergylist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-night/allergylist.xml b/app/src/main/res/layout-night/allergylist.xml
+new file mode 100644
+--- /dev/null	(date 1654928870004)
++++ b/app/src/main/res/layout-night/allergylist.xml	(date 1654928870004)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="50dp"
++    android:background="@color/white">
++
++
++
++    <TextView
++        android:id="@+id/allergytext"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignBottom="@+id/image_view_flag"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:layout_toEndOf="@+id/image_view_flag"
++        android:gravity="center"
++        android:text="Male"
++        android:layout_marginLeft="40dp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@android:color/black"
++
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-night/diseaselist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-night/diseaselist.xml b/app/src/main/res/layout-night/diseaselist.xml
+new file mode 100644
+--- /dev/null	(date 1654928869999)
++++ b/app/src/main/res/layout-night/diseaselist.xml	(date 1654928869999)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="50dp"
++    android:background="@color/white">
++
++
++
++    <TextView
++        android:id="@+id/diseasetext"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignBottom="@+id/image_view_flag"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:layout_toEndOf="@+id/image_view_flag"
++        android:gravity="center"
++        android:text="Male"
++        android:layout_marginLeft="40dp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@android:color/black"
++
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/harsh1310/rakkktcharitr/register_page.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.harsh1310.rakkktcharitr;\r\n\r\nimport androidx.annotation.Nullable;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.core.app.ActivityCompat;\r\n\r\nimport android.Manifest;\r\nimport android.content.ActivityNotFoundException;\r\nimport android.content.Intent;\r\nimport android.content.pm.PackageManager;\r\nimport android.net.Uri;\r\nimport android.os.Bundle;\r\nimport android.util.Log;\r\nimport android.util.Patterns;\r\nimport android.view.View;\r\nimport android.widget.AdapterView;\r\nimport android.widget.Button;\r\nimport android.widget.EditText;\r\nimport android.widget.ImageView;\r\nimport android.widget.Spinner;\r\nimport android.widget.TextView;\r\nimport android.widget.Toast;\r\n\r\nimport com.android.volley.Request;\r\nimport com.android.volley.RequestQueue;\r\nimport com.android.volley.Response;\r\nimport com.android.volley.VolleyError;\r\nimport com.android.volley.toolbox.JsonObjectRequest;\r\nimport com.android.volley.toolbox.Volley;\r\nimport com.google.firebase.database.FirebaseDatabase;\r\n\r\nimport org.json.JSONArray;\r\nimport org.json.JSONException;\r\nimport org.json.JSONObject;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.regex.Matcher;\r\nimport java.util.regex.Pattern;\r\n\r\nimport de.hdodenhof.circleimageview.CircleImageView;\r\n\r\npublic class register_page extends AppCompatActivity {\r\nEditText phonenum,name,emailaddres,pass,confirmpass,pincode;\r\nCircleImageView pimg;\r\nButton next;\r\nstored_credentials pref;\r\nUri uri;\r\nSpinner genderspineer,grpspinner;\r\n    private RequestQueue mRequestQueue;\r\n    String getdata=\"tt\";\r\n    private ArrayList<grpmodel> mCountryList;\r\n    ArrayList<gendermodel>genderlist;\r\n    private bloddgrpadapterspinner mAdapter;\r\n    genderadapter genderAdapter;\r\n    String bgrp,gender;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_register_page);\r\n\r\n        mRequestQueue = Volley.newRequestQueue(register_page.this);\r\n      pimg=findViewById(R.id.profimg);\r\n        name=findViewById(R.id.name);\r\n        emailaddres=findViewById(R.id.emailadd);\r\n      //  pass=findViewById(R.id.password);\r\n       // confirmpass=findViewById(R.id.confirmPassword);\r\n\r\n        pincode=findViewById(R.id.pincode);\r\n        phonenum=findViewById(R.id.phonenumber);\r\n    genderspineer=findViewById(R.id.genderspinner);\r\n    grpspinner=findViewById(R.id.bloodgrpspinner);\r\n       pimg.setOnClickListener(v->setprofile());\r\n        next=findViewById(R.id.next1);\r\n        initList();\r\n        genderlist=new ArrayList<>();\r\n        genderlist.add(new gendermodel(\"Male\"));\r\n        genderlist.add(new gendermodel(\"Female\"));\r\n\r\n        mAdapter = new bloddgrpadapterspinner(this, mCountryList);\r\n        genderAdapter=new genderadapter(this,genderlist);\r\n        grpspinner.setAdapter(mAdapter);\r\n        genderspineer.setAdapter(genderAdapter);\r\n        grpspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {\r\n            @Override\r\n            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {\r\n                grpmodel clickedItem = (grpmodel) parent.getItemAtPosition(position);\r\n                String clickedCountryName = clickedItem.getCountryName();\r\n                bgrp=clickedCountryName;\r\n                //  Toast.makeText(register_page1.this, clickedCountryName + \" selected\", Toast.LENGTH_SHORT).show();\r\n            }\r\n\r\n            @Override\r\n            public void onNothingSelected(AdapterView<?> parent) {\r\n\r\n            }\r\n        });\r\n        genderspineer.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {\r\n            @Override\r\n            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {\r\n                gendermodel clickedItem = (gendermodel) parent.getItemAtPosition(position);\r\n                String clickedCountryName = clickedItem.getgender();\r\n                gender=clickedCountryName;\r\n\r\n                //  Toast.makeText(register_page1.this, clickedCountryName + \" selected\", Toast.LENGTH_SHORT).show();\r\n            }\r\n\r\n            @Override\r\n            public void onNothingSelected(AdapterView<?> parent) {\r\n\r\n            }\r\n        });\r\n\r\n\r\n        next.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n               ArrayList<String> list = new ArrayList<>();\r\n\r\n                if (name.getText().toString().length() == 0) {\r\n                    name.setError(\" name not entered\");\r\n                    name.requestFocus();\r\n                }\r\n               else if (!emailValidator(emailaddres.getText().toString())) {\r\n                    emailaddres.setError(\"Email address in invalid\");\r\n                    emailaddres.requestFocus();\r\n                }\r\n\r\n\r\n              else if(!isValid(phonenum.getText().toString()))\r\n                {\r\n                    phonenum.setError(\"Phonenum is invalid\");\r\n                    phonenum.requestFocus();\r\n                }\r\n\r\n              else if(!isValidPinCode(pincode.getText().toString()))\r\n                {\r\n                    pincode.setError(\"Invalid pincode\");\r\n                    pincode.requestFocus();\r\n                }\r\n\r\nelse if(uri==null)\r\n                {\r\n                    Toast.makeText(register_page.this,\"Please select image\",Toast.LENGTH_SHORT).show();\r\n                }\r\n               else{\r\n                    getDataFromPinCode(pincode.getText().toString());\r\n              // Log.d(\"check\",getdata);\r\n\r\n                list.add(name.getText().toString().trim());\r\n                list.add(emailaddres.getText().toString().trim());\r\n                list.add(phonenum.getText().toString());\r\n\r\n                list.add(pincode.getText().toString().trim());\r\n//                list.add(pass.getText().toString().trim());\r\n                list.add(uri.toString());\r\n               list.add(bgrp);\r\n             list.add(gender);\r\n                //    FirebaseDatabase.getInstance().getReference().child(\"O\").child(\"123456\").push().setValue()\r\n                Intent intent=new Intent(register_page.this,register_page1.class);\r\n                intent.putExtra(\"key1\",list);\r\n                startActivity(intent);}\r\n            }\r\n        });\r\n\r\n    }\r\n\r\n    private void initList() {\r\n        mCountryList = new ArrayList<>();\r\n        mCountryList.add(new grpmodel(\"A+\", R.drawable.grpimg));\r\n        mCountryList.add(new grpmodel(\"A-\", R.drawable.grpimg));\r\n        mCountryList.add(new grpmodel(\"AB+\", R.drawable.grpimg));\r\n        mCountryList.add(new grpmodel(\"AB-\", R.drawable.grpimg));\r\n        mCountryList.add(new grpmodel(\"O+\", R.drawable.grpimg));\r\n        mCountryList.add(new grpmodel(\"O-\", R.drawable.grpimg));\r\n        mCountryList.add(new grpmodel(\"B+\", R.drawable.grpimg));\r\n        mCountryList.add(new grpmodel(\"B-\", R.drawable.grpimg));\r\n\r\n    }\r\n\r\n    private void setprofile() {\r\n        if (ActivityCompat.checkSelfPermission(register_page.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {\r\n\r\n            ActivityCompat.requestPermissions(register_page.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 101);\r\n        } else {\r\n            Intent intent = new Intent(Intent.ACTION_PICK);\r\n            intent.setType(\"image/*\");\r\n            try {\r\n                startActivityForResult(intent, 101);\r\n\r\n            } catch (ActivityNotFoundException e) {\r\n\r\n                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();\r\n            }\r\n        }\r\n    }\r\n\r\n    public  boolean isValid(String s)\r\n    {\r\n\r\n        Pattern p = Pattern.compile(\"(0|91)?[7-9][0-9]{9}\");\r\n\r\n        // Pattern class contains matcher() method\r\n        // to find matching between given number\r\n        // and regular expression\r\n        Matcher m = p.matcher(s);\r\n        return (m.find() && m.group().equals(s));\r\n    }\r\n    public boolean emailValidator(String emailToText) {\r\n\r\n        // extract the entered data from the EditText\r\n\r\n        // Android offers the inbuilt patterns which the entered\r\n        // data from the EditText field needs to be compared with\r\n        // In this case the the entered data needs to compared with\r\n        // the EMAIL_ADDRESS, which is implemented same below\r\n        if (!emailToText.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(emailToText).matches()) {\r\n            return  true;\r\n        } else {\r\n            return false;\r\n        }\r\n    }\r\n\r\n\r\n    private void getDataFromPinCode(String pinCode) {\r\n        mRequestQueue.getCache().clear();\r\n        // clearing our cache of request queue.\r\n        //  mRequestQueue.getCache().clear();\r\n\r\n        // below is the url from where we will be getting\r\n        // our response in the json format.\r\n        String url = \"http://www.postalpincode.in/api/pincode/\" + pinCode;\r\n\r\n        // below line is use to initialize our request queue.\r\n        RequestQueue queue = Volley.newRequestQueue(register_page.this);\r\n        // private void updateAndroidSecurityProvider() { try { ProviderInstaller.installIfNeeded(this); } catch (Exception e) { e.getMessage(); } }\r\n        // in below line we are creating a\r\n        // object request using volley.\r\n        JsonObjectRequest objectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {\r\n            @Override\r\n            public void onResponse(JSONObject response) {\r\n                // inside this method we will get two methods\r\n                // such as on response method\r\n                // inside on response method we are extracting\r\n                // data from the json format.\r\n                try {\r\n                    // we are getting data of post office\r\n                    // in the form of JSON file.\r\n                    JSONArray postOfficeArray = response.getJSONArray(\"PostOffice\");\r\n                    if (response.getString(\"Status\").equals(\"Error\")) {\r\n                        // validating if the response status is success or failure.\r\n                        // in this method the response status is having error and\r\n                        // we are setting text to TextView as invalid pincode.\r\n                        Toast.makeText(register_page.this, \"Invalid pincode\", Toast.LENGTH_SHORT).show();\r\n                    } else {\r\n                        // if the status is success we are calling this method\r\n                        // in which we are getting data from post office object\r\n                        // here we are calling first object of our json array.\r\n                        JSONObject obj = postOfficeArray.getJSONObject(0);\r\n                        // inside our json array we are getting district name,\r\n                        // state and country from our data.\r\n                        String district = obj.getString(\"District\");\r\n                        String city = obj.getString(\"Taluk\");\r\n                        String country = obj.getString(\"Country\");\r\n                      //  tv.setText(district);\r\n                          getdata=city+\" \"+district;\r\n                        //// Log.d(\"ash\",getdata);\r\n\r\n                        // list1.add(state);\r\n                        // after getting all data we are setting this data in\r\n                        // our text view on below line.\r\n                      //  Toast.makeText(register_page.this, \"Details of pin code is : \\n\" + \"District is : \" + district + \"\\n\" + \"State : \"\r\n                        //        + \"\\n\" + \"Country : \" + country, Toast.LENGTH_SHORT).show();\r\n                    }\r\n                } catch (JSONException e) {\r\n                    // if we gets any error then it\r\n                    // will be printed in log cat.\r\n                    e.printStackTrace();\r\n                    Toast.makeText(register_page.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();\r\n                }\r\n            }\r\n        }, new Response.ErrorListener() {\r\n            @Override\r\n            public void onErrorResponse(VolleyError error) {\r\n                // below method is called if we get\r\n                // any error while fetching data from API.\r\n                // below line is use to display an error message.\r\n                Toast.makeText(register_page.this, error.getMessage(), Toast.LENGTH_SHORT).show();\r\n\r\n            }\r\n        });\r\n        //  Log.d(\"ash\",getdata);\r\n        queue.add(objectRequest);\r\n\r\n\r\n    }\r\n    public  boolean isValidPinCode(String pinCode)\r\n    {\r\n\r\n        // Regex to check valid pin code of India.\r\n        String regex\r\n                = \"^[1-9][0-9]{5}$\";\r\n\r\n\r\n\r\n        Pattern p = Pattern.compile(regex);\r\n\r\n\r\n        if (pinCode == null) {\r\n            return false;\r\n        }\r\n\r\n\r\n        Matcher m = p.matcher(pinCode);\r\n\r\n\r\n        return m.matches();\r\n    }\r\n\r\n    @Override\r\n    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {\r\n        super.onActivityResult(requestCode, resultCode, data);\r\n        if (requestCode == 101 && resultCode == RESULT_OK)\r\n        {\r\n            if (data.getData() != null) {\r\n                uri = data.getData();\r\n                pimg.setImageURI(uri);\r\n\r\n            }\r\n        }\r\n\r\n    }\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/harsh1310/rakkktcharitr/register_page.java b/app/src/main/java/com/harsh1310/rakkktcharitr/register_page.java
+--- a/app/src/main/java/com/harsh1310/rakkktcharitr/register_page.java	(revision 16fd298a8643a10dfa7a58a00271f4aa2df151ba)
++++ b/app/src/main/java/com/harsh1310/rakkktcharitr/register_page.java	(date 1654928186868)
+@@ -276,7 +276,7 @@
+                     // if we gets any error then it
+                     // will be printed in log cat.
+                     e.printStackTrace();
+-                    Toast.makeText(register_page.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
++                  //  Toast.makeText(register_page.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                 }
+             }
+         }, new Response.ErrorListener() {
+Index: app/src/main/res/layout-night/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"55dp\"\r\n    android:background=\"@color/white\">>\r\n    <TextView\r\n        android:id=\"@+id/text_view_name1\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_alignParentTop=\"true\"\r\n        android:layout_margin=\"16dp\"\r\n        android:gravity=\"center\"\r\n        android:text=\"Govt Employee\"\r\n        android:textSize=\"16sp\"\r\n        android:textStyle=\"bold\"\r\n\r\n        android:layout_centerVertical=\"true\"\r\n        android:textColor=\"@color/black\" />\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-night/professionlist.xml b/app/src/main/res/layout-night/professionlist.xml
+--- a/app/src/main/res/layout-night/professionlist.xml	(revision 16fd298a8643a10dfa7a58a00271f4aa2df151ba)
++++ b/app/src/main/res/layout-night/professionlist.xml	(date 1654928186886)
+@@ -2,7 +2,7 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="55dp"
+-    android:background="@color/white">>
++    android:background="@color/white">
+     <TextView
+         android:id="@+id/text_view_name1"
+         android:layout_width="wrap_content"
+@@ -10,10 +10,9 @@
+         android:layout_alignParentTop="true"
+         android:layout_margin="16dp"
+         android:gravity="center"
+-        android:text="Govt Employee"
+-        android:textSize="16sp"
++        android:text="Govt.Emp"
++        android:textSize="18sp"
+         android:textStyle="bold"
+-
+         android:layout_centerVertical="true"
+         android:textColor="@color/black" />
+ </RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-night/isbdlistlyt.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-night/isbdlistlyt.xml b/app/src/main/res/layout-night/isbdlistlyt.xml
+new file mode 100644
+--- /dev/null	(date 1654928623955)
++++ b/app/src/main/res/layout-night/isbdlistlyt.xml	(date 1654928623955)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="50dp"
++    android:background="@color/white">
++
++
++
++    <TextView
++        android:id="@+id/isbdtext"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignBottom="@+id/image_view_flag"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:layout_toEndOf="@+id/image_view_flag"
++        android:gravity="center"
++        android:text="Male"
++        android:layout_marginLeft="40dp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@android:color/black"
++
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <bytecodeTargetLevel target=\"1.8\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 16fd298a8643a10dfa7a58a00271f4aa2df151ba)
++++ b/.idea/compiler.xml	(date 1655741614356)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="CompilerConfiguration">
+-    <bytecodeTargetLevel target="1.8" />
++    <bytecodeTargetLevel target="11" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: app/src/main/res/layout-anydpi/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-anydpi/professionlist.xml b/app/src/main/res/layout-anydpi/professionlist.xml
+new file mode 100644
+--- /dev/null	(date 1654927293477)
++++ b/app/src/main/res/layout-anydpi/professionlist.xml	(date 1654927293477)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="55dp"
++   >
++    <TextView
++        android:id="@+id/text_view_name1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:gravity="center"
++        android:text="Govt.Employee"
++        android:textSize="17sp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@color/black" />
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-ldpi/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-ldpi/professionlist.xml b/app/src/main/res/layout-ldpi/professionlist.xml
+new file mode 100644
+--- /dev/null	(date 1654927273845)
++++ b/app/src/main/res/layout-ldpi/professionlist.xml	(date 1654927273845)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="55dp"
++   >
++    <TextView
++        android:id="@+id/text_view_name1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:gravity="center"
++        android:text="Govt.Employee"
++        android:textSize="17sp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@color/black" />
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-xhdpi/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-xhdpi/professionlist.xml b/app/src/main/res/layout-xhdpi/professionlist.xml
+new file mode 100644
+--- /dev/null	(date 1654927221059)
++++ b/app/src/main/res/layout-xhdpi/professionlist.xml	(date 1654927221059)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="55dp"
++   >
++    <TextView
++        android:id="@+id/text_view_name1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:gravity="center"
++        android:text="Govt.Employee"
++        android:textSize="17sp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@color/black" />
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-xxhdpi/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-xxhdpi/professionlist.xml b/app/src/main/res/layout-xxhdpi/professionlist.xml
+new file mode 100644
+--- /dev/null	(date 1654927203044)
++++ b/app/src/main/res/layout-xxhdpi/professionlist.xml	(date 1654927203044)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="55dp"
++   >
++    <TextView
++        android:id="@+id/text_view_name1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:gravity="center"
++        android:text="Govt.Employee"
++        android:textSize="17sp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@color/black" />
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-mdpi/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-mdpi/professionlist.xml b/app/src/main/res/layout-mdpi/professionlist.xml
+new file mode 100644
+--- /dev/null	(date 1654927255957)
++++ b/app/src/main/res/layout-mdpi/professionlist.xml	(date 1654927255957)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="55dp"
++   >
++    <TextView
++        android:id="@+id/text_view_name1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:gravity="center"
++        android:text="Govt.Employee"
++        android:textSize="17sp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@color/black" />
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-hdpi/professionlist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout-hdpi/professionlist.xml b/app/src/main/res/layout-hdpi/professionlist.xml
+new file mode 100644
+--- /dev/null	(date 1654927236839)
++++ b/app/src/main/res/layout-hdpi/professionlist.xml	(date 1654927236839)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="55dp"
++   >
++    <TextView
++        android:id="@+id/text_view_name1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignParentTop="true"
++        android:layout_margin="16dp"
++        android:gravity="center"
++        android:text="Govt.Employee"
++        android:textSize="17sp"
++        android:textStyle="bold"
++        android:layout_centerVertical="true"
++        android:textColor="@color/black" />
++</RelativeLayout>
+\ No newline at end of file

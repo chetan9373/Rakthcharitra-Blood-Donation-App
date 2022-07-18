@@ -33,7 +33,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
@@ -44,17 +44,19 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
+
                 <Spinner
                     android:id="@+id/sspinners"
                     android:layout_width="186dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
                     android:layout_weight="1" />
             </LinearLayout>
+
             <EditText
-                android:layout_marginTop="16dp"
                 android:id="@+id/daterange1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/inpuut_bg"
                 android:backgroundTint="#fff"
                 android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
@@ -74,10 +76,10 @@
                 app:drawableTint="#E10E0E" />
 
             <EditText
-                android:layout_marginTop="16dp"
                 android:id="@+id/reason"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
 
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#fff"
@@ -98,12 +100,12 @@
                 android:textStyle="normal|bold" />
 
             <Button
-                android:layout_marginTop="40dp"
                 android:id="@+id/ssave"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginEnd="20dp"
 
                 android:layout_marginBottom="30dp"

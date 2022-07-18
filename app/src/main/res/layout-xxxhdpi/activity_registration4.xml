@@ -2,15 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bcgn"
     >
+
+
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_90sdp"
@@ -22,46 +29,63 @@
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold" />
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:orientation="vertical"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="41dp">
+
+            </Space>
+
             <LinearLayout
-                android:layout_width="384dp"
-                android:layout_height="47dp"
-                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
-                android:orientation="horizontal"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp">
+                android:orientation="horizontal">
+
                 <TextView
-                    android:layout_width="330dp"
+                    android:layout_width="257dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_margin="5.00dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-                    android:drawablePadding="3dp"
-                    android:padding="10dp"
-                    android:text="PickUp and Drop Required"
+                    android:paddingTop="5dp"
+                    android:text=" Pickup/drop required?:"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
                 <Spinner
                     android:id="@+id/pickdropspineer"
-                    android:layout_width="186dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_width="168dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
+
+
             <EditText
                 android:id="@+id/Remarks"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginStart="5dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
                 android:drawableLeft="@drawable/ic_baseline_message_24"
@@ -76,13 +100,17 @@
                 android:textColorHighlight="@color/black"
                 android:textColorHint="@color/black"
                 android:textColorLink="#FAF3F3"
-                android:textSize="18sp"
+                android:textSize="17sp"
                 android:textStyle="normal|bold" />
+
+
             <EditText
                 android:id="@+id/password"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
                 android:drawableLeft="@drawable/ic_password"
@@ -97,13 +125,16 @@
                 android:textColorHighlight="@color/black"
                 android:textColorHint="@color/black"
                 android:textColorLink="#FAF3F3"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="normal|bold" />
+
             <EditText
                 android:id="@+id/ConfirmPassword"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="2dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#FFF"
                 android:drawableLeft="@drawable/ic_password"
@@ -118,23 +149,41 @@
                 android:textColorHighlight="@color/black"
                 android:textColorHint="@color/black"
                 android:textColorLink="#FAF3F3"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="normal|bold" />
-            <Button
-                android:id="@+id/signup"
-                android:layout_width="192dp"
+
+
+            <LinearLayout
+                android:layout_width="196dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="30dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="72dp"
                 android:background="@drawable/inpuut_bg"
-                android:text="Sign in"
+                android:text="Sign Up"
                 android:textColor="@color/white"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                app:backgroundTint="@color/design_default_color_error" />
+                android:visibility="visible"
+                app:backgroundTint="@color/design_default_color_error"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phonenumberLabel"
+                app:layout_constraintVertical_bias="1.0" />
+
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

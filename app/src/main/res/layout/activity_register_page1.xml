@@ -6,24 +6,28 @@
     android:layout_height="match_parent"
     android:background="@drawable/bcgn"
     android:foregroundTint="#980E0E">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="288dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="150dp"
             android:fontFamily="sans-serif-medium"
+            android:gravity="center"
             android:padding="@dimen/_10sdp"
             android:text="REGISTRATION  DETAILS"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:gravity="center"/>
+            android:textStyle="bold" />
 
 
         <LinearLayout
@@ -36,14 +40,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="19dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="176dp"
+                    android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
@@ -58,16 +62,17 @@
 
                 <Spinner
                     android:id="@+id/professionspinner"
-                    android:layout_width="180dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="212dp"
+                    android:layout_height="48dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/dateofbirth"
                 android:layout_width="wrap_content"
-                android:layout_height="49dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -115,7 +120,7 @@
                 <Spinner
                     android:id="@+id/bloodspinners"
                     android:layout_width="186dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
@@ -146,7 +151,7 @@
                 <Spinner
                     android:id="@+id/plateletsspinners"
                     android:layout_width="186dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
@@ -176,7 +181,7 @@
                 <Spinner
                     android:id="@+id/smokerspineer"
                     android:layout_width="186dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
@@ -184,7 +189,7 @@
             <TextView
                 android:id="@+id/lastblodddonatedate"
                 android:layout_width="wrap_content"
-                android:layout_height="49dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -210,10 +215,10 @@
             <Button
                 android:id="@+id/next2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/inpuut_bg"
