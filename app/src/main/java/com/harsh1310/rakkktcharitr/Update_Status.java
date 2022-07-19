@@ -178,4 +178,9 @@ Log.d("check",error.getMessage());
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent=new Intent(Update_Status.this,Login_activity.class);
+    }
 }
