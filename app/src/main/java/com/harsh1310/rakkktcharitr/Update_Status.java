@@ -181,6 +181,7 @@ Log.d("check",error.getMessage());
 
     @Override
     public void onBackPressed() {
-        Intent intent=new Intent(Update_Status.this,Login_activity.class);
+        //Intent intent=new Intent(Update_Status.this,Login_activity.class);
+    finish();
     }
 }
