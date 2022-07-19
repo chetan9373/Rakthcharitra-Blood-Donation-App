@@ -20,7 +20,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_110sdp"
             android:fontFamily="sans-serif-medium"
             android:padding="@dimen/_10sdp"
             android:text="REGISTRATION  DETAILS"
@@ -45,7 +45,7 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="2dp"
@@ -55,6 +55,7 @@
                 <TextView
                     android:layout_width="257dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="5.00dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
@@ -63,13 +64,14 @@
                     android:paddingTop="5dp"
                     android:text=" Pickup/drop required?:"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/pickdropspineer"
                     android:layout_width="168dp"
-                    android:layout_height="48dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
                     android:layout_weight="1"
                     tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
@@ -78,7 +80,7 @@
             <EditText
                 android:id="@+id/Remarks"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="2dp"
@@ -103,7 +105,7 @@
             <EditText
                 android:id="@+id/password"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="2dp"
@@ -114,7 +116,7 @@
                 android:ems="20"
                 android:hint="Password:"
                 android:includeFontPadding="false"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 android:padding="@dimen/_10sdp"
                 android:shadowColor="#FBFBFB"
                 android:textColor="@color/black"
@@ -127,7 +129,7 @@
             <EditText
                 android:id="@+id/ConfirmPassword"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="2dp"
@@ -138,7 +140,7 @@
                 android:ems="20"
                 android:hint="Confirm Password:"
                 android:includeFontPadding="false"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 android:padding="@dimen/_10sdp"
                 android:shadowColor="#FBFBFB"
                 android:textColor="@color/black"

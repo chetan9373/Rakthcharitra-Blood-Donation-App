@@ -56,32 +56,34 @@
             android:textStyle="bold"
             tools:ignore="TouchTargetSizeCheck" />
 
-        <com.google.android.material.textfield.TextInputLayout
+
+        <EditText
+            android:id="@+id/loginpass"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/textviewbg"
+            android:backgroundTint="#F6F7FA"
             android:drawableLeft="@drawable/ic_password"
-            app:passwordToggleEnabled="true"
-            tools:layout_editor_absoluteX="92dp"
-            tools:layout_editor_absoluteY="238dp">
+            android:drawablePadding="5dp"
+            android:ems="20"
+            android:hint="Password:"
+            android:includeFontPadding="true"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:shadowColor="#FBFBFB"
+            android:textColor="#000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#000"
+            android:textColorLink="#FAF3F3"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <EditText
-                android:id="@+id/loginpass"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="@drawable/textviewbg"
-                android:backgroundTint="#F4F4F6"
-                android:ems="50"
-                android:fontFamily="@font/roboto"
-                android:hint="PASSWORD:"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                tools:ignore="SpeakableTextPresentCheck" />
 
-        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
@@ -117,7 +119,10 @@
             android:id="@+id/forgotpassword"
             android:layout_width="156dp"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:gravity="center"
             android:shadowColor="@color/black"
             android:text="Forgot Password?"

@@ -25,7 +25,8 @@
             <LinearLayout
 
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="55dp"
+
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
@@ -33,7 +34,8 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
@@ -48,14 +50,15 @@
                 <Spinner
                     android:id="@+id/sspinners"
                     android:layout_width="186dp"
-                    android:layout_height="48dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
                     android:layout_weight="1" />
             </LinearLayout>
 
             <EditText
                 android:id="@+id/daterange1"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/inpuut_bg"
                 android:backgroundTint="#fff"
@@ -78,7 +81,7 @@
             <EditText
                 android:id="@+id/reason"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:layout_marginTop="16dp"
 
                 android:background="@drawable/textviewbg"

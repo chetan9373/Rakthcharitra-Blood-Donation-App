@@ -22,11 +22,11 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:padding="@dimen/_10sdp"
-            android:text="REGISTRATION  DETAILS"
+            android:text="REGISTRATION DETAILS"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="22dp"
             android:textStyle="bold" />
 
 
@@ -38,7 +38,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="5dp"
@@ -46,10 +46,11 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="176dp"
+                    android:layout_width="212dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
                     android:drawablePadding="3dp"
@@ -63,8 +64,10 @@
                 <Spinner
                     android:id="@+id/professionspinner"
                     android:layout_width="212dp"
-                    android:layout_height="48dp"
+                    android:layout_height="55dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
@@ -72,7 +75,7 @@
             <TextView
                 android:id="@+id/dateofbirth"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -97,7 +100,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -107,6 +110,7 @@
                 <TextView
                     android:layout_width="306dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="5.00dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
@@ -120,7 +124,8 @@
                 <Spinner
                     android:id="@+id/bloodspinners"
                     android:layout_width="186dp"
-                    android:layout_height="48dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
                     android:layout_weight="1"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
@@ -128,7 +133,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -138,6 +143,7 @@
                 <TextView
                     android:layout_width="306dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="5.00dp"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
@@ -151,14 +157,15 @@
                 <Spinner
                     android:id="@+id/plateletsspinners"
                     android:layout_width="186dp"
-                    android:layout_height="48dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -169,6 +176,8 @@
                     android:layout_width="306dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5.00dp"
+
+                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_add_circle_24"
                     android:drawablePadding="5dp"
@@ -181,7 +190,8 @@
                 <Spinner
                     android:id="@+id/smokerspineer"
                     android:layout_width="186dp"
-                    android:layout_height="48dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
                     android:layout_weight="1"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
@@ -189,7 +199,7 @@
             <TextView
                 android:id="@+id/lastblodddonatedate"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
