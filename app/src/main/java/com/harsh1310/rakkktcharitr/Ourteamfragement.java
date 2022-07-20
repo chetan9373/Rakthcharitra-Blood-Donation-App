@@ -30,7 +30,7 @@ ImageButton acharyabtn,atuldevbtn,prashantbtn,radhikabtn,chetanbtn,harshalbtn;
         radhikabtn=rootview.findViewById(R.id.radhikslnk);
         chetanbtn=rootview.findViewById(R.id.chetanlnk);
         harshalbtn=rootview.findViewById(R.id.harshallnk);
-        acharyabtn.setOnClickListener(v->openacharyaln());
+        //acharyabtn.setOnClickListener(v->openacharyaln());
         atuldevbtn.setOnClickListener(v->openatullnk());
         prashantbtn.setOnClickListener(v->openprashantlnk());
         radhikabtn.setOnClickListener(v->openradhikalnk());
@@ -75,14 +75,14 @@ ImageButton acharyabtn,atuldevbtn,prashantbtn,radhikabtn,chetanbtn,harshalbtn;
         startActivity(urlintent);
     }
 
-    private void openacharyaln() {
+    /*private void openacharyaln() {
         String theurl = "http://google.com";
         Uri urlstr = Uri.parse(theurl);
         Intent urlintent = new Intent();
         urlintent.setData(urlstr);
         urlintent.setAction(Intent.ACTION_VIEW);
         startActivity(urlintent);
-    }
+    }*/
 
     private void openhasrahlnk() {
         String theurl = "https://www.linkedin.com/in/harshal-gosavi-947313198";
