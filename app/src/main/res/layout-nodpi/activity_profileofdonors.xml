@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bcgn">
+    android:background="@drawable/bcgn"
+    >
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,7 +19,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="355dp"
+                android:layout_height="324dp"
                 android:layout_gravity="center"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/_5sdp"
@@ -30,9 +32,9 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginLeft="82dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="32dp"
-                    android:background="@drawable/img12"
+                    android:background="@drawable/profilef"
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -48,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -60,6 +62,7 @@
                         android:layout_weight="1"
 
                         android:textAlignment="center"
+                        android:textAllCaps="true"
                         android:textColor="@color/common_google_signin_btn_text_light_focused"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -73,8 +76,8 @@
                         android:gravity="center"
                         android:text="DONOR TYPE"
                         android:textAlignment="center"
-                        android:textColor="@color/red"
-                        android:textSize="24sp"
+                        android:textColor="@color/design_default_color_error"
+                        android:textSize="28sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -87,31 +90,33 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/_5sdp"
-                android:paddingRight="@dimen/_5sdp">
+                android:paddingRight="@dimen/_5sdp"
+                android:background="#51D4DAD9">
 
                 <LinearLayout
-                    android:layout_width="288dp"
+                    android:layout_width="325dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/dtype1"
-                        android:layout_width="304dp"
-                        android:layout_height="31dp"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center|center_horizontal"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="8dp"
+
+
                         android:layout_marginEnd="5dp"
-
-
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
+                        android:gravity="center"
                         android:paddingLeft="15dp"
-                        android:paddingTop="5dp"
+                        android:paddingTop="10dp"
                         android:paddingBottom="5dp"
                         android:textAlignment="center"
                         android:textColor="@color/black"
@@ -128,9 +133,9 @@
 
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_gravity="center"
+
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="10dp"
@@ -141,7 +146,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="            Gender"
+                        android:text="         Gender"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -149,7 +154,7 @@
                     <TextView
                         android:id="@+id/dgender1"
                         android:layout_width="120dp"
-                        android:layout_height="28dp"
+                        android:layout_height="30dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
@@ -157,14 +162,15 @@
 
                         android:paddingBottom="5dp"
                         android:textColor="@color/black"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_gravity="center"
+
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
@@ -174,7 +180,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="            Contact"
+                        android:text="         Contact"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -182,21 +188,22 @@
                     <TextView
                         android:id="@+id/dcontact1"
                         android:layout_width="120dp"
-                        android:layout_height="28dp"
+                        android:layout_height="30dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:textColor="@color/black"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_gravity="center"
+
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
@@ -206,7 +213,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="            Availability"
+                        android:text="         Availability"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -214,21 +221,22 @@
                     <TextView
                         android:id="@+id/davailable1"
                         android:layout_width="143dp"
-                        android:layout_height="28dp"
+                        android:layout_height="30dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:textColor="@color/black"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_gravity="center"
+
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
@@ -238,7 +246,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="            Location"
+                        android:text="         Location"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -246,21 +254,22 @@
                     <TextView
                         android:id="@+id/dLocation1"
                         android:layout_width="125dp"
-                        android:layout_height="28dp"
+                        android:layout_height="30dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:textColor="@color/black"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_gravity="center"
+
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
@@ -270,7 +279,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="            Pick up/Drop"
+                        android:text="         Pick up/Drop"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -278,31 +287,35 @@
                     <TextView
                         android:id="@+id/drop1"
                         android:layout_width="152dp"
-                        android:layout_height="28dp"
+                        android:layout_height="30dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:textColor="@color/black"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
                 <Button
                     android:id="@+id/sendmsg"
 
-                    android:layout_width="167dp"
-                    android:layout_height="48dp"
+                    android:layout_width="325dp"
+                    android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginBottom="20dp"
+                    android:background="@drawable/inpuut_bg"
                     android:text="Send Message"
                     android:textColor="@color/white"
                     android:textColorHint="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     android:visibility="visible"
-                    app:backgroundTint="?attr/colorPrimarySurface" />
+                    app:backgroundTint="?attr/colorPrimarySurface"
+                    tools:ignore="TouchTargetSizeCheck" />
 
 
             </LinearLayout>

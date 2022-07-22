@@ -85,8 +85,7 @@
                         android:id="@+id/acharyalnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk"
-                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                        android:background="@drawable/linkedd" />
 
                 </LinearLayout>
 
@@ -148,7 +147,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:text="Founder MD"
+                        android:text="Founder and MD"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="18sp"
@@ -162,7 +161,7 @@
                         android:id="@+id/atuldevlnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
                 </LinearLayout>
 
@@ -238,7 +237,7 @@
                         android:id="@+id/prashantlnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
 
                 </LinearLayout>
@@ -315,7 +314,7 @@
                         android:id="@+id/radhikslnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
                 </LinearLayout>
 
@@ -390,7 +389,7 @@
                         android:id="@+id/chetanlnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
                 </LinearLayout>
 
@@ -463,7 +462,7 @@
                         android:id="@+id/harshallnk"
                         android:layout_width="46dp"
                         android:layout_height="45dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
                 </LinearLayout>
 
 

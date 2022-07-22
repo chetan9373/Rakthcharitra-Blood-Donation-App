@@ -40,10 +40,10 @@
             android:layout_marginBottom="@dimen/_5sdp"
             android:background="@drawable/textviewbg"
             android:backgroundTint="#F6F7FA"
-            android:drawableLeft="@drawable/ic_login_email_24"
+            android:drawableLeft="@drawable/ic_baseline_email_2424"
             android:drawablePadding="5dp"
             android:ems="20"
-            android:hint="EMAIL:"
+            android:hint="Email:"
             android:includeFontPadding="true"
             android:inputType="textPersonName"
             android:padding="10dp"
@@ -67,7 +67,7 @@
             android:layout_marginBottom="@dimen/_5sdp"
             android:background="@drawable/textviewbg"
             android:backgroundTint="#F6F7FA"
-            android:drawableLeft="@drawable/ic_password"
+            android:drawableLeft="@drawable/ic_baseline_lock_2424"
             android:drawablePadding="5dp"
             android:ems="20"
             android:hint="Password:"
@@ -84,15 +84,13 @@
             tools:ignore="TouchTargetSizeCheck" />
 
 
-
-
         <Button
             android:id="@+id/loginbtn"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/inpuut_bg"
@@ -115,21 +113,21 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/forgotpassword"
-        android:layout_width="156dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:layout_marginEnd="@dimen/_5sdp"
-        android:layout_marginBottom="@dimen/_5sdp"
-        android:gravity="center"
-        android:shadowColor="@color/black"
-        android:text="Forgot Password?"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="Forgot Password?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </RelativeLayout>

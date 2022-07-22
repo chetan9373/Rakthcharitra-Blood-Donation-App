@@ -33,10 +33,10 @@
             <TextView
                 android:layout_width="226dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
                 android:drawablePadding="3dp"
                 android:padding="10dp"
                 android:text="Blood Group:"
@@ -48,8 +48,8 @@
                 android:id="@+id/sgrpspinner"
                 android:layout_width="186dp"
                 android:layout_height="55dp"
-                android:gravity="center"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:gravity="center" />
 
         </LinearLayout>
 
@@ -62,35 +62,30 @@
             android:layout_marginEnd="5dp"
             android:background="@drawable/textviewbg"
             android:backgroundTint="#fff"
-            android:drawableLeft="@drawable/ic_baseline_add_location_24"
+            android:drawableLeft="@drawable/ic_baseline_add_location_2424"
             android:drawablePadding="5dp"
             android:ems="20"
             android:hint="Pincode:"
             android:includeFontPadding="false"
             android:inputType="textPersonName"
+            android:maxLength="6"
             android:padding="@dimen/_10sdp"
             android:shadowColor="#FBFBFB"
             android:textColor="@color/black"
             android:textColorHighlight="@color/black"
             android:textColorHint="@color/black"
             android:textColorLink="#FAF3F3"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="normal|bold"
-            app:drawableTint="#EF0707" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="16dp"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal" />
+            app:drawableTint="@color/design_default_color_error" />
 
         <Button
             android:id="@+id/searchbtn"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/inpuut_bg"

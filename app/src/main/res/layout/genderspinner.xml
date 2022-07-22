@@ -4,8 +4,8 @@
     android:layout_height="50dp">
 
     <TextView android:layout_marginTop="3dp"
-        android:id="@+id/text_view_name1"
-        android:layout_width="45dp"
+        android:id="@+id/text_view_name1gender"
+        android:layout_width="70dp"
         android:layout_height="34dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="4dp"
@@ -14,7 +14,7 @@
         android:textSize="14dp"
 
         android:gravity="center"
-        android:text="Male"
+        android:text="Female"
         android:textColor="@android:color/black" />
 
 </RelativeLayout>

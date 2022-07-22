@@ -60,7 +60,7 @@
 
             <TextView
                 android:id="@+id/dploctext"
-                android:layout_width="98dp"
+                android:layout_width="110dp"
                 android:layout_height="match_parent"
 
 
@@ -190,7 +190,7 @@
 
             <TextView
                 android:id="@+id/dpgendertext"
-                android:layout_width="110dp"
+                android:layout_width="119dp"
                 android:layout_height="match_parent"
 
 
@@ -204,14 +204,13 @@
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
                 android:drawableLeft="@drawable/ic_baseline_pan_tool_24"
-                android:padding="@dimen/_3sdp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/dpavailabilitytext"
-                android:layout_width="98dp"
+                android:layout_width="110dp"
                 android:layout_height="match_parent"
 
 

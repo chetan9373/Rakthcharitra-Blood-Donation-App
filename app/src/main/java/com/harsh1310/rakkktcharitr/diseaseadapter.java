@@ -31,12 +31,12 @@ public class diseaseadapter  extends ArrayAdapter<diseasemodel> {
     private View initView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.diseaselist, parent, false
+                    R.layout.yesornospinner, parent, false
             );
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.diseasetext);
+        TextView textViewName = convertView.findViewById(R.id.text_view_name1);
 
         diseasemodel currentItem = getItem(position);
 

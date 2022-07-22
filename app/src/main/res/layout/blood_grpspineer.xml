@@ -7,16 +7,19 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/grpimg" />
-    <TextView android:layout_marginTop="5dp"
+
+    <TextView
         android:id="@+id/text_view_name"
         android:layout_width="40dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="4dp"
         android:layout_toEndOf="@+id/image_view_flag"
         android:gravity="center"
         android:text="O+"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>

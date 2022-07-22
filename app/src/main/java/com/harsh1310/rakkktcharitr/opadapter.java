@@ -31,12 +31,12 @@ public class opadapter extends ArrayAdapter<opmodel> {
     private View initView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.oplist, parent, false
+                    R.layout.yesornospinner, parent, false
             );
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.optext);
+        TextView textViewName = convertView.findViewById(R.id.text_view_name1);
 
         opmodel currentItem = getItem(position);
 

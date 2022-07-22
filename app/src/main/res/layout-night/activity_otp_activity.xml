@@ -18,7 +18,7 @@
             android:id="@+id/imageView5"
             android:layout_width="221dp"
             android:layout_height="168dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60dp"
             android:layout_marginBottom="30dp"
             app:srcCompat="@drawable/tsrf2" />
 
@@ -26,11 +26,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
+            android:gravity="center"
             android:text="OTP VERIFICATION"
-            android:textColor="@color/red"
+            android:textColor="@color/design_default_color_error"
             android:textSize="22dp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="291dp"
@@ -43,7 +43,7 @@
             android:text="We will send you an one time OTP on this given number"
             android:textColor="@color/black"
             android:textSize="@dimen/_14sdp"
-            android:textStyle="normal" />
+            android:textStyle="normal|bold" />
 
         <TextView
             android:layout_width="335dp"
@@ -83,14 +83,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:hint="9845612385"
+                android:hint="XXXXXXXXXX"
                 android:imeOptions="actionDone"
                 android:importantForAutofill="no"
                 android:inputType="number"
+                android:maxLength="10"
                 android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold"
-
                 tools:ignore="TouchTargetSizeCheck" />
 
 
@@ -98,11 +100,11 @@
 
         <Button
             android:id="@+id/buttonget_otp"
-            android:layout_width="match_parent"
+            android:layout_width="325dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/inpuut_bg"

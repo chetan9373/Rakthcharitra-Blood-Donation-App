@@ -139,6 +139,11 @@ public class registration4 extends AppCompatActivity {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
+
+
+                                            Toast.makeText(registration4.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+
+
                                         } else {
                                             progressDialog.dismiss();
                                             Toast.makeText(registration4.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
@@ -191,6 +196,8 @@ public class registration4 extends AppCompatActivity {
                                 progressDialog.dismiss();
                                 pref.setid(hmap.get("id"));
                                 pref.checkupdate("1");
+                                Toast.makeText(registration4.this, "You have registered successfullly", Toast.LENGTH_LONG).show();
+
                                 Intent intent = new Intent(registration4.this, Update_Status.class);
                                 startActivity(intent);
                                 finish();

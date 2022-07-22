@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="150dp"
-
     >
-
-
-
     <LinearLayout
         android:layout_width="353dp"
         android:layout_height="128dp"
@@ -58,9 +54,10 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/plsmadloctext"
-                android:layout_width="98dp"
+                android:layout_width="110dp"
                 android:layout_height="match_parent"
 
 

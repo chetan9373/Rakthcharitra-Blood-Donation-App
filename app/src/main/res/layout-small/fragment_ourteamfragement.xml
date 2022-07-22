@@ -85,7 +85,7 @@
                         android:id="@+id/acharyalnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
                 </LinearLayout>
 
@@ -161,7 +161,7 @@
                         android:id="@+id/atuldevlnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
                 </LinearLayout>
 
@@ -237,7 +237,7 @@
                         android:id="@+id/prashantlnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
 
                 </LinearLayout>
@@ -314,7 +314,7 @@
                         android:id="@+id/radhikslnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
                 </LinearLayout>
 
@@ -389,7 +389,7 @@
                         android:id="@+id/chetanlnk"
                         android:layout_width="46dp"
                         android:layout_height="47dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
 
                 </LinearLayout>
 
@@ -462,7 +462,7 @@
                         android:id="@+id/harshallnk"
                         android:layout_width="46dp"
                         android:layout_height="45dp"
-                        android:background="@drawable/lndk" />
+                        android:background="@drawable/linkedd" />
                 </LinearLayout>
 
 

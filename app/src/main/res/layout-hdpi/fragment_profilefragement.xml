@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bcgn">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,7 +19,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="324dp"
+                android:layout_height="280dp"
 
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/_5sdp"
@@ -31,9 +32,9 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="15dp"
                     android:layout_marginLeft="82dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="32dp"
-                    android:background="@drawable/img12"
+                    android:background="@drawable/profilef"
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -48,9 +49,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="79dp"
+                    android:layout_height="42dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -60,9 +61,10 @@
                         android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:textAlignment="center"
+                        android:textAllCaps="true"
+
                         android:textColor="@color/black"
                         android:textSize="20sp"
-
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -73,27 +75,27 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
+                android:background="#51D4DAD9"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/_5sdp"
                 android:paddingRight="@dimen/_5sdp">
 
                 <LinearLayout
-                    android:layout_width="301dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/dtype"
-                        android:layout_width="287dp"
-                        android:layout_height="31dp"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
-                        android:paddingLeft="15dp"
+                        android:paddingTop="8dp"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
@@ -104,21 +106,17 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="5dp"/>
-
-
-
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" />
 
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_marginTop="15dp"
                     android:layout_marginStart="2dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="5dp"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <TextView
 
@@ -127,27 +125,28 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="            Gender"
+                        android:text="         Gender"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/dpgender"
-                        android:layout_width="114dp"
-                        android:layout_height="28dp"
+                        android:layout_width="120dp"
+                        android:layout_height="29dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
 
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="5dp"
@@ -159,7 +158,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="            Contact"
+                        android:text="         Contact"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -167,18 +166,19 @@
                     <TextView
                         android:id="@+id/dcontact1"
                         android:layout_width="120dp"
-                        android:layout_height="28dp"
+                        android:layout_height="29dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="5dp"
@@ -191,7 +191,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="            Availability"
+                        android:text="         Availability"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -199,18 +199,19 @@
                     <TextView
                         android:id="@+id/favailable"
                         android:layout_width="143dp"
-                        android:layout_height="28dp"
+                        android:layout_height="29dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="13dp"
+                        android:paddingTop="5dp"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="5dp"
@@ -223,7 +224,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="            Location"
+                        android:text="         Location"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -231,18 +232,19 @@
                     <TextView
                         android:id="@+id/fLocation1"
                         android:layout_width="125dp"
-                        android:layout_height="28dp"
+                        android:layout_height="29dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="345dp"
+                    android:layout_width="320dp"
                     android:layout_height="37dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginEnd="5dp"
@@ -255,7 +257,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="            Pick up/Drop"
+                        android:text="         Pick up/Drop"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -263,29 +265,31 @@
                     <TextView
                         android:id="@+id/fdrop1"
                         android:layout_width="152dp"
-                        android:layout_height="28dp"
+                        android:layout_height="29dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:background="@drawable/textviewbg"
                         android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
 
-                <Button android:id="@+id/logoutbtn"
-                    android:layout_width="138dp"
+                <Button
+                    android:id="@+id/logoutbtn"
+                    android:layout_width="325dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_marginBottom="72dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/inpuut_bg"
                     android:text="LOG OUT"
                     android:textColor="@color/white"
                     android:textColorHint="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="visible"
-                    app:backgroundTint="?attr/colorPrimarySurface" />
+                    app:backgroundTint="@color/design_default_color_error" />
 
 
             </LinearLayout>

@@ -72,8 +72,9 @@ Spinner genderspineer,grpspinner;
         next=findViewById(R.id.next1);
         initList();
         genderlist=new ArrayList<>();
+
         genderlist.add(new gendermodel("Male"));
-        genderlist.add(new gendermodel("Female"));
+        genderlist.add(new gendermodel("female"));
 
         mAdapter = new bloddgrpadapterspinner(this, mCountryList);
         genderAdapter=new genderadapter(this,genderlist);

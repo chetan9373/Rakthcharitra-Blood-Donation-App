@@ -145,6 +145,7 @@ save.setOnClickListener(new View.OnClickListener() {
                             {
                                 Intent intent=new Intent(Update_Status.this,Login_activity.class);
                                 startActivity(intent);
+                                finish();
                             }
                             else {
                                 Toast.makeText(Update_Status.this,task.getException().getLocalizedMessage(),Toast.LENGTH_SHORT).show();

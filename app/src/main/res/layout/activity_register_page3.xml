@@ -49,8 +49,8 @@
             <LinearLayout
                 android:layout_width="330dp"
                 android:layout_height="55dp"
-                android:layout_marginStart="5dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/textviewbg"
                 android:orientation="horizontal">
@@ -59,18 +59,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="4.00dp"
-                    android:drawableLeft="@drawable/ic_baseline_add_circlees_24"
-                    android:gravity="center" />
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp" />
 
 
                 <Spinner
                     android:id="@+id/diseasesspinners"
                     android:layout_width="186dp"
-                    android:layout_height="55dp"
+                    android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_weight="1" />
+                    android:layout_gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <TextView
@@ -88,8 +92,8 @@
             <LinearLayout
                 android:layout_width="330dp"
                 android:layout_height="55dp"
-                android:layout_marginStart="5dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="5dp"
 
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/textviewbg"
@@ -99,18 +103,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="4.00dp"
-                    android:drawableLeft="@drawable/ic_baseline_add_circlees_24"
-                    android:gravity="center" />
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingTop="8dp"
+                    android:textAlignment="center" />
 
 
                 <Spinner
                     android:id="@+id/operationspinners"
                     android:layout_width="186dp"
-                    android:layout_height="55dp"
-                    android:gravity="center"
+                    android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck" />
+                />
             </LinearLayout>
 
             <TextView
@@ -138,26 +148,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="4.00dp"
-                    android:drawableLeft="@drawable/ic_baseline_add_circlees_24"
-                    android:gravity="center" />
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp" />
 
                 <Spinner
                     android:id="@+id/allergyspinners"
                     android:layout_width="186dp"
-                    android:layout_height="55dp"
+                    android:layout_height="48dp"
                     android:layout_marginStart="5dp"
-                    android:gravity="center"
                     android:layout_marginEnd="10dp"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="196dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/_10sdp"
-                android:orientation="horizontal">
-
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <Button
@@ -166,7 +171,7 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/inpuut_bg"

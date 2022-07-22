@@ -5,7 +5,7 @@
     android:background="@color/white">
 
     <TextView android:layout_marginTop="3dp"
-        android:id="@+id/text_view_name1"
+        android:id="@+id/text_view_name1gender"
         android:layout_width="45dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
@@ -15,7 +15,7 @@
         android:textStyle="bold"
 
         android:gravity="center"
-        android:text="Male"
+        android:text="female"
         android:textColor="@android:color/black" />
 
 </RelativeLayout>

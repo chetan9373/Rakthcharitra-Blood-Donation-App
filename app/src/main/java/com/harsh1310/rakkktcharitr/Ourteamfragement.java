@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,23 @@ ImageButton acharyabtn,atuldevbtn,prashantbtn,radhikabtn,chetanbtn,harshalbtn;
         radhikabtn.setOnClickListener(v->openradhikalnk());
         chetanbtn.setOnClickListener(v->openchetnlnk());
         harshalbtn.setOnClickListener(v->openhasrahlnk());
+        rootview.setFocusableInTouchMode(true);
+        rootview.requestFocus();
+
+        rootview.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                    if (keyCode == KeyEvent.KEYCODE_BACK) {
+                        startActivity(new Intent(getActivity(), MainActivity.class));
+                        getActivity().finish();
+
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
         return rootview;
     }
 

@@ -19,6 +19,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -34,6 +35,7 @@ import java.util.ArrayList;
 
 public class Login_activity extends AppCompatActivity {
     private static final int REQUEST_CODE =102 ;
+    String m,p;
     EditText loginemail,loginpass;
 Button loginbtn;
 TextView donthaveacnt,forgotpass;
@@ -59,9 +61,28 @@ stored_credentials pref;
 
        auth=FirebaseAuth.getInstance();
 
-       loginbtn.setOnClickListener(v->login());
+
+       loginbtn.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+
+               m = loginemail.getText().toString();
+               p = loginpass.getText().toString();
+               if(!m.equals("") && !p.equals(""))
+               {
+                   login();
+               }
+               else {
+                   Toast.makeText(Login_activity.this, "Enter Email and Password properly", Toast.LENGTH_SHORT).show();
+
+               }
+           }
+       });
        donthaveacnt.setOnClickListener(v->gotosignup());
        forgotpass.setOnClickListener(v->resetpass());
+
+
+
     }
 
     private void resetpass() {
@@ -80,7 +101,7 @@ stored_credentials pref;
         Log.d("check","done");
         progressDialog.setMessage("Processing");
         progressDialog.show();
-        auth.signInWithEmailAndPassword(loginemail.getText().toString(),loginpass.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        auth.signInWithEmailAndPassword(m,p).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful())

@@ -18,6 +18,7 @@
         android:layout_toEndOf="@+id/image_view_flag"
         android:gravity="center"
         android:text="O+"
+
         android:textColor="@android:color/black"
         android:textStyle="bold"
         android:background="@color/black"

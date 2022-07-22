@@ -39,7 +39,7 @@ public class genderadapter extends ArrayAdapter<gendermodel> {
         }
 
 
-        TextView textViewName = convertView.findViewById(R.id.text_view_name1);
+        TextView textViewName = convertView.findViewById(R.id.text_view_name1gender);
 
         gendermodel currentItem = getItem(position);
 

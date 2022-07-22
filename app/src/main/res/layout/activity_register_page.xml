@@ -19,7 +19,8 @@
 
             android:layout_marginTop="35dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -30,6 +31,7 @@
 
                 android:layout_weight="1"
                 android:gravity="center"
+                android:paddingRight="15dp"
                 android:text="REGISTRATION"
                 android:textColor="@color/black"
                 android:textSize="25dp"
@@ -42,6 +44,8 @@
 
             android:layout_width="wrap_content"
             android:layout_height="137dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -70,8 +74,9 @@
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/inpuut_bg"
                 android:backgroundTint="#fff"
-                android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                android:drawableLeft="@drawable/ic_baseline_person_2424"
                 android:drawablePadding="5dp"
+                android:gravity="center_vertical"
                 android:hint="Name:"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
@@ -82,9 +87,8 @@
                 android:textColorHint="@color/black"
                 android:textColorLink="#FAF3F3"
                 android:textSize="20sp"
-                android:textStyle="bold"
 
-                />
+                android:textStyle="bold" />
 
 
             <EditText
@@ -96,8 +100,9 @@
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#fff"
-                android:drawableLeft="@drawable/ic_login_email_24"
+                android:drawableLeft="@drawable/ic_baseline_email_2424"
                 android:drawablePadding="5dp"
+                android:gravity="center_vertical"
                 android:hint="Email :"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
@@ -108,26 +113,26 @@
                 android:textColorHint="@color/black"
                 android:textColorLink="#FAF3F3"
                 android:textSize="20sp"
-                android:textStyle="normal|bold"
 
-                />
+                android:textStyle="normal|bold" />
 
 
             <EditText
                 android:id="@+id/phonenumber"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:maxLength="10"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#fff"
-                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:drawableLeft="@drawable/ic_baseline_phone_2424"
                 android:drawablePadding="5dp"
+                android:gravity="center_vertical"
                 android:hint="Phone No:"
                 android:includeFontPadding="false"
                 android:inputType="number"
+                android:maxLength="10"
                 android:padding="10dp"
                 android:shadowColor="#FBFBFB"
                 android:textColor="@color/black"
@@ -140,18 +145,19 @@
             <EditText
                 android:id="@+id/pincode"
                 android:layout_width="match_parent"
-                android:maxLength="6"
                 android:layout_height="48dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/textviewbg"
                 android:backgroundTint="#fff"
-                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:drawableLeft="@drawable/ic_baseline_add_location_2424"
                 android:drawablePadding="5dp"
+                android:gravity="center_vertical"
                 android:hint="Pincode:"
                 android:includeFontPadding="false"
                 android:inputType="number"
+                android:maxLength="6"
                 android:padding="10dp"
                 android:shadowColor="#FBFBFB"
                 android:textColor="@color/black"
@@ -176,21 +182,24 @@
                     android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_group_24"
+                    android:drawableLeft="@drawable/ic_baseline_people_2424"
                     android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
                     android:padding="10dp"
                     android:text="Gender:"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    app:drawableTint="#E30A0A" />
+                    app:drawableTint="@color/design_default_color_error" />
 
                 <Spinner
                     android:id="@+id/genderspinner"
                     android:layout_width="186dp"
                     android:layout_height="55dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -207,12 +216,14 @@
                     android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
                     android:padding="10dp"
+                    android:paddingStart="6dp"
                     android:text="Blood Group:"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <Spinner
@@ -229,7 +240,7 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/inpuut_bg"
