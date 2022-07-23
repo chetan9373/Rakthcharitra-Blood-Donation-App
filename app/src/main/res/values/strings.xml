@@ -10,11 +10,27 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login">Login</string>
+    <string name="otp">OTP VERIFICATION</string>
     <string name="enter_email">Enter email</string>
     <string name="enter_password">Enter password</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="wait_we_are_sending_you_a_new_password_copy_the_password_from_your_email_address_if_not_received_check_your_spam_box">Enter your register email address.\n We are sending you Email. If not received, check your spam box.</string>
+    <string name="wait_otp">We will send you an one time OTP on this given number</string>
+    <string name="getotp">Get OTP</string>
+    <string name="mobile">Enter Mobile Number</string>
+    <string name="pincode">Enter Pincode</string>
+    <string name="search">Search</string>
     <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="date">Date Range</string>
+    <string name="remarks">Any other Special Remarks</string>
+    <string name="reg">REGISTRATION DETAILS</string>
+    <string name="password">Password</string>
+    <string name="conpassword">Confirm Password</string>
+    <string name="signup">Sign up</string>
+    <string name="Pick">Pick up and drop Required?</string>
+
+    <string name="reason">Reason</string>
 </resources>
 
 
