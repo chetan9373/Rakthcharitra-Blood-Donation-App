@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -46,6 +47,9 @@ public class Forgot_Password extends AppCompatActivity {
         }else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(mEmailId).matches()){
             Toast.makeText(Forgot_Password.this, "Please enter valid email", Toast.LENGTH_SHORT).show();
         }else {
+            ProgressDialog progressDialog = new ProgressDialog(this);
+            progressDialog.setMessage("Please wait...");
+            progressDialog.show();
             DatabaseReference db = (DatabaseReference) FirebaseDatabase.getInstance().getReference("Users");
             db.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
@@ -61,6 +65,7 @@ public class Forgot_Password extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
+                                        progressDialog.dismiss();
                                         AlertDialog.Builder builder = new AlertDialog.Builder(Forgot_Password.this);
                                         builder.setMessage("Email end Successfully. If not received, check your spam box. !!")
                                                 .setNegativeButton("Ok", (dialog, which) -> {
@@ -74,6 +79,7 @@ public class Forgot_Password extends AppCompatActivity {
 
 
                                     }else {
+                                        progressDialog.dismiss();
                                         Toast.makeText(Forgot_Password.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                                     }
                                 }
@@ -82,12 +88,15 @@ public class Forgot_Password extends AppCompatActivity {
                         }
                     }
 
-                    if (!f)
+                    if (!f) {
+                        progressDialog.dismiss();
                         Toast.makeText(Forgot_Password.this, "Email does not exist", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
+                    progressDialog.dismiss();
                     Toast.makeText(Forgot_Password.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });

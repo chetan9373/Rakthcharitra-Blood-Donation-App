@@ -156,10 +156,15 @@
         <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable-v24/textviewbg.xml" value="0.1485" />
         <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/custom_button_red.xml" value="0.164" />
         <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/custom_edittext_white.xml" value="0.164" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/custom_spinner.xml" value="0.1" />
         <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/my_ripple_effect.xml" value="0.164" />
-        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_forgot__password.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_forgot__password.xml" value="0.18" />
         <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_login_activity.xml" value="0.1984375" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_register_page1.xml" value="0.11203703703703703" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_registration4.xml" value="0.11481481481481481" />
         <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_splash__screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/spinner_popup_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/textview_for_spinner.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

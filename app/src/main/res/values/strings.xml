@@ -14,7 +14,7 @@
     <string name="enter_email">Enter email</string>
     <string name="enter_password">Enter password</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="wait_we_are_sending_you_a_new_password_copy_the_password_from_your_email_address_if_not_received_check_your_spam_box">Enter your register email address.\n We are sending you Email. If not received, check your spam box.</string>
+    <string name="wait_we_are_sending_you_a_new_password_copy_the_password_from_your_email_address_if_not_received_check_your_spam_box">Enter your registered email address.\n We are sending you email for Verification. \nIf not received, Do check your Spam Box!.</string>
     <string name="wait_otp">We will send you an one time OTP on this given number</string>
     <string name="getotp">Get OTP</string>
     <string name="mobile">Enter Mobile Number</string>

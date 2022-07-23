@@ -40,19 +40,19 @@ import java.util.regex.Pattern;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class register_page extends AppCompatActivity {
-EditText phonenum,name,emailaddres,pass,confirmpass,pincode;
-CircleImageView pimg;
-Button next;
-stored_credentials pref;
-Uri uri;
-Spinner genderspineer,grpspinner;
+    EditText phonenum, name, emailaddres, pass, confirmpass, pincode;
+    CircleImageView pimg;
+    Button next;
+    stored_credentials pref;
+    Uri uri;
+    Spinner genderspineer, grpspinner;
     private RequestQueue mRequestQueue;
-    String getdata="tt";
+    String getdata = "tt";
     private ArrayList<grpmodel> mCountryList;
-    ArrayList<gendermodel>genderlist;
+    ArrayList<gendermodel> genderlist;
     private bloddgrpadapterspinner mAdapter;
     genderadapter genderAdapter;
-    String bgrp,gender;
+    String bgrp, gender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,24 +60,24 @@ Spinner genderspineer,grpspinner;
         setContentView(R.layout.activity_register_page);
 
         mRequestQueue = Volley.newRequestQueue(register_page.this);
-      pimg=findViewById(R.id.profimg);
-        name=findViewById(R.id.name);
-        emailaddres=findViewById(R.id.emailadd);
+        pimg = findViewById(R.id.profimg);
+        name = findViewById(R.id.name);
+        emailaddres = findViewById(R.id.emailadd);
 
-        pincode=findViewById(R.id.pincode);
-        phonenum=findViewById(R.id.phonenumber);
-    genderspineer=findViewById(R.id.genderspinner);
-    grpspinner=findViewById(R.id.bloodgrpspinner);
-       pimg.setOnClickListener(v->setprofile());
-        next=findViewById(R.id.next1);
+        pincode = findViewById(R.id.pincode);
+        phonenum = findViewById(R.id.phonenumber);
+        genderspineer = findViewById(R.id.genderspinner);
+        grpspinner = findViewById(R.id.bloodgrpspinner);
+        pimg.setOnClickListener(v -> setprofile());
+        next = findViewById(R.id.next1);
         initList();
-        genderlist=new ArrayList<>();
 
+        genderlist = new ArrayList<>();
         genderlist.add(new gendermodel("Male"));
         genderlist.add(new gendermodel("female"));
 
         mAdapter = new bloddgrpadapterspinner(this, mCountryList);
-        genderAdapter=new genderadapter(this,genderlist);
+        genderAdapter = new genderadapter(this, genderlist);
         grpspinner.setAdapter(mAdapter);
         genderspineer.setAdapter(genderAdapter);
         grpspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -85,7 +85,7 @@ Spinner genderspineer,grpspinner;
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 grpmodel clickedItem = (grpmodel) parent.getItemAtPosition(position);
                 String clickedCountryName = clickedItem.getCountryName();
-                bgrp=clickedCountryName;
+                bgrp = clickedCountryName;
             }
 
             @Override
@@ -98,7 +98,7 @@ Spinner genderspineer,grpspinner;
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 gendermodel clickedItem = (gendermodel) parent.getItemAtPosition(position);
                 String clickedCountryName = clickedItem.getgender();
-                gender=clickedCountryName;
+                gender = clickedCountryName;
 
             }
 
@@ -112,48 +112,37 @@ Spinner genderspineer,grpspinner;
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               ArrayList<String> list = new ArrayList<>();
+                ArrayList<String> list = new ArrayList<>();
 
                 if (name.getText().toString().length() == 0) {
                     name.setError(" name not entered");
                     name.requestFocus();
-                }
-               else if (!emailValidator(emailaddres.getText().toString())) {
+                } else if (!emailValidator(emailaddres.getText().toString())) {
                     emailaddres.setError("Email address in invalid");
                     emailaddres.requestFocus();
-                }
-
-
-              else if(!isValid(phonenum.getText().toString()))
-                {
+                } else if (!isValid(phonenum.getText().toString())) {
                     phonenum.setError("Phonenum is invalid");
                     phonenum.requestFocus();
-                }
-
-              else if(!isValidPinCode(pincode.getText().toString()))
-                {
+                } else if (!isValidPinCode(pincode.getText().toString())) {
                     pincode.setError("Invalid pincode");
                     pincode.requestFocus();
-                }
-
-else if(uri==null)
-                {
-                    Toast.makeText(register_page.this,"Please select image",Toast.LENGTH_SHORT).show();
-                }
-               else{
+                } else if (uri == null) {
+                    Toast.makeText(register_page.this, "Please select image", Toast.LENGTH_SHORT).show();
+                } else {
                     getDataFromPinCode(pincode.getText().toString());
 
-                list.add(name.getText().toString().trim());
-                list.add(emailaddres.getText().toString().trim());
-                list.add(phonenum.getText().toString());
+                    list.add(name.getText().toString().trim());
+                    list.add(emailaddres.getText().toString().trim());
+                    list.add(phonenum.getText().toString());
 
-                list.add(pincode.getText().toString().trim());
-                list.add(uri.toString());
-               list.add(bgrp);
-             list.add(gender);
-                Intent intent=new Intent(register_page.this,register_page1.class);
-                intent.putExtra("key1",list);
-                startActivity(intent);}
+                    list.add(pincode.getText().toString().trim());
+                    list.add(uri.toString());
+                    list.add(bgrp);
+                    list.add(gender);
+                    Intent intent = new Intent(register_page.this, register_page1.class);
+                    intent.putExtra("key1", list);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -189,18 +178,18 @@ else if(uri==null)
         }
     }
 
-    public  boolean isValid(String s)
-    {
+    public boolean isValid(String s) {
 
         Pattern p = Pattern.compile("(0|91)?[7-9][0-9]{9}");
 
         Matcher m = p.matcher(s);
         return (m.find() && m.group().equals(s));
     }
+
     public boolean emailValidator(String emailToText) {
 
         if (!emailToText.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(emailToText).matches()) {
-            return  true;
+            return true;
         } else {
             return false;
         }
@@ -224,7 +213,7 @@ else if(uri==null)
                         String district = obj.getString("District");
                         String city = obj.getString("Taluk");
                         String country = obj.getString("Country");
-                          getdata=city+" "+district;
+                        getdata = city + " " + district;
 
                     }
                 } catch (JSONException e) {
@@ -243,12 +232,11 @@ else if(uri==null)
 
 
     }
-    public  boolean isValidPinCode(String pinCode)
-    {
+
+    public boolean isValidPinCode(String pinCode) {
 
         String regex
                 = "^[1-9][0-9]{5}$";
-
 
 
         Pattern p = Pattern.compile(regex);
@@ -268,8 +256,7 @@ else if(uri==null)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 101 && resultCode == RESULT_OK)
-        {
+        if (requestCode == 101 && resultCode == RESULT_OK) {
             if (data.getData() != null) {
                 uri = data.getData();
                 pimg.setImageURI(uri);

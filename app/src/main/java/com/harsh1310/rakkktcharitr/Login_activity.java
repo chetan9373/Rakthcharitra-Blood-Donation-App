@@ -107,7 +107,7 @@ public class Login_activity extends AppCompatActivity {
     private void login() {
         ProgressDialog progressDialog = new ProgressDialog(this);
         Log.d("check", "done");
-        progressDialog.setMessage("Processing");
+        progressDialog.setMessage("Please wait...");
         progressDialog.show();
         auth.signInWithEmailAndPassword(m, p).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override

@@ -71,7 +71,7 @@ public class Searchfragement extends Fragment {
 
 searchbtn.setOnClickListener(v->donorsfun());
 
-        rootview.setFocusableInTouchMode(true);
+        /*rootview.setFocusableInTouchMode(true);
         rootview.requestFocus();
 
         rootview.setOnKeyListener(new View.OnKeyListener() {
@@ -87,7 +87,7 @@ searchbtn.setOnClickListener(v->donorsfun());
                 }
                 return false;
             }
-        });
+        });*/
 
 return  rootview;
     }
