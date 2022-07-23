@@ -2,7 +2,10 @@ package com.harsh1310.rakkktcharitr;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -19,60 +22,76 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Forgot_Password extends AppCompatActivity {
-FirebaseAuth auth;
-EditText resettext;
-Button resetbut;
+    FirebaseAuth auth;
+    EditText resettext;
+    AppCompatButton resetbut;
+    String mEmailId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot__password);
-        auth=FirebaseAuth.getInstance();
-      resetbut=findViewById(R.id.resetbtn);
-        resettext=findViewById(R.id.emailforpass);
-        resetbut.setOnClickListener(v->resetpass());
+        auth = FirebaseAuth.getInstance();
+        resetbut = findViewById(R.id.resetbtn);
+        resettext = findViewById(R.id.emailforpass);
+        resetbut.setOnClickListener(v -> resetpass());
     }
 
     private void resetpass() {
-        if(resettext.getText().toString().trim().length()==0)
-        {
-            Toast.makeText(Forgot_Password.this,"Invalid email",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        DatabaseReference db= (DatabaseReference) FirebaseDatabase.getInstance().getReference("Users");
-        db.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                boolean f=false;
-                for(DataSnapshot d:snapshot.getChildren()) {
-                    Log.d("check", d.child(Constants.operaion).getValue().toString());
-                    if (d.child(Constants.operaion).getValue().toString().equals(resettext.getText().toString().trim())) {
-                        f=true;
-                  String s=   resettext.getText().toString().trim();
+        mEmailId = resettext.getText().toString().trim();
 
-                        auth.sendPasswordResetEmail(s).addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful())
-                                    Toast.makeText(Forgot_Password.this, "Done", Toast.LENGTH_SHORT).show();
-                                else {
-                                    Toast.makeText(Forgot_Password.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+        if (mEmailId.isEmpty()){
+            Toast.makeText(Forgot_Password.this, "Enter email", Toast.LENGTH_SHORT).show();
+
+        }else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(mEmailId).matches()){
+            Toast.makeText(Forgot_Password.this, "Please enter valid email", Toast.LENGTH_SHORT).show();
+        }else {
+            DatabaseReference db = (DatabaseReference) FirebaseDatabase.getInstance().getReference("Users");
+            db.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    boolean f = false;
+                    for (DataSnapshot d : snapshot.getChildren()) {
+                        Log.d("check", d.child(Constants.operaion).getValue().toString());
+                        if (d.child(Constants.operaion).getValue().toString().equals(resettext.getText().toString().trim())) {
+                            f = true;
+                            String s = resettext.getText().toString().trim();
+
+                            auth.sendPasswordResetEmail(s).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()) {
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(Forgot_Password.this);
+                                        builder.setMessage("Email end Successfully. If not received, check your spam box. !!")
+                                                .setNegativeButton("Ok", (dialog, which) -> {
+
+                                                    startActivity(new Intent(Forgot_Password.this, Login_activity.class));
+                                                    finish();
+                                                    dialog.dismiss();
+                                                });
+                                        AlertDialog alertDialog = builder.create();
+                                        alertDialog.show();
+
+
+                                    }else {
+                                        Toast.makeText(Forgot_Password.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                                    }
                                 }
-                            }
-                        });
-                        break;
+                            });
+                            break;
+                        }
                     }
 
+                    if (!f)
+                        Toast.makeText(Forgot_Password.this, "Email does not exist", Toast.LENGTH_SHORT).show();
                 }
 
-                if(!f)
-                    Toast.makeText(Forgot_Password.this,"Mail not exist",Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(Forgot_Password.this,error.getMessage(),Toast.LENGTH_SHORT).show();
-            }
-        });
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    Toast.makeText(Forgot_Password.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
 
     }
 

@@ -1,0 +1,1278 @@
+Index: app/src/main/res/layout/activity_login_activity.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:background=\"@drawable/login\"\r\n    android:layout_height=\"match_parent\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_alignParentStart=\"true\"\r\n        android:layout_alignParentTop=\"true\"\r\n        android:layout_marginStart=\"5dp\"\r\n        android:layout_marginTop=\"0dp\"\r\n        android:layout_marginEnd=\"5dp\"\r\n        android:gravity=\"center\"\r\n        android:orientation=\"vertical\"\r\n        android:paddingLeft=\"@dimen/_10sdp\"\r\n        android:paddingRight=\"@dimen/_10sdp\">\r\n\r\n        <TextView\r\n            android:layout_width=\"117dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginBottom=\"@dimen/_20sdp\"\r\n            android:fontFamily=\"@font/roboto\"\r\n            android:gravity=\"center\"\r\n            android:text=\"LOGIN\"\r\n            android:textColor=\"@color/black\"\r\n            android:textSize=\"30sp\"\r\n            android:textStyle=\"bold\" />\r\n\r\n        <EditText\r\n            android:id=\"@+id/loginemail\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"48dp\"\r\n            android:layout_marginStart=\"@dimen/_5sdp\"\r\n            android:layout_marginTop=\"@dimen/_5sdp\"\r\n            android:layout_marginEnd=\"@dimen/_5sdp\"\r\n            android:layout_marginBottom=\"@dimen/_5sdp\"\r\n            android:background=\"@drawable/textviewbg\"\r\n            android:backgroundTint=\"#F6F7FA\"\r\n            android:drawableLeft=\"@drawable/ic_baseline_email_2424\"\r\n            android:drawablePadding=\"5dp\"\r\n            android:ems=\"20\"\r\n            android:hint=\"Email:\"\r\n            android:includeFontPadding=\"true\"\r\n            android:inputType=\"textPersonName\"\r\n            android:padding=\"10dp\"\r\n            android:paddingLeft=\"10dp\"\r\n            android:shadowColor=\"#FBFBFB\"\r\n            android:textColor=\"#000\"\r\n            android:textColorHighlight=\"#090909\"\r\n            android:textColorHint=\"#000\"\r\n            android:textColorLink=\"#FAF3F3\"\r\n            android:textStyle=\"bold\"\r\n            tools:ignore=\"TouchTargetSizeCheck\" />\r\n\r\n\r\n        <EditText\r\n            android:id=\"@+id/loginpass\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"48dp\"\r\n            android:layout_marginStart=\"@dimen/_5sdp\"\r\n            android:layout_marginTop=\"@dimen/_5sdp\"\r\n            android:layout_marginEnd=\"@dimen/_5sdp\"\r\n            android:layout_marginBottom=\"@dimen/_5sdp\"\r\n            android:background=\"@drawable/textviewbg\"\r\n            android:backgroundTint=\"#F6F7FA\"\r\n            android:drawableLeft=\"@drawable/ic_baseline_lock_2424\"\r\n            android:drawablePadding=\"5dp\"\r\n            android:ems=\"20\"\r\n            android:hint=\"Password:\"\r\n            android:includeFontPadding=\"true\"\r\n            android:inputType=\"textPassword\"\r\n            android:padding=\"10dp\"\r\n            android:paddingLeft=\"10dp\"\r\n            android:shadowColor=\"#FBFBFB\"\r\n            android:textColor=\"#000\"\r\n            android:textColorHighlight=\"#090909\"\r\n            android:textColorHint=\"#000\"\r\n            android:textColorLink=\"#FAF3F3\"\r\n            android:textStyle=\"bold\"\r\n            tools:ignore=\"TouchTargetSizeCheck\" />\r\n\r\n\r\n        <Button\r\n            android:id=\"@+id/loginbtn\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"48dp\"\r\n            android:layout_gravity=\"center\"\r\n            android:layout_marginStart=\"20dp\"\r\n            android:layout_marginTop=\"25dp\"\r\n            android:layout_marginEnd=\"20dp\"\r\n            android:layout_marginBottom=\"30dp\"\r\n            android:background=\"@drawable/inpuut_bg\"\r\n            android:text=\"LOGIN\"\r\n            android:textColor=\"@color/white\"\r\n            android:textSize=\"20dp\"\r\n            android:textStyle=\"bold\"\r\n            app:backgroundTint=\"@color/design_default_color_error\" />\r\n\r\n\r\n        <TextView\r\n            android:id=\"@+id/donthaveacnt\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_margin=\"@dimen/_5sdp\"\r\n            android:gravity=\"center\"\r\n\r\n            android:text=\"Don't have an Account?\"\r\n            android:textColor=\"@color/black\"\r\n            android:textSize=\"18sp\"\r\n            android:textStyle=\"bold\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/forgotpassword\"\r\n            android:layout_width=\"156dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"@dimen/_5sdp\"\r\n            android:layout_marginTop=\"@dimen/_5sdp\"\r\n            android:layout_marginEnd=\"@dimen/_5sdp\"\r\n            android:layout_marginBottom=\"@dimen/_5sdp\"\r\n            android:gravity=\"center\"\r\n            android:shadowColor=\"@color/black\"\r\n            android:text=\"Forgot Password?\"\r\n            android:textColor=\"@color/black\"\r\n            android:textColorHint=\"@color/black\"\r\n            android:textSize=\"18sp\"\r\n            android:textStyle=\"bold\" />\r\n    </LinearLayout>\r\n\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_login_activity.xml b/app/src/main/res/layout/activity_login_activity.xml
+--- a/app/src/main/res/layout/activity_login_activity.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ b/app/src/main/res/layout/activity_login_activity.xml	(date 1658551205946)
+@@ -1,12 +1,179 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++<androidx.constraintlayout.widget.ConstraintLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+-    android:background="@drawable/login"
++    android:background="@drawable/search"
+     android:layout_height="match_parent">
++
++    <androidx.core.widget.NestedScrollView
++        android:id="@+id/scrollView"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:fillViewport="true">
++
++        <androidx.constraintlayout.widget.ConstraintLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent">
+ 
+-    <LinearLayout
++
++            <androidx.cardview.widget.CardView
++                android:id="@+id/appIcon"
++                android:layout_width="120dp"
++                android:layout_height="120dp"
++                app:cardElevation="10dp"
++                app:cardCornerRadius="999dp"
++                android:layout_marginTop="55dp"
++                app:cardBackgroundColor="@color/white"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintTop_toTopOf="parent">
++
++                <ImageView
++                    android:layout_width="120dp"
++                    android:layout_height="120dp"
++                    android:src="@drawable/img"
++                    tools:ignore="ContentDescription" />
++            </androidx.cardview.widget.CardView>
++
++
++            <TextView
++                android:id="@+id/tvLogin"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="25dp"
++                android:text="@string/login"
++                android:fontFamily="@font/rubik_medium"
++                android:textColor="@color/red"
++                android:textSize="25sp"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintTop_toBottomOf="@id/appIcon"/>
++
++
++            <EditText
++                android:id="@+id/loginemail"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginBottom="25dp"
++                android:layout_marginStart="20dp"
++                android:layout_marginEnd="20dp"
++                android:layout_marginTop="45dp"
++                android:hint="@string/enter_email"
++                android:textColorHint="@color/red"
++                android:padding="16dp"
++                android:singleLine="true"
++                android:textColor="@color/red"
++                android:fontFamily="@font/rubik_regular"
++                android:elevation="5dp"
++                android:textSize="16sp"
++                android:inputType="textEmailAddress"
++                android:background="@drawable/custom_edittext_white"
++                app:layout_constraintTop_toBottomOf="@id/tvLogin"
++                tools:ignore="RtlSymmetry,TextFields"
++                android:importantForAutofill="no" />
++
++            <EditText
++                android:id="@+id/loginpass"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="20dp"
++                android:layout_marginStart="20dp"
++                android:layout_marginEnd="20dp"
++                android:hint="@string/enter_password"
++                android:textColorHint="@color/red"
++                android:padding="16dp"
++                android:singleLine="true"
++                android:textColor="@color/red"
++                android:fontFamily="@font/rubik_regular"
++                android:elevation="5dp"
++                android:textSize="16sp"
++                android:inputType="textPassword"
++                android:background="@drawable/custom_edittext_white"
++                app:layout_constraintTop_toBottomOf="@id/loginemail"
++                tools:ignore="RtlSymmetry,TextFields"
++                android:importantForAutofill="no" />
++
++            <TextView
++                android:id="@+id/tvForgotPassword"
++                android:layout_width="wrap_content"
++                android:layout_height="40dp"
++                android:text="@string/forgot_password"
++                android:textSize="18sp"
++                android:gravity="center"
++                android:paddingStart="10dp"
++                android:paddingEnd="10dp"
++                android:fontFamily="@font/rubik_medium"
++                android:background="@drawable/my_ripple_effect"
++                android:textColor="@color/red"
++                android:layout_marginEnd="10dp"
++                android:layout_marginTop="20dp"
++                app:layout_constraintEnd_toEndOf="@id/loginpass"
++                app:layout_constraintTop_toBottomOf="@id/loginpass"/>
++
++            <androidx.appcompat.widget.AppCompatButton
++                android:id="@+id/btnLogin"
++                android:layout_width="220dp"
++                android:layout_height="48dp"
++                android:text="@string/login"
++                android:elevation="5dp"
++                android:textColor="@color/white"
++                android:textAllCaps="false"
++                android:textSize="18sp"
++                android:fontFamily="@font/rubik_medium"
++                android:layout_marginTop="25dp"
++                android:background="@drawable/custom_button_red"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintTop_toBottomOf="@id/tvForgotPassword"/>
++
++
++            <LinearLayout
++                android:id="@+id/tvRegister"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="30dp"
++                android:layout_marginBottom="30dp"
++                android:padding="5dp"
++                android:elevation="5dp"
++                android:background="@drawable/my_ripple_effect"
++                app:layout_constraintVertical_bias="0.1"
++                app:layout_constraintTop_toBottomOf="@id/btnLogin"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintBottom_toBottomOf="parent">
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="30dp"
++                    android:paddingStart="10dp"
++                    android:gravity="center"
++                    android:fontFamily="@font/rubik_medium"
++                    android:text="@string/don_t_have_an_account"
++                    android:textColor="@color/black"
++                    android:textSize="16sp"
++                    tools:ignore="RtlSymmetry" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="30dp"
++                    android:fontFamily="@font/rubik_medium"
++                    android:text="Register"
++                    android:gravity="center"
++                    android:paddingStart="10dp"
++                    android:paddingEnd="10dp"
++                    android:textColor="@color/red"
++                    android:textSize="17sp"
++                    tools:ignore="HardcodedText" />
++
++            </LinearLayout>
++
++
++        </androidx.constraintlayout.widget.ConstraintLayout>
++    </androidx.core.widget.NestedScrollView>
++
++    <!--<LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentStart="true"
+@@ -128,6 +295,6 @@
+             android:textColorHint="@color/black"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+-    </LinearLayout>
++    </LinearLayout>-->
+ 
+-</RelativeLayout>
+\ No newline at end of file
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-night/activity_login_activity.xml
+===================================================================
+diff --git a/app/src/main/res/layout-night/activity_login_activity.xml b/app/src/main/res/layout-night/activity_login_activity.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout-night/activity_login_activity.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ /dev/null	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
+@@ -1,133 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:background="@drawable/login"
+-    android:layout_height="match_parent">
+-
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:layout_alignParentStart="true"
+-        android:layout_alignParentTop="true"
+-        android:layout_marginStart="5dp"
+-        android:layout_marginTop="0dp"
+-        android:layout_marginEnd="5dp"
+-        android:gravity="center"
+-        android:orientation="vertical"
+-        android:paddingLeft="@dimen/_10sdp"
+-        android:paddingRight="@dimen/_10sdp">
+-
+-        <TextView
+-            android:layout_width="117dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginBottom="@dimen/_20sdp"
+-            android:fontFamily="@font/roboto"
+-            android:gravity="center"
+-            android:text="LOGIN"
+-            android:textColor="@color/black"
+-            android:textSize="30sp"
+-            android:textStyle="bold" />
+-
+-        <EditText
+-            android:id="@+id/loginemail"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_email_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Email:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPersonName"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <EditText
+-            android:id="@+id/loginpass"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_lock_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Password:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPassword"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <Button
+-            android:id="@+id/loginbtn"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_gravity="center"
+-            android:layout_marginStart="20dp"
+-            android:layout_marginTop="25dp"
+-            android:layout_marginEnd="20dp"
+-            android:layout_marginBottom="30dp"
+-            android:background="@drawable/inpuut_bg"
+-            android:text="LOGIN"
+-            android:textColor="@color/white"
+-            android:textSize="20dp"
+-            android:textStyle="bold"
+-            app:backgroundTint="@color/design_default_color_error" />
+-
+-
+-        <TextView
+-            android:id="@+id/donthaveacnt"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="@dimen/_5sdp"
+-            android:gravity="center"
+-
+-            android:text="Don't have an Account?"
+-            android:textColor="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-
+-        <TextView
+-            android:id="@+id/forgotpassword"
+-            android:layout_width="156dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:gravity="center"
+-            android:shadowColor="@color/black"
+-            android:text="Forgot Password?"
+-            android:textColor="@color/black"
+-            android:textColorHint="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-    </LinearLayout>
+-
+-</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-xhdpi/activity_login_activity.xml
+===================================================================
+diff --git a/app/src/main/res/layout-xhdpi/activity_login_activity.xml b/app/src/main/res/layout-xhdpi/activity_login_activity.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout-xhdpi/activity_login_activity.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ /dev/null	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
+@@ -1,133 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:background="@drawable/login"
+-    android:layout_height="match_parent">
+-
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:layout_alignParentStart="true"
+-        android:layout_alignParentTop="true"
+-        android:layout_marginStart="5dp"
+-        android:layout_marginTop="0dp"
+-        android:layout_marginEnd="5dp"
+-        android:gravity="center"
+-        android:orientation="vertical"
+-        android:paddingLeft="@dimen/_10sdp"
+-        android:paddingRight="@dimen/_10sdp">
+-
+-        <TextView
+-            android:layout_width="117dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginBottom="@dimen/_20sdp"
+-            android:fontFamily="@font/roboto"
+-            android:gravity="center"
+-            android:text="LOGIN"
+-            android:textColor="@color/black"
+-            android:textSize="30sp"
+-            android:textStyle="bold" />
+-
+-        <EditText
+-            android:id="@+id/loginemail"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_email_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Email:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPersonName"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <EditText
+-            android:id="@+id/loginpass"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_lock_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Password:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPassword"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <Button
+-            android:id="@+id/loginbtn"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_gravity="center"
+-            android:layout_marginStart="20dp"
+-            android:layout_marginTop="25dp"
+-            android:layout_marginEnd="20dp"
+-            android:layout_marginBottom="30dp"
+-            android:background="@drawable/inpuut_bg"
+-            android:text="LOGIN"
+-            android:textColor="@color/white"
+-            android:textSize="20dp"
+-            android:textStyle="bold"
+-            app:backgroundTint="@color/design_default_color_error" />
+-
+-
+-        <TextView
+-            android:id="@+id/donthaveacnt"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="@dimen/_5sdp"
+-            android:gravity="center"
+-
+-            android:text="Don't have an Account?"
+-            android:textColor="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-
+-        <TextView
+-            android:id="@+id/forgotpassword"
+-            android:layout_width="156dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:gravity="center"
+-            android:shadowColor="@color/black"
+-            android:text="Forgot Password?"
+-            android:textColor="@color/black"
+-            android:textColorHint="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-    </LinearLayout>
+-
+-</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-mdpi/activity_login_activity.xml
+===================================================================
+diff --git a/app/src/main/res/layout-mdpi/activity_login_activity.xml b/app/src/main/res/layout-mdpi/activity_login_activity.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout-mdpi/activity_login_activity.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ /dev/null	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
+@@ -1,133 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:background="@drawable/login"
+-    android:layout_height="match_parent">
+-
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:layout_alignParentStart="true"
+-        android:layout_alignParentTop="true"
+-        android:layout_marginStart="5dp"
+-        android:layout_marginTop="0dp"
+-        android:layout_marginEnd="5dp"
+-        android:gravity="center"
+-        android:orientation="vertical"
+-        android:paddingLeft="@dimen/_10sdp"
+-        android:paddingRight="@dimen/_10sdp">
+-
+-        <TextView
+-            android:layout_width="117dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginBottom="@dimen/_20sdp"
+-            android:fontFamily="@font/roboto"
+-            android:gravity="center"
+-            android:text="LOGIN"
+-            android:textColor="@color/black"
+-            android:textSize="30sp"
+-            android:textStyle="bold" />
+-
+-        <EditText
+-            android:id="@+id/loginemail"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_email_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Email:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPersonName"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <EditText
+-            android:id="@+id/loginpass"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_lock_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Password:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPassword"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <Button
+-            android:id="@+id/loginbtn"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_gravity="center"
+-            android:layout_marginStart="20dp"
+-            android:layout_marginTop="25dp"
+-            android:layout_marginEnd="20dp"
+-            android:layout_marginBottom="30dp"
+-            android:background="@drawable/inpuut_bg"
+-            android:text="LOGIN"
+-            android:textColor="@color/white"
+-            android:textSize="20dp"
+-            android:textStyle="bold"
+-            app:backgroundTint="@color/design_default_color_error" />
+-
+-
+-        <TextView
+-            android:id="@+id/donthaveacnt"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="@dimen/_5sdp"
+-            android:gravity="center"
+-
+-            android:text="Don't have an Account?"
+-            android:textColor="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-
+-        <TextView
+-            android:id="@+id/forgotpassword"
+-            android:layout_width="156dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:gravity="center"
+-            android:shadowColor="@color/black"
+-            android:text="Forgot Password?"
+-            android:textColor="@color/black"
+-            android:textColorHint="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-    </LinearLayout>
+-
+-</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-anydpi/activity_login_activity.xml
+===================================================================
+diff --git a/app/src/main/res/layout-anydpi/activity_login_activity.xml b/app/src/main/res/layout-anydpi/activity_login_activity.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout-anydpi/activity_login_activity.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ /dev/null	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
+@@ -1,133 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:background="@drawable/login"
+-    android:layout_height="match_parent">
+-
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:layout_alignParentStart="true"
+-        android:layout_alignParentTop="true"
+-        android:layout_marginStart="5dp"
+-        android:layout_marginTop="0dp"
+-        android:layout_marginEnd="5dp"
+-        android:gravity="center"
+-        android:orientation="vertical"
+-        android:paddingLeft="@dimen/_10sdp"
+-        android:paddingRight="@dimen/_10sdp">
+-
+-        <TextView
+-            android:layout_width="117dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginBottom="@dimen/_20sdp"
+-            android:fontFamily="@font/roboto"
+-            android:gravity="center"
+-            android:text="LOGIN"
+-            android:textColor="@color/black"
+-            android:textSize="30sp"
+-            android:textStyle="bold" />
+-
+-        <EditText
+-            android:id="@+id/loginemail"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_email_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Email:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPersonName"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <EditText
+-            android:id="@+id/loginpass"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_lock_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Password:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPassword"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <Button
+-            android:id="@+id/loginbtn"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_gravity="center"
+-            android:layout_marginStart="20dp"
+-            android:layout_marginTop="25dp"
+-            android:layout_marginEnd="20dp"
+-            android:layout_marginBottom="30dp"
+-            android:background="@drawable/inpuut_bg"
+-            android:text="LOGIN"
+-            android:textColor="@color/white"
+-            android:textSize="20dp"
+-            android:textStyle="bold"
+-            app:backgroundTint="@color/design_default_color_error" />
+-
+-
+-        <TextView
+-            android:id="@+id/donthaveacnt"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="@dimen/_5sdp"
+-            android:gravity="center"
+-
+-            android:text="Don't have an Account?"
+-            android:textColor="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-
+-        <TextView
+-            android:id="@+id/forgotpassword"
+-            android:layout_width="156dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:gravity="center"
+-            android:shadowColor="@color/black"
+-            android:text="Forgot Password?"
+-            android:textColor="@color/black"
+-            android:textColorHint="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-    </LinearLayout>
+-
+-</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-hdpi/activity_login_activity.xml
+===================================================================
+diff --git a/app/src/main/res/layout-hdpi/activity_login_activity.xml b/app/src/main/res/layout-hdpi/activity_login_activity.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout-hdpi/activity_login_activity.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ /dev/null	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
+@@ -1,133 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:background="@drawable/login"
+-    android:layout_height="match_parent">
+-
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:layout_alignParentStart="true"
+-        android:layout_alignParentTop="true"
+-        android:layout_marginStart="5dp"
+-        android:layout_marginTop="0dp"
+-        android:layout_marginEnd="5dp"
+-        android:gravity="center"
+-        android:orientation="vertical"
+-        android:paddingLeft="@dimen/_10sdp"
+-        android:paddingRight="@dimen/_10sdp">
+-
+-        <TextView
+-            android:layout_width="117dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginBottom="@dimen/_20sdp"
+-            android:fontFamily="@font/roboto"
+-            android:gravity="center"
+-            android:text="LOGIN"
+-            android:textColor="@color/black"
+-            android:textSize="30sp"
+-            android:textStyle="bold" />
+-
+-        <EditText
+-            android:id="@+id/loginemail"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_email_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Email:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPersonName"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <EditText
+-            android:id="@+id/loginpass"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_lock_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Password:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPassword"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <Button
+-            android:id="@+id/loginbtn"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_gravity="center"
+-            android:layout_marginStart="20dp"
+-            android:layout_marginTop="25dp"
+-            android:layout_marginEnd="20dp"
+-            android:layout_marginBottom="30dp"
+-            android:background="@drawable/inpuut_bg"
+-            android:text="LOGIN"
+-            android:textColor="@color/white"
+-            android:textSize="20dp"
+-            android:textStyle="bold"
+-            app:backgroundTint="@color/design_default_color_error" />
+-
+-
+-        <TextView
+-            android:id="@+id/donthaveacnt"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="@dimen/_5sdp"
+-            android:gravity="center"
+-
+-            android:text="Don't have an Account?"
+-            android:textColor="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-
+-        <TextView
+-            android:id="@+id/forgotpassword"
+-            android:layout_width="156dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:gravity="center"
+-            android:shadowColor="@color/black"
+-            android:text="Forgot Password?"
+-            android:textColor="@color/black"
+-            android:textColorHint="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-    </LinearLayout>
+-
+-</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-xxhdpi/activity_login_activity.xml
+===================================================================
+diff --git a/app/src/main/res/layout-xxhdpi/activity_login_activity.xml b/app/src/main/res/layout-xxhdpi/activity_login_activity.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout-xxhdpi/activity_login_activity.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ /dev/null	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
+@@ -1,133 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:background="@drawable/login"
+-    android:layout_height="match_parent">
+-
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:layout_alignParentStart="true"
+-        android:layout_alignParentTop="true"
+-        android:layout_marginStart="5dp"
+-        android:layout_marginTop="0dp"
+-        android:layout_marginEnd="5dp"
+-        android:gravity="center"
+-        android:orientation="vertical"
+-        android:paddingLeft="@dimen/_10sdp"
+-        android:paddingRight="@dimen/_10sdp">
+-
+-        <TextView
+-            android:layout_width="117dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginBottom="@dimen/_20sdp"
+-            android:fontFamily="@font/roboto"
+-            android:gravity="center"
+-            android:text="LOGIN"
+-            android:textColor="@color/black"
+-            android:textSize="30sp"
+-            android:textStyle="bold" />
+-
+-        <EditText
+-            android:id="@+id/loginemail"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_email_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Email:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPersonName"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <EditText
+-            android:id="@+id/loginpass"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_lock_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Password:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPassword"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <Button
+-            android:id="@+id/loginbtn"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_gravity="center"
+-            android:layout_marginStart="20dp"
+-            android:layout_marginTop="25dp"
+-            android:layout_marginEnd="20dp"
+-            android:layout_marginBottom="30dp"
+-            android:background="@drawable/inpuut_bg"
+-            android:text="LOGIN"
+-            android:textColor="@color/white"
+-            android:textSize="20dp"
+-            android:textStyle="bold"
+-            app:backgroundTint="@color/design_default_color_error" />
+-
+-
+-        <TextView
+-            android:id="@+id/donthaveacnt"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="@dimen/_5sdp"
+-            android:gravity="center"
+-
+-            android:text="Don't have an Account?"
+-            android:textColor="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-
+-        <TextView
+-            android:id="@+id/forgotpassword"
+-            android:layout_width="156dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:gravity="center"
+-            android:shadowColor="@color/black"
+-            android:text="Forgot Password?"
+-            android:textColor="@color/black"
+-            android:textColorHint="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-    </LinearLayout>
+-
+-</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout-xxxhdpi/activity_login_activity.xml
+===================================================================
+diff --git a/app/src/main/res/layout-xxxhdpi/activity_login_activity.xml b/app/src/main/res/layout-xxxhdpi/activity_login_activity.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout-xxxhdpi/activity_login_activity.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ /dev/null	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
+@@ -1,133 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:background="@drawable/login"
+-    android:layout_height="match_parent">
+-
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:layout_alignParentStart="true"
+-        android:layout_alignParentTop="true"
+-        android:layout_marginStart="5dp"
+-        android:layout_marginTop="0dp"
+-        android:layout_marginEnd="5dp"
+-        android:gravity="center"
+-        android:orientation="vertical"
+-        android:paddingLeft="@dimen/_10sdp"
+-        android:paddingRight="@dimen/_10sdp">
+-
+-        <TextView
+-            android:layout_width="117dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginBottom="@dimen/_20sdp"
+-            android:fontFamily="@font/roboto"
+-            android:gravity="center"
+-            android:text="LOGIN"
+-            android:textColor="@color/black"
+-            android:textSize="30sp"
+-            android:textStyle="bold" />
+-
+-        <EditText
+-            android:id="@+id/loginemail"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_email_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Email:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPersonName"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <EditText
+-            android:id="@+id/loginpass"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:background="@drawable/textviewbg"
+-            android:backgroundTint="#F6F7FA"
+-            android:drawableLeft="@drawable/ic_baseline_lock_2424"
+-            android:drawablePadding="5dp"
+-            android:ems="20"
+-            android:hint="Password:"
+-            android:includeFontPadding="true"
+-            android:inputType="textPassword"
+-            android:padding="10dp"
+-            android:paddingLeft="10dp"
+-            android:shadowColor="#FBFBFB"
+-            android:textColor="#000"
+-            android:textColorHighlight="#090909"
+-            android:textColorHint="#000"
+-            android:textColorLink="#FAF3F3"
+-            android:textStyle="bold"
+-            tools:ignore="TouchTargetSizeCheck" />
+-
+-
+-        <Button
+-            android:id="@+id/loginbtn"
+-            android:layout_width="match_parent"
+-            android:layout_height="48dp"
+-            android:layout_gravity="center"
+-            android:layout_marginStart="20dp"
+-            android:layout_marginTop="25dp"
+-            android:layout_marginEnd="20dp"
+-            android:layout_marginBottom="30dp"
+-            android:background="@drawable/inpuut_bg"
+-            android:text="LOGIN"
+-            android:textColor="@color/white"
+-            android:textSize="20dp"
+-            android:textStyle="bold"
+-            app:backgroundTint="@color/design_default_color_error" />
+-
+-
+-        <TextView
+-            android:id="@+id/donthaveacnt"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:layout_margin="@dimen/_5sdp"
+-            android:gravity="center"
+-
+-            android:text="Don't have an Account?"
+-            android:textColor="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-
+-        <TextView
+-            android:id="@+id/forgotpassword"
+-            android:layout_width="156dp"
+-            android:layout_height="wrap_content"
+-            android:layout_marginStart="@dimen/_5sdp"
+-            android:layout_marginTop="@dimen/_5sdp"
+-            android:layout_marginEnd="@dimen/_5sdp"
+-            android:layout_marginBottom="@dimen/_5sdp"
+-            android:gravity="center"
+-            android:shadowColor="@color/black"
+-            android:text="Forgot Password?"
+-            android:textColor="@color/black"
+-            android:textColorHint="@color/black"
+-            android:textSize="18sp"
+-            android:textStyle="bold" />
+-    </LinearLayout>
+-
+-</RelativeLayout>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n        <option name=\"useQualifiedModuleNames\" value=\"true\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ b/.idea/gradle.xml	(date 1658546239656)
+@@ -4,17 +4,16 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-        <option name="testRunner" value="PLATFORM" />
++        <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="Embedded JDK" />
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
+             <option value="$PROJECT_DIR$/app" />
+           </set>
+         </option>
+-        <option name="resolveModulePerSourceSet" value="false" />
+-        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_login_activity.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_profileofdonors.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_register_page1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/blood_grpspineer.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/fragment_profilefragement.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-anydpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_register_page3.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_registration4.xml\" value=\"0.10416666666666667\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/fragment_searchfragement.xml\" value=\"0.14666666666666667\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-hdpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_registration4.xml\" value=\"0.14666666666666667\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/fragment_searchfragement.xml\" value=\"0.5625\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-ldpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_register_page1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_registration4.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-mdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_forgot__password.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_login_activity.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_register_page3.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/activity_registration4.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/blood_grpspineer.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/fragment_ourteamfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/fragment_profilefragement.xml\" value=\"0.11820652173913043\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/professionlist.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-night/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-nodpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-normal/fragment_ourteamfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-notnight-xxxhdpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-small/fragment_ourteamfragement.xml\" value=\"0.48848684210526316\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/activity_profileofdonors.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-sw600dp/fragment_faqfrag.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_register_page3.xml\" value=\"0.19959677419354838\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/fragment_searchfragement.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xhdpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_register_page3.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_registration4.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/fragment_searchfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxhdpi/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_profileofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_register_page3.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_registration4.xml\" value=\"0.10416666666666667\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/blood_grpspineer.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_ourteamfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_profilefragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/fragment_searchfragement.xml\" value=\"0.1014344262295082\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout-xxxhdpi/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_donorprofile.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_forgot__password.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_last__screen.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_login_activity.xml\" value=\"0.1381340579710145\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_main2.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_notificationactivity.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_otp_activity.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_ourteam.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_plasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_profileofdonors.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page3.xml\" value=\"0.12\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_registration4.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_splash__screen.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_update__status.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/allergylist.xml\" value=\"0.15989583333333332\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/blood_grpspineer.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_faqfrag.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_ourteamfragement.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_profilefragement.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/fragment_searchfragement.xml\" value=\"0.4316860465116279\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/genderspinner.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofdonors.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/listofplasma.xml\" value=\"0.13451086956521738\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/professionlist.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/proflist.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/smokelist.xml\" value=\"0.12771739130434784\" />\r\n        <entry key=\"..\\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/yesornospinner.xml\" value=\"0.12771739130434784\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"NullableNotNullManager\">\r\n    <option name=\"myDefaultNullable\" value=\"org.jetbrains.annotations.Nullable\" />\r\n    <option name=\"myDefaultNotNull\" value=\"androidx.annotation.NonNull\" />\r\n    <option name=\"myNullables\">\r\n      <value>\r\n        <list size=\"14\">\r\n          <item index=\"0\" class=\"java.lang.String\" itemvalue=\"org.jetbrains.annotations.Nullable\" />\r\n          <item index=\"1\" class=\"java.lang.String\" itemvalue=\"edu.umd.cs.findbugs.annotations.Nullable\" />\r\n          <item index=\"2\" class=\"java.lang.String\" itemvalue=\"android.support.annotation.Nullable\" />\r\n          <item index=\"3\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.Nullable\" />\r\n          <item index=\"4\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.RecentlyNullable\" />\r\n          <item index=\"5\" class=\"java.lang.String\" itemvalue=\"com.android.annotations.Nullable\" />\r\n          <item index=\"6\" class=\"java.lang.String\" itemvalue=\"javax.annotation.Nullable\" />\r\n          <item index=\"7\" class=\"java.lang.String\" itemvalue=\"javax.annotation.CheckForNull\" />\r\n          <item index=\"8\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.qual.Nullable\" />\r\n          <item index=\"9\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NullableDecl\" />\r\n          <item index=\"10\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NullableType\" />\r\n          <item index=\"11\" class=\"java.lang.String\" itemvalue=\"org.eclipse.jdt.annotation.Nullable\" />\r\n          <item index=\"12\" class=\"java.lang.String\" itemvalue=\"io.reactivex.annotations.Nullable\" />\r\n          <item index=\"13\" class=\"java.lang.String\" itemvalue=\"io.reactivex.rxjava3.annotations.Nullable\" />\r\n        </list>\r\n      </value>\r\n    </option>\r\n    <option name=\"myNotNulls\">\r\n      <value>\r\n        <list size=\"13\">\r\n          <item index=\"0\" class=\"java.lang.String\" itemvalue=\"org.jetbrains.annotations.NotNull\" />\r\n          <item index=\"1\" class=\"java.lang.String\" itemvalue=\"edu.umd.cs.findbugs.annotations.NonNull\" />\r\n          <item index=\"2\" class=\"java.lang.String\" itemvalue=\"android.support.annotation.NonNull\" />\r\n          <item index=\"3\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.NonNull\" />\r\n          <item index=\"4\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.RecentlyNonNull\" />\r\n          <item index=\"5\" class=\"java.lang.String\" itemvalue=\"com.android.annotations.NonNull\" />\r\n          <item index=\"6\" class=\"java.lang.String\" itemvalue=\"javax.annotation.Nonnull\" />\r\n          <item index=\"7\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.qual.NonNull\" />\r\n          <item index=\"8\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NonNullDecl\" />\r\n          <item index=\"9\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NonNullType\" />\r\n          <item index=\"10\" class=\"java.lang.String\" itemvalue=\"org.eclipse.jdt.annotation.NonNull\" />\r\n          <item index=\"11\" class=\"java.lang.String\" itemvalue=\"io.reactivex.annotations.NonNull\" />\r\n          <item index=\"12\" class=\"java.lang.String\" itemvalue=\"io.reactivex.rxjava3.annotations.NonNull\" />\r\n        </list>\r\n      </value>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n  <component name=\"VisualizationToolProject\">\r\n    <option name=\"state\">\r\n      <ProjectState>\r\n        <option name=\"scale\" value=\"0.16666666666666666\" />\r\n      </ProjectState>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ b/.idea/misc.xml	(date 1658551399875)
+@@ -152,6 +152,12 @@
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/proflist.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/smokelist.xml" value="0.12771739130434784" />
+         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/yesornospinner.xml" value="0.12771739130434784" />
++        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable-v24/textviewbg.xml" value="0.1485" />
++        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/custom_button_red.xml" value="0.164" />
++        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/custom_edittext_white.xml" value="0.164" />
++        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/my_ripple_effect.xml" value="0.164" />
++        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_login_activity.xml" value="0.19444444444444445" />
++        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_splash__screen.xml" value="0.20416666666666666" />
+       </map>
+     </option>
+   </component>
+@@ -198,7 +204,7 @@
+       </value>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">RAKTHACHARITRA</string>\r\n    <string name=\"underline\"> <u>RUDRAKSHA WELFARE FOUNDATION </u> </string>\r\n\r\n\r\n    <string name=\"nav_open\">Open</string>\r\n    <string name=\"nav_close\">Close</string>\r\n    <!-- TODO: Remove or change this placeholder text -->\r\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\r\n</resources>\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 3be61c57617c9abe282ba24cee3b6cfb146b97c3)
++++ b/app/src/main/res/values/strings.xml	(date 1658550820041)
+@@ -5,8 +5,14 @@
+ 
+     <string name="nav_open">Open</string>
+     <string name="nav_close">Close</string>
++    <string name="don_t_have_an_account">Don\'t have an account?</string>
++    <string name="register">Register</string>
+     <!-- TODO: Remove or change this placeholder text -->
+     <string name="hello_blank_fragment">Hello blank fragment</string>
++    <string name="login">Login</string>
++    <string name="enter_email">Enter email</string>
++    <string name="enter_password">Enter password</string>
++    <string name="forgot_password">Forgot Password?</string>
+ </resources>
+ 
+ 
