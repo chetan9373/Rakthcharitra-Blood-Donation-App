@@ -141,7 +141,6 @@ public class registration4 extends AppCompatActivity {
                                         if (task.isSuccessful()) {
 
 
-                                            Toast.makeText(registration4.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
 
 
                                         } else {

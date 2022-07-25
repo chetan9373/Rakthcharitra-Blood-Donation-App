@@ -88,7 +88,7 @@ holder.itemView.setOnClickListener(new View.OnClickListener() {
        arlist.add(model.getProfession());
     arlist.add(model.getDtype());
        arlist.add(model.getGender());
-        arlist.add(model.getPhonenum());
+        arlist.add(model.getAllergy());
 
         arlist.add(model.getAvailability());
 

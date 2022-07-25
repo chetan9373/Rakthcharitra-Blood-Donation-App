@@ -16,7 +16,7 @@
         android:layout_marginLeft="40dp"
         android:fontFamily="@font/rubik_regular"
         android:textColor="@color/red"
-         android:textSize="16dp"
+        android:textSize="16dp"
         android:layout_toEndOf="@+id/image_view_flag"
         android:gravity="center"
         android:text="Male"

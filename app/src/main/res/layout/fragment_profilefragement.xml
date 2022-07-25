@@ -1,5 +1,379 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bcgn"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/propic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="82dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="36dp"
+                android:background="@drawable/spiral"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/dpimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+
+                    android:layout_weight="1"
+
+                    />
+            </LinearLayout>
+
+
+
+
+
+    <TextView
+                android:id="@+id/dname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/propic"/>
+
+
+            <EditText
+                android:id="@+id/dtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+
+                android:textColorHint="@color/red"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:fontFamily="@font/rubik_regular"
+                android:elevation="5dp"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/custom_edittext_white"
+                app:layout_constraintTop_toBottomOf="@id/dname"
+                tools:ignore="RtlSymmetry,TextFields"
+                android:importantForAutofill="no" />
+
+
+            <LinearLayout
+                android:id="@+id/pgen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="170dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/my_ripple_effect"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintTop_toBottomOf="@id/dtype"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/ugender"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+                <TextView
+                    android:id="@+id/dpgender"
+
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/rubik_medium"
+
+                    android:gravity="center"
+                    android:layout_marginStart="80dp"
+
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/red"
+                    android:elevation="5dp"
+                    android:background="@drawable/custom_edittext_white"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+                    android:importantForAutofill="no" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginBottom="200dp"
+
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/my_ripple_effect"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintTop_toBottomOf="@id/pcont"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/uavailable"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+                <TextView
+                    android:id="@+id/favailable"
+
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/rubik_medium"
+
+                    android:gravity="center"
+                    android:layout_marginStart="55dp"
+
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/red"
+                    android:elevation="5dp"
+                    android:background="@drawable/custom_edittext_white"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+                android:importantForAutofill="no" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/pcont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="250dp"
+
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/my_ripple_effect"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintTop_toBottomOf="@id/pgen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/uphone"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+                <TextView
+                    android:id="@+id/dcontact1"
+
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/rubik_medium"
+
+                    android:gravity="center"
+                    android:layout_marginStart="50dp"
+
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/red"
+                    android:elevation="5dp"
+                    android:background="@drawable/custom_edittext_white"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+                android:importantForAutofill="no" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ploc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="180dp"
+
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/my_ripple_effect"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintTop_toBottomOf="@id/pav"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/ulocation"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+                <TextView
+                    android:id="@+id/fLocation1"
+
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/rubik_medium"
+
+                    android:gravity="center"
+                    android:layout_marginStart="70dp"
+
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/red"
+                    android:elevation="5dp"
+                    android:background="@drawable/custom_edittext_white"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+                android:importantForAutofill="no" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ppick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp"
+
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/my_ripple_effect"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintTop_toBottomOf="@id/ploc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/upick"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+                <TextView
+                    android:id="@+id/fdrop1"
+
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/rubik_medium"
+
+                    android:gravity="center"
+                    android:layout_marginStart="35dp"
+
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/red"
+                    android:elevation="5dp"
+                    android:background="@drawable/custom_edittext_white"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+                android:importantForAutofill="no" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logoutbtn"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:text="@string/ulogout"
+                android:elevation="5dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_button_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ppick"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,7 +393,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="265dp"
 
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/_5sdp"
@@ -27,21 +401,23 @@
 
 
                 <LinearLayout
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="15dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="30dp"
                     android:layout_marginLeft="82dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="32dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="36dp"
                     android:background="@drawable/profilef"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/dpimg"
-                        android:layout_width="211dp"
-                        android:layout_height="170dp"
-                        android:layout_marginTop="25dp"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+
+
                         android:layout_weight="1"
 
                         />
@@ -62,6 +438,9 @@
                         android:layout_weight="1"
                         android:textAlignment="center"
                         android:textAllCaps="true"
+
+                      android:gravity="center"
+                        android:layout_gravity="center"
 
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -113,9 +492,10 @@
                 <LinearLayout
                     android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="5dp"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <TextView
@@ -148,7 +528,8 @@
                 <LinearLayout
                     android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
                     android:layout_marginEnd="5dp"
                     android:orientation="horizontal">
 
@@ -180,7 +561,7 @@
                 <LinearLayout
                     android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_gravity="center"
                     android:layout_marginEnd="5dp"
                     android:orientation="horizontal">
 
@@ -213,7 +594,7 @@
                 <LinearLayout
                     android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_gravity="center"
                     android:layout_marginEnd="5dp"
                     android:orientation="horizontal">
 
@@ -246,7 +627,7 @@
                 <LinearLayout
                     android:layout_width="320dp"
                     android:layout_height="37dp"
-                    android:layout_marginStart="2dp"
+                    android:layout_gravity="center"
                     android:layout_marginEnd="5dp"
                     android:orientation="horizontal">
 
@@ -296,4 +677,5 @@
         </LinearLayout>
 
     </ScrollView>
-</RelativeLayout>
+</RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

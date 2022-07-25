@@ -30,10 +30,13 @@
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
 
+
                 android:drawableLeft="@drawable/fblood1"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="20sp"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"
                 android:textStyle="bold" />
 
             <TextView
@@ -41,11 +44,15 @@
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
 
+                android:paddingTop="9dp"
+
 
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/dplocicon"
@@ -54,20 +61,24 @@
 
                 android:drawableLeft="@drawable/floc"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/dploctext"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
 
-
+                android:paddingTop="9dp"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"/>
 
         </LinearLayout>
 
@@ -83,18 +94,23 @@
 
                 android:drawableLeft="@drawable/blood22"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/dpnametext"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
+                android:paddingTop="9dp"
 
 
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/dpcontacticon"
@@ -103,18 +119,22 @@
 
                 android:drawableLeft="@drawable/fcon"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/dpcontacttext"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
-
+                android:paddingTop="9dp"
 
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"/>
 
         </LinearLayout>
 
@@ -130,18 +150,22 @@
 
                 android:drawableLeft="@drawable/proob"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/dpallergytext"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
+                android:paddingTop="9dp"
 
+                android:fontFamily="@font/rubik_regular"
 
                 android:textAlignment="center"
-                android:textColor="@color/black"
+                android:textColor="@color/red"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -152,20 +176,25 @@
 
                 android:drawableLeft="@drawable/fmed"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/dpmedtext"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
+                android:paddingTop="9dp"
 
 
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"/>
 
         </LinearLayout>
 
@@ -183,25 +212,28 @@
                 android:drawableLeft="@drawable/ic_baseline_group_24"
 
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
 
                 android:textStyle="bold"
-                app:drawableTint="#E41414" />
+                app:drawableTint="#E41414"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/dpgendertext"
-                android:layout_width="119dp"
+                android:layout_width="110dp"
                 android:layout_height="match_parent"
-
-
+                android:paddingTop="9dp"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/dpavailabilityicon"
-                android:layout_width="43dp"
+                android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:drawableLeft="@drawable/ic_baseline_pan_tool_24"
                 android:textAlignment="center"
@@ -212,10 +244,11 @@
                 android:id="@+id/dpavailabilitytext"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
-
-
+                android:paddingTop="9dp"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -232,10 +265,12 @@
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"/>
 
             <TextView
                 android:id="@+id/did"
@@ -244,10 +279,12 @@
 
 
                 android:textAlignment="center"
-                android:textColor="@color/black"
+
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"/>
 
         </LinearLayout>
     </LinearLayout>

@@ -16,9 +16,11 @@
         android:gravity="center"
         android:text="Govt Employee"
         android:layout_marginLeft="40dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/rubik_regular"
+        android:textColor="@color/red"
+       android:textSize="16dp"
         android:layout_centerVertical="true"
-        android:textColor="@android:color/black"
+
 
         />
 

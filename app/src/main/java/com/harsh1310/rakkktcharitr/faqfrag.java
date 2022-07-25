@@ -25,7 +25,7 @@ ImageView i1,i2,i3,i4;
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootview=inflater.inflate(R.layout.fragment_faqfrag, container, false);
-i1=rootview.findViewById(R.id.p1);
+         i1=rootview.findViewById(R.id.p1);
         i2=rootview.findViewById(R.id.p2);
         i3=rootview.findViewById(R.id.p3);
         i4=rootview.findViewById(R.id.p4);

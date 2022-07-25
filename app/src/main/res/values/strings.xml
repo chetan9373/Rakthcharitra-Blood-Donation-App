@@ -25,15 +25,46 @@
     <string name="date">Date Range</string>
     <string name="remarks">Any other Special Remarks</string>
     <string name="reg">REGISTRATION DETAILS</string>
+    <string name="reg1">REGISTRATION</string>
     <string name="password">Password</string>
     <string name="conpassword">Confirm Password</string>
     <string name="signup">Sign up</string>
     <string name="Pick">Pick up and drop Required?</string>
-
+      <string name="text1">Any Existing Diseases?</string>
+    <string name="text2">Any Operation in Last one year?</string>
+    <string name="text3">Do you have any Allergy?</string>
+    <string name="next3">Next</string>
+    <string name="blood">Blood Group</string>
+    <string name="status">Status</string>
+    <string name="enterotp">Please Enter the OTP Sent to you</string>
+    <string name="name1">Enter Name</string>
+    <string name="email1">Enter Email</string>
+    <string name="contact">Enter Mobile Number</string>
+    <string name="pincode1">Enter Pincode</string>
+    <string name="blood1">Select Blood Group</string>
     <string name="reason">Reason</string>
+    <string name="gender">Select Gender</string>
+    <string name="next1">Next</string>
+    <string name="profession">Select Profession</string>
+    <string name="datebirth">Date Of Birth</string>
+    <string name="lastblood">Last Blood Donation</string>
+    <string name="lastplat">Last Platelets Donation</string>
+    <string name="smoke">Do You Smoke or Drink?</string>
+    <string name="lastblooddate">Last Blood Donated Date</string>
+    <string name="next2">Next</string>
+
+    <string name="ugender">Gender</string>
+    <string name="uphone">Contact No</string>
+    <string name="uavailable">Availability</string>
+    <string name="upick">Pick up/Drop</string>
+    <string name="ulocation">Location</string>
+    <string name="ulogout">Log Out</string>
+    <string name="donor">DONOR TYPE</string>
+    <string name="submit">Submit</string>
+    <string name="send">Send Message</string>
+
+
+
+
+
 </resources>
-
-
-
-
-

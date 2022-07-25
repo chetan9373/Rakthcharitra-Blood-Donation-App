@@ -9,6 +9,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.os.Looper;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +33,7 @@ public class Searchfragement extends Fragment {
     EditText searchpin;
     Spinner bgrplist;
     Button searchbtn;
+    boolean doubleBackToExitPressedOnce = false;
     private bloddgrpadapterspinner mAdapter;
     ArrayList<grpmodel> mCountryList;
    String bgrp;
@@ -78,9 +80,9 @@ searchbtn.setOnClickListener(v->donorsfun());
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (event.getAction() == KeyEvent.ACTION_DOWN) {
+
                     if (keyCode == KeyEvent.KEYCODE_BACK) {
-                        startActivity(new Intent(getActivity(), MainActivity.class));
-                        getActivity().finish();
+
 
                         return true;
                     }
@@ -107,8 +109,9 @@ return  rootview;
                             ArrayList<String> list = new ArrayList<>();
                             list.add(bgrp);
                             list.add(searchpin.getText().toString());
-                            Intent intent = new Intent(getActivity(), MainActivity2.class);
-                            intent.putExtra("key5", list);
+                            Intent intent;
+                           intent = new Intent(getActivity(),MainActivity2.class);
+                           intent.putExtra("key5", list);
                             startActivity(intent);
 
                         }
@@ -140,6 +143,5 @@ return  rootview;
             mCountryList.add(new grpmodel("AB-", R.drawable.grpimg));
             mCountryList.add(new grpmodel("O-", R.drawable.grpimg));
         }
-
 
 }

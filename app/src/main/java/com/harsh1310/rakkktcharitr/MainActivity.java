@@ -67,22 +67,22 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-    // private static sfinal String CHANNEL_1_--------ID ="channel1" -;
+   // private static sfinal String CHANNEL_1_--------ID ="channel1" -;
     EditText searchpin;
     private bloddgrpadapterspinner mAdapter;
-    boolean doubleBackToExitPressedOnce = false;
-    ArrayList<grpmodel> mCountryList;
-    Button getdonors, getplasmadonors;
-    Button tt;
-    String bgrp;
-    BottomNavigationView bottomNavigationView;
-    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 0;
 
+    ArrayList<grpmodel>mCountryList;
+Button getdonors,getplasmadonors;
+Button tt;
+String bgrp;
+    boolean doubleBackToExitPressedOnce = false;
+BottomNavigationView bottomNavigationView;
+    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS =0 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottomNavigationView = findViewById(R.id.navigation);
+bottomNavigationView=findViewById(R.id.navigation);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame, new Searchfragement());
         transaction.commit();
@@ -101,14 +101,14 @@ public class MainActivity extends AppCompatActivity {
                         transaction1.commit();
 
                         break;
-                    case R.id.ourteam:
+                    case  R.id.ourteam:
                         FragmentTransaction transaction2 = getSupportFragmentManager().beginTransaction();
                         transaction2.replace(R.id.frame, new Ourteamfragement());
                         transaction2.commit();
-                        break;
+                         break;
                     case R.id.faq:
-                        FragmentTransaction transaction3 = getSupportFragmentManager().beginTransaction();
-                        transaction3.replace(R.id.frame, new faqfrag());
+                        FragmentTransaction transaction3=getSupportFragmentManager().beginTransaction();
+                        transaction3.replace(R.id.frame,new faqfrag());
                         transaction3.commit();
                 }
 
@@ -118,11 +118,11 @@ public class MainActivity extends AppCompatActivity {
 
         // bottomNavigationView.setSelectedItemId(R.id.navhome12);
 
-        // initlist();
-        //  Spinner spinnerCountries = findViewById(R.id.spinner_bgrp);
-        //  mAdapter = new bloddgrpadapterspinner(this, mCountryList);
+       // initlist();
+      //  Spinner spinnerCountries = findViewById(R.id.spinner_bgrp);
+      //  mAdapter = new bloddgrpadapterspinner(this, mCountryList);
 
-        //  spinnerCountries.setAdapter(mAdapter);
+      //  spinnerCountries.setAdapter(mAdapter);
        /* spinnerCountries.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -286,5 +286,4 @@ String phoneNo,message;
         Toast.makeText(MainActivity.this, "Please click Back again to exit", Toast.LENGTH_SHORT).show();
         new Handler(Looper.getMainLooper()).postDelayed(() -> doubleBackToExitPressedOnce = false, 2000);
     }
-
 }

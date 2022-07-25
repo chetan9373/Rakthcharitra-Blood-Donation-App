@@ -1,5 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bcgn"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp">
+
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/status"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/sspinners"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintTop_toBottomOf="@id/status"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_spinner" />
+
+
+            <TextView
+                android:id="@+id/status1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/date"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sspinners"
+
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/daterange1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+
+                android:textColorHint="@color/red"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/red"
+                android:fontFamily="@font/rubik_regular"
+                android:elevation="5dp"
+                android:textSize="18sp"
+                android:inputType="textPersonName"
+                android:background="@drawable/custom_input"
+                app:layout_constraintTop_toBottomOf="@id/status1"
+                tools:ignore="RtlSymmetry,TextFields"
+                android:importantForAutofill="no" />
+
+
+
+            <TextView
+                android:id="@+id/status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/reason"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daterange1"
+
+                tools:ignore="MissingConstraints" />
+            <EditText
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+
+                android:textColorHint="@color/red"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/red"
+                android:fontFamily="@font/rubik_regular"
+                android:elevation="5dp"
+                android:textSize="18sp"
+                android:inputType="textPersonName"
+                android:background="@drawable/custom_input"
+                app:layout_constraintTop_toBottomOf="@id/status2"
+                tools:ignore="RtlSymmetry,TextFields"
+                android:importantForAutofill="no" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ssave"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:text="@string/save"
+                android:elevation="5dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_button_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reason"/>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -126,4 +274,5 @@
         </LinearLayout>
     </LinearLayout>
 
-</RelativeLayout>
+</RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

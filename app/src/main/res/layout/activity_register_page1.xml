@@ -1,5 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bcgn"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="130dp"
+            >
+
+            <TextView
+                android:id="@+id/reg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/reg"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/profession"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toBottomOf="@id/reg2"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/professionspinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintTop_toBottomOf="@id/profession"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_spinner"/>
+
+
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/dateofbirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/datebirth"
+                android:textColorHint="@color/red"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/red"
+                android:fontFamily="@font/rubik_regular"
+                android:elevation="5dp"
+                android:textSize="18sp"
+                android:inputType="textPersonName"
+                android:background="@drawable/custom_input"
+                app:layout_constraintTop_toBottomOf="@id/professionspinner"
+                tools:ignore="RtlSymmetry,TextFields"
+                android:importantForAutofill="no" />
+
+
+            <TextView
+                android:id="@+id/lastblood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/lastblood"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toBottomOf="@id/dateofbirth"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/bloodspinners"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintTop_toBottomOf="@id/lastblood"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_spinner"/>
+            <TextView
+                android:id="@+id/lastplatelate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/lastplat"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toBottomOf="@id/bloodspinners"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/plateletsspinners"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintTop_toBottomOf="@id/lastplatelate"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_spinner"/>
+            <TextView
+                android:id="@+id/smoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/smoke"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toBottomOf="@id/plateletsspinners"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/smokerspineer"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintTop_toBottomOf="@id/smoke"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_spinner"/>
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/lastblodddonatedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/lastblooddate"
+                android:textColorHint="@color/red"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/red"
+                android:fontFamily="@font/rubik_regular"
+                android:elevation="5dp"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/custom_input"
+                app:layout_constraintTop_toBottomOf="@id/smokerspineer"
+                tools:ignore="RtlSymmetry,TextFields"
+                android:importantForAutofill="no" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next2"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:text="@string/next2"
+                android:elevation="5dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_button_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lastblodddonatedate"/>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -252,4 +483,5 @@
 
         </LinearLayout>
     </LinearLayout>
-</RelativeLayout>
+<RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bcgn"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp">
+
+
+            <TextView
+                android:id="@+id/reg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/reg"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/text1"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toBottomOf="@id/reg3"
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/diseasesspinners"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_spinner"
+                />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/text2"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toBottomOf="@id/diseasesspinners"
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/operationspinners"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintTop_toBottomOf="@id/text2"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_spinner" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/text3"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toBottomOf="@id/operationspinners"
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/allergyspinners"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_constraintTop_toBottomOf="@id/text3"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/custom_spinner" />
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next3"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:text="@string/next3"
+                android:elevation="5dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_button_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/allergyspinners"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -183,4 +325,5 @@
         </LinearLayout>
 
     </LinearLayout>
-</RelativeLayout>
+</RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcgn">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imgl"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/lock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/tvOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/otp"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgl" />
+
+
+            <TextView
+                android:id="@+id/tv001l"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/rubik_medium"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/enterotp"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOtp" />
+
+            <EditText
+                android:id="@+id/otptext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_input"
+                android:elevation="5dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/rubik_regular"
+
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/red"
+                android:textColorHint="@color/red"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/tv001l"
+                tools:ignore="RtlSymmetry,TextFields" />
+
+            <LinearLayout
+                android:id="@+id/didntreceivedotp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/my_ripple_effect"
+                android:elevation="5dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/otptext"
+                app:layout_constraintVertical_bias="0.1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="Didn't receive the OTP?"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/resendotp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="RESEND OTP AGAIN"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonget_otp"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_button_red"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/didntreceivedotp"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/submit3"
     android:layout_width="match_parent"
@@ -68,7 +217,7 @@
                 android:layout_height="wrap_content"
                 android:text="Didn't receive the OTP?"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_14sdp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/resendotp"
@@ -76,8 +225,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:text="RESEND OTP AGAIN"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="15dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -97,4 +246,5 @@
             android:textStyle="bold"
             app:backgroundTint="@color/design_default_color_error" />
     </LinearLayout>
+</RelativeLayout>-->
 </RelativeLayout>

@@ -9,8 +9,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+
 
     <application
 
@@ -24,7 +23,6 @@
         <activity android:name=".Verify_otp"></activity>
         <activity android:name=".registration4" />
         <activity android:name=".Ourteam" />
-        <activity android:name=".Last_Screen" />
         <activity android:name=".Forgot_Password" />
         <activity android:name=".PlasmaActivity" />
         <activity android:name=".Profileofdonors" />

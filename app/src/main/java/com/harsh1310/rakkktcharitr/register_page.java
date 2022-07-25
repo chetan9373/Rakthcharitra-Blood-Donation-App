@@ -41,7 +41,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class register_page extends AppCompatActivity {
     EditText phonenum, name, emailaddres, pass, confirmpass, pincode;
-    CircleImageView pimg;
+    ImageView pimg;
     Button next;
     stored_credentials pref;
     Uri uri;
@@ -74,7 +74,7 @@ public class register_page extends AppCompatActivity {
 
         genderlist = new ArrayList<>();
         genderlist.add(new gendermodel("Male"));
-        genderlist.add(new gendermodel("female"));
+        genderlist.add(new gendermodel("Female"));
 
         mAdapter = new bloddgrpadapterspinner(this, mCountryList);
         genderAdapter = new genderadapter(this, genderlist);
