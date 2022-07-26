@@ -68,6 +68,7 @@ public class register_page1 extends AppCompatActivity //implements AdapterView.O
         ArrayList<String> list = (ArrayList<String>) getIntent().getSerializableExtra("key1");
         mRequestQueue = Volley.newRequestQueue(register_page1.this);
         bod=findViewById(R.id.dateofbirth);
+        //bod.setEnabled(false);
 
         professionspinner=findViewById(R.id.professionspinner);
         last_bdspinner=findViewById(R.id.bloodspinners);
@@ -75,8 +76,10 @@ public class register_page1 extends AppCompatActivity //implements AdapterView.O
         smokespinner=findViewById(R.id.smokerspineer);
         next2=findViewById(R.id.next2);
         lastblooddonate=findViewById(R.id.lastblodddonatedate);
+        //lastblooddonate.setEnabled(false);
         pref=stored_credentials.getInstance(this);
-
+         //bod.setEnabled(false);
+        //lastblooddonate.setEnabled(false);
         initprof();
         isbloodlist=new ArrayList<>();
         isbloodlist.add(new isbloodmodel("Yes"));

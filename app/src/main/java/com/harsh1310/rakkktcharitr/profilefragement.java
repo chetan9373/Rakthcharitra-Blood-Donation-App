@@ -123,28 +123,29 @@ DatabaseReference db= FirebaseDatabase.getInstance().getReference("Users");
         db.child(uid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                progressDialog.dismiss();
+                if(snapshot.exists()) {
+                    progressDialog.dismiss();
 
-                String dtpe = snapshot.child(Constants.dtype).getValue().toString();
-                userbloodgrp.setText(dtpe);
-                String gender = snapshot.child(Constants.gender).getValue().toString();
-                usergender.setText(gender);
-                String loc = snapshot.child(Constants.add).getValue().toString();
-                userloc.setText(loc);
-                String avail = snapshot.child(Constants.avail).getValue().toString();
-                useravailibility.setText(avail);
-                String pickup = snapshot.child(Constants.pickup).getValue().toString();
-                userpickup.setText(pickup);
-                usercontact.setText(snapshot.child(Constants.phone).getValue().toString());
-                String img = snapshot.child(Constants.pimg).getValue().toString();
+                    String dtpe = snapshot.child(Constants.dtype).getValue().toString();
+                    userbloodgrp.setText(dtpe);
+                    String gender = snapshot.child(Constants.gender).getValue().toString();
+                    usergender.setText(gender);
+                    String loc = snapshot.child(Constants.add).getValue().toString();
+                    userloc.setText(loc);
+                    String avail = snapshot.child(Constants.avail).getValue().toString();
+                    useravailibility.setText(avail);
+                    String pickup = snapshot.child(Constants.pickup).getValue().toString();
+                    userpickup.setText(pickup);
+                    usercontact.setText(snapshot.child(Constants.phone).getValue().toString());
+                    String img = snapshot.child(Constants.pimg).getValue().toString();
 //pimg.setImageURI(Uri.parse(img));
 
-                Log.d("TAG", "onDataChange:"+"  "+snapshot.child(Constants.pimg));
+                    Log.d("TAG", "onDataChange:" + "  " + snapshot.child(Constants.pimg));
 
-                Glide.with(getActivity()).load(img).into(pimg);
-                name.setText(snapshot.child(Constants.name).getValue().toString());
+                    Glide.with(getActivity()).load(img).into(pimg);
+                    name.setText(snapshot.child(Constants.name).getValue().toString());
 
-
+                }
             }
 
             @Override

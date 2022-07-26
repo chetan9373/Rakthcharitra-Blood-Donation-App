@@ -48,7 +48,7 @@ int age;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.updateactivity);
+        setContentView(R.layout.activity_update__status);
 
 reason=findViewById(R.id.reason);
 datetange=findViewById(R.id.daterange1);
