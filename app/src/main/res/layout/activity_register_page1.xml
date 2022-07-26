@@ -62,18 +62,7 @@
                 android:elevation="5dp"
                 android:background="@drawable/custom_spinner"/>
 
-
-
-
-
-
-
-
-
-
-
             <EditText
-
                 android:id="@+id/dateofbirth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,13 +73,16 @@
                 android:hint="@string/datebirth"
                 android:textColorHint="@color/red"
                 android:padding="16dp"
+                android:cursorVisible="false"
+                android:clickable="false"
+                android:editable="false"
                 android:singleLine="true"
                 android:textColor="@color/red"
                 android:fontFamily="@font/rubik_regular"
                 android:elevation="5dp"
                 android:textSize="18sp"
                 android:inputType="textPersonName"
-                android:background="@drawable/custom_input"
+                android:background="@drawable/custom_edittext_white"
                 app:layout_constraintTop_toBottomOf="@id/professionspinner"
                 tools:ignore="RtlSymmetry,TextFields"
                 android:importantForAutofill="no" />
@@ -181,12 +173,6 @@
                 android:elevation="5dp"
                 android:background="@drawable/custom_spinner"/>
 
-
-
-
-
-
-
             <EditText
                 android:id="@+id/lastblodddonatedate"
                 android:layout_width="match_parent"
@@ -201,9 +187,12 @@
                 android:textColor="@color/red"
                 android:fontFamily="@font/rubik_regular"
                 android:elevation="5dp"
+                android:cursorVisible="false"
                 android:textSize="18sp"
+                android:clickable="false"
+                android:editable="false"
                 android:inputType="textEmailAddress"
-                android:background="@drawable/custom_input"
+                android:background="@drawable/custom_edittext_white"
                 app:layout_constraintTop_toBottomOf="@id/smokerspineer"
                 tools:ignore="RtlSymmetry,TextFields"
                 android:importantForAutofill="no" />

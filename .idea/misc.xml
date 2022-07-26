@@ -181,7 +181,7 @@
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_plasma.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_profileofdonors.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page.xml" value="0.1" />
-        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page1.xml" value="0.1" />
+        <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page1.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_register_page3.xml" value="0.1" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_registration4.xml" value="0.1" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/activity_splash__screen.xml" value="0.13451086956521738" />
@@ -209,6 +209,14 @@
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/layout/yesornospinner.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1255" />
         <entry key="..\:/Users/Radhika/AndroidStudioProjects/blooddonation21/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1285" />
+        <entry key="..\:/Users/Saurabh Thakur/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_spinner_dropdown_item.xml" value="0.13240740740740742" />
+        <entry key="..\:/Users/Saurabh Thakur/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_spinner_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/custom_button_red.xml" value="0.1" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/custom_edittext_white.xml" value="0.1" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/drawable/custom_input.xml" value="0.1" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_register_page1.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/activity_update__status.xml" value="0.17" />
+        <entry key="..\:/Users/Saurabh Thakur/StudioProjects/Rakthcharitra-Blood-Donation-App/app/src/main/res/layout/updateactivity.xml" value="0.11481481481481481" />
       </map>
     </option>
   </component>
