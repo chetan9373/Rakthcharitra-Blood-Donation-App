@@ -13,7 +13,6 @@ import java.util.ArrayList;
 
 public class allergyadapter  extends ArrayAdapter<allergymodel> {
 
-
     public allergyadapter(@NonNull Context context, ArrayList<allergymodel> countryList) {
         super(context,0,countryList);
     }
@@ -35,7 +34,6 @@ public class allergyadapter  extends ArrayAdapter<allergymodel> {
                     R.layout.yesornospinner, parent, false
             );
         }
-
 
         TextView textViewName = convertView.findViewById(R.id.text_view_name1);
 

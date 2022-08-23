@@ -1,16 +1,12 @@
 package com.harsh1310.rakkktcharitr;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,8 +14,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -27,7 +26,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,8 +34,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class register_page extends AppCompatActivity {
     EditText phonenum, name, emailaddres, pass, confirmpass, pincode;
@@ -54,10 +50,14 @@ public class register_page extends AppCompatActivity {
     genderadapter genderAdapter;
     String bgrp, gender;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_page);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("shrdUserData", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
 
         mRequestQueue = Volley.newRequestQueue(register_page.this);
         pimg = findViewById(R.id.profimg);
@@ -130,6 +130,14 @@ public class register_page extends AppCompatActivity {
                     Toast.makeText(register_page.this, "Please select image", Toast.LENGTH_SHORT).show();
                 } else {
                     getDataFromPinCode(pincode.getText().toString());
+
+                    editor.putString("USER_NAME", name.getText().toString().trim());
+                    editor.putString("USER_EMAIL", emailaddres.getText().toString().trim());
+                    editor.putString("USER_PHONE", phonenum.getText().toString().trim());
+                    editor.putString("USER_PINCODE", pincode.getText().toString().trim());
+                    editor.putString("USER_GENDER", gender);
+                    editor.putString("USER_BLOODGROUP", bgrp);
+                    editor.apply();
 
                     list.add(name.getText().toString().trim());
                     list.add(emailaddres.getText().toString().trim());

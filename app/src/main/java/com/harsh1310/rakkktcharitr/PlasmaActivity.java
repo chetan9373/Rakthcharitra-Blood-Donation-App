@@ -31,7 +31,6 @@ public class PlasmaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plasma);
 
-
         pref = stored_credentials.getInstance(this);
         rview = findViewById(R.id.rview1);
         courseModelArrayList = new ArrayList<>();

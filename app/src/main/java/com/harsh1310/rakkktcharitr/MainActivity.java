@@ -1,88 +1,39 @@
 package com.harsh1310.rakkktcharitr;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-import androidx.core.content.ContextCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.Manifest;
-import android.app.AlarmManager;
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.SystemClock;
-import android.telephony.SmsManager;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.HurlStack;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-import com.google.android.gms.security.ProviderInstaller;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.messaging.FirebaseMessaging;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-   // private static sfinal String CHANNEL_1_--------ID ="channel1" -;
+    // private static sfinal String CHANNEL_1_--------ID ="channel1" -;
     EditText searchpin;
     private bloddgrpadapterspinner mAdapter;
 
-    ArrayList<grpmodel>mCountryList;
-Button getdonors,getplasmadonors;
-Button tt;
-String bgrp;
+    ArrayList<grpmodel> mCountryList;
+    Button getdonors, getplasmadonors;
+    Button tt;
+    String bgrp;
     boolean doubleBackToExitPressedOnce = false;
-BottomNavigationView bottomNavigationView;
-    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS =0 ;
+    BottomNavigationView bottomNavigationView;
+    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-bottomNavigationView=findViewById(R.id.navigation);
+        bottomNavigationView = findViewById(R.id.navigation);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame, new Searchfragement());
         transaction.commit();
@@ -101,14 +52,14 @@ bottomNavigationView=findViewById(R.id.navigation);
                         transaction1.commit();
 
                         break;
-                    case  R.id.ourteam:
+                    case R.id.ourteam:
                         FragmentTransaction transaction2 = getSupportFragmentManager().beginTransaction();
                         transaction2.replace(R.id.frame, new Ourteamfragement());
                         transaction2.commit();
-                         break;
+                        break;
                     case R.id.faq:
-                        FragmentTransaction transaction3=getSupportFragmentManager().beginTransaction();
-                        transaction3.replace(R.id.frame,new faqfrag());
+                        FragmentTransaction transaction3 = getSupportFragmentManager().beginTransaction();
+                        transaction3.replace(R.id.frame, new faqfrag());
                         transaction3.commit();
                 }
 
@@ -118,11 +69,11 @@ bottomNavigationView=findViewById(R.id.navigation);
 
         // bottomNavigationView.setSelectedItemId(R.id.navhome12);
 
-       // initlist();
-      //  Spinner spinnerCountries = findViewById(R.id.spinner_bgrp);
-      //  mAdapter = new bloddgrpadapterspinner(this, mCountryList);
+        // initlist();
+        //  Spinner spinnerCountries = findViewById(R.id.spinner_bgrp);
+        //  mAdapter = new bloddgrpadapterspinner(this, mCountryList);
 
-      //  spinnerCountries.setAdapter(mAdapter);
+        //  spinnerCountries.setAdapter(mAdapter);
        /* spinnerCountries.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

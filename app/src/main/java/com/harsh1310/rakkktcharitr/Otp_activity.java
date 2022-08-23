@@ -1,49 +1,29 @@
 package com.harsh1310.rakkktcharitr;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
-import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseException;
-import com.google.firebase.auth.AuthResult;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.PhoneAuthCredential;
-import com.google.firebase.auth.PhoneAuthOptions;
-import com.google.firebase.auth.PhoneAuthProvider;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Otp_activity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private EditText edtPhone, edtOTP;
-stored_credentials pref;
+    stored_credentials pref;
     private Button verifyOTPBtn, generateOTPBtn;
-ProgressDialog progressDialog;
+    ProgressDialog progressDialog;
     private String verificationId;
-    ArrayList<String>list=new ArrayList<>();
+    ArrayList<String> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,26 +36,23 @@ ProgressDialog progressDialog;
 
         generateOTPBtn = findViewById(R.id.buttonget_otp);
 
-        generateOTPBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String phonenum = edtPhone.getText().toString();
+        generateOTPBtn.setOnClickListener(v -> {
+            String phonenum = edtPhone.getText().toString();
 
-                if (TextUtils.isEmpty(phonenum) && isValid(phonenum)) {
-                    Toast.makeText(Otp_activity.this, "Please enter a valid phone number.", Toast.LENGTH_SHORT).show();
-                } else {
-                    String phone = "+91"+edtPhone.getText().toString();
-                    Intent intent = new Intent(Otp_activity.this, Verify_otp.class);
-                    list.add(phone);
-                    intent.putExtra("key8", list);
-                    startActivity(intent);
+            if (TextUtils.isEmpty(phonenum) && isValid(phonenum)) {
+                Toast.makeText(Otp_activity.this, "Please enter a valid phone number.", Toast.LENGTH_SHORT).show();
+            } else {
+                String phone = "+91" + edtPhone.getText().toString();
+                Intent intent = new Intent(Otp_activity.this, Verify_otp.class);
+                list.add(phone);
+                intent.putExtra("key8", list);
+                startActivity(intent);
 
-                }
             }
         });
     }
-    public  boolean isValid(String s)
-    {
+
+    public boolean isValid(String s) {
 
         // The given argument to compile() method
         // is regular expression. With the help of
@@ -92,9 +69,6 @@ ProgressDialog progressDialog;
         Matcher m = p.matcher(s);
         return (m.find() && m.group().equals(s));
     }
-
-
-
 
 
 }

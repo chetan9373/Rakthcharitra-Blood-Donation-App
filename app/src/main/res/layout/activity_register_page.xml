@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/bcgn"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcgn">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="15dp"
+        android:fillViewport="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="100dp"
-            >
+            android:layout_marginTop="100dp">
 
             <TextView
                 android:id="@+id/reg1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="@string/reg1"
                 android:fontFamily="@font/rubik_medium"
+                android:text="@string/reg1"
                 android:textColor="@color/red"
                 android:textSize="25sp"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
 
@@ -38,128 +36,126 @@
                 android:id="@+id/appIcon1"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="999dp"
                 android:layout_marginTop="50dp"
                 app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="999dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/reg1"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                     android:id="@+id/profimg"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/finalpro"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/finalpro"
                     tools:ignore="ContentDescription" />
             </androidx.cardview.widget.CardView>
-
-
-
 
 
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_input"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_regular"
                 android:hint="@string/name1"
-                android:textColorHint="@color/red"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
                 android:padding="16dp"
                 android:singleLine="true"
                 android:textColor="@color/red"
-                android:fontFamily="@font/rubik_regular"
-                android:elevation="5dp"
+                android:textColorHint="@color/red"
                 android:textSize="18sp"
-                android:inputType="textPersonName"
-                android:background="@drawable/custom_input"
                 app:layout_constraintTop_toBottomOf="@id/appIcon1"
-                tools:ignore="RtlSymmetry,TextFields"
-                android:importantForAutofill="no" />
+                tools:ignore="RtlSymmetry,TextFields" />
 
             <EditText
                 android:id="@+id/emailadd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_regular"
                 android:hint="@string/email1"
-                android:textColorHint="@color/red"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
                 android:padding="16dp"
                 android:singleLine="true"
                 android:textColor="@color/red"
-                android:fontFamily="@font/rubik_regular"
-                android:elevation="5dp"
+                android:textColorHint="@color/red"
                 android:textSize="18sp"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/custom_input"
                 app:layout_constraintTop_toBottomOf="@id/name"
-                tools:ignore="RtlSymmetry,TextFields"
-                android:importantForAutofill="no" />
+                tools:ignore="RtlSymmetry,TextFields" />
+
             <EditText
                 android:id="@+id/phonenumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_regular"
                 android:hint="@string/contact"
-                android:textColorHint="@color/red"
-                android:padding="16dp"
+                android:importantForAutofill="no"
+                android:inputType="number"
                 android:maxLength="10"
+                android:padding="16dp"
                 android:singleLine="true"
                 android:textColor="@color/red"
-                android:fontFamily="@font/rubik_regular"
-                android:elevation="5dp"
+                android:textColorHint="@color/red"
                 android:textSize="18sp"
-                android:inputType="textPersonName"
-                android:background="@drawable/custom_input"
                 app:layout_constraintTop_toBottomOf="@id/emailadd"
-                tools:ignore="RtlSymmetry,TextFields"
-                android:importantForAutofill="no" />
+                tools:ignore="RtlSymmetry,TextFields" />
 
             <EditText
                 android:id="@+id/pincode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_regular"
                 android:hint="@string/pincode1"
-                android:textColorHint="@color/red"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="6"
                 android:padding="16dp"
                 android:singleLine="true"
                 android:textColor="@color/red"
-                android:fontFamily="@font/rubik_regular"
-                android:elevation="5dp"
+                android:textColorHint="@color/red"
                 android:textSize="18sp"
-                android:maxLength="6"
-                android:inputType="textPersonName"
-                android:background="@drawable/custom_input"
                 app:layout_constraintTop_toBottomOf="@id/phonenumber"
-                tools:ignore="RtlSymmetry,TextFields"
-                android:importantForAutofill="no" />
+                tools:ignore="RtlSymmetry,TextFields" />
 
 
             <TextView
                 android:id="@+id/regt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/gender"
                 android:fontFamily="@font/rubik_regular"
+                android:text="@string/gender"
                 android:textColor="@color/red"
                 android:textSize="18sp"
-                android:layout_marginStart="30dp"
-                app:layout_constraintTop_toBottomOf="@id/pincode"
-
                 app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/pincode"
 
                 tools:ignore="MissingConstraints" />
 
@@ -168,28 +164,28 @@
                 android:id="@+id/genderspinner"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                app:layout_constraintTop_toBottomOf="@id/regt"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_spinner"
                 android:elevation="5dp"
-                android:background="@drawable/custom_spinner"/>
+                app:layout_constraintTop_toBottomOf="@id/regt" />
 
 
             <TextView
                 android:id="@+id/regt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/blood1"
                 android:fontFamily="@font/rubik_regular"
+                android:text="@string/blood1"
                 android:textColor="@color/red"
                 android:textSize="18sp"
-                android:layout_marginStart="30dp"
-                app:layout_constraintTop_toBottomOf="@id/genderspinner"
-
                 app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/genderspinner"
 
                 tools:ignore="MissingConstraints" />
 
@@ -198,35 +194,30 @@
                 android:id="@+id/bloodgrpspinner"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                app:layout_constraintTop_toBottomOf="@id/regt1"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_spinner"
                 android:elevation="5dp"
-                android:background="@drawable/custom_spinner"/>
-
-
+                app:layout_constraintTop_toBottomOf="@id/regt1" />
 
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/next1"
                 android:layout_width="220dp"
                 android:layout_height="48dp"
-                android:text="@string/next1"
-                android:elevation="5dp"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="20sp"
-                android:fontFamily="@font/rubik_medium"
                 android:layout_marginTop="25dp"
                 android:background="@drawable/custom_button_red"
-                app:layout_constraintStart_toStartOf="parent"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/next1"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/bloodgrpspinner"/>
-
-
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bloodgrpspinner" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

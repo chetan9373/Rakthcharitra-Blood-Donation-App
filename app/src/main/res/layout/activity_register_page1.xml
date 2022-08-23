@@ -1,51 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/bcgn"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcgn">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="15dp"
+        android:fillViewport="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="130dp"
-            >
+            android:layout_marginTop="130dp">
 
             <TextView
                 android:id="@+id/reg2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="@string/reg"
                 android:fontFamily="@font/rubik_medium"
+                android:text="@string/reg"
                 android:textColor="@color/red"
                 android:textSize="25sp"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/profession"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/profession"
                 android:fontFamily="@font/rubik_regular"
+                android:text="@string/profession"
                 android:textColor="@color/red"
                 android:textSize="18sp"
-                android:layout_marginStart="30dp"
-                app:layout_constraintTop_toBottomOf="@id/reg2"
-
                 app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/reg2"
 
                 tools:ignore="MissingConstraints" />
 
@@ -54,53 +52,53 @@
                 android:id="@+id/professionspinner"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                app:layout_constraintTop_toBottomOf="@id/profession"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_spinner"
                 android:elevation="5dp"
-                android:background="@drawable/custom_spinner"/>
+                app:layout_constraintTop_toBottomOf="@id/profession" />
 
             <EditText
                 android:id="@+id/dateofbirth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
-                android:hint="@string/datebirth"
-                android:textColorHint="@color/red"
-                android:padding="16dp"
-                android:cursorVisible="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_edittext_white"
                 android:clickable="false"
+                android:cursorVisible="false"
                 android:editable="false"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="@string/datebirth"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="16dp"
                 android:singleLine="true"
                 android:textColor="@color/red"
-                android:fontFamily="@font/rubik_regular"
-                android:elevation="5dp"
+                android:textColorHint="@color/red"
                 android:textSize="18sp"
-                android:inputType="textPersonName"
-                android:background="@drawable/custom_edittext_white"
                 app:layout_constraintTop_toBottomOf="@id/professionspinner"
-                tools:ignore="RtlSymmetry,TextFields"
-                android:importantForAutofill="no" />
+                tools:ignore="RtlSymmetry,TextFields" />
 
 
             <TextView
                 android:id="@+id/lastblood"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/lastblood"
                 android:fontFamily="@font/rubik_regular"
+                android:text="@string/lastblood"
                 android:textColor="@color/red"
                 android:textSize="18sp"
-                android:layout_marginStart="30dp"
-                app:layout_constraintTop_toBottomOf="@id/dateofbirth"
-
                 app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/dateofbirth"
 
                 tools:ignore="MissingConstraints" />
 
@@ -109,26 +107,27 @@
                 android:id="@+id/bloodspinners"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                app:layout_constraintTop_toBottomOf="@id/lastblood"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_spinner"
                 android:elevation="5dp"
-                android:background="@drawable/custom_spinner"/>
+                app:layout_constraintTop_toBottomOf="@id/lastblood" />
+
             <TextView
                 android:id="@+id/lastplatelate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/lastplat"
                 android:fontFamily="@font/rubik_regular"
+                android:text="@string/lastplat"
                 android:textColor="@color/red"
                 android:textSize="18sp"
-                android:layout_marginStart="30dp"
-                app:layout_constraintTop_toBottomOf="@id/bloodspinners"
-
                 app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/bloodspinners"
 
                 tools:ignore="MissingConstraints" />
 
@@ -137,26 +136,27 @@
                 android:id="@+id/plateletsspinners"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                app:layout_constraintTop_toBottomOf="@id/lastplatelate"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_spinner"
                 android:elevation="5dp"
-                android:background="@drawable/custom_spinner"/>
+                app:layout_constraintTop_toBottomOf="@id/lastplatelate" />
+
             <TextView
                 android:id="@+id/smoke"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/smoke"
                 android:fontFamily="@font/rubik_regular"
+                android:text="@string/smoke"
                 android:textColor="@color/red"
                 android:textSize="18sp"
-                android:layout_marginStart="30dp"
-                app:layout_constraintTop_toBottomOf="@id/plateletsspinners"
-
                 app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/plateletsspinners"
 
                 tools:ignore="MissingConstraints" />
 
@@ -165,313 +165,309 @@
                 android:id="@+id/smokerspineer"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                app:layout_constraintTop_toBottomOf="@id/smoke"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_spinner"
                 android:elevation="5dp"
-                android:background="@drawable/custom_spinner"/>
+                app:layout_constraintTop_toBottomOf="@id/smoke" />
 
             <EditText
                 android:id="@+id/lastblodddonatedate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext_white"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_regular"
                 android:hint="@string/lastblooddate"
-                android:textColorHint="@color/red"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
                 android:padding="16dp"
                 android:singleLine="true"
                 android:textColor="@color/red"
-                android:fontFamily="@font/rubik_regular"
-                android:elevation="5dp"
-                android:cursorVisible="false"
+                android:textColorHint="@color/red"
                 android:textSize="18sp"
-                android:clickable="false"
-                android:editable="false"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/custom_edittext_white"
                 app:layout_constraintTop_toBottomOf="@id/smokerspineer"
-                tools:ignore="RtlSymmetry,TextFields"
-                android:importantForAutofill="no" />
-
+                tools:ignore="RtlSymmetry,TextFields" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/next2"
                 android:layout_width="220dp"
                 android:layout_height="48dp"
-                android:text="@string/next2"
-                android:elevation="5dp"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="20sp"
-                android:fontFamily="@font/rubik_medium"
                 android:layout_marginTop="25dp"
                 android:background="@drawable/custom_button_red"
-                app:layout_constraintStart_toStartOf="parent"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/next2"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/lastblodddonatedate"/>
-
-
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lastblodddonatedate" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bcgn"
-    android:foregroundTint="#980E0E">
-
-    <LinearLayout
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="288dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="110dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:padding="@dimen/_10sdp"
-            android:text="REGISTRATION DETAILS"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@color/black"
-            android:textSize="22dp"
-            android:textStyle="bold" />
-
+        android:background="@drawable/bcgn"
+        android:foregroundTint="#980E0E">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/_1sdp">
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="150dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="REGISTRATION DETAILS"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/textviewbg"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/textviewbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="212dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:padding="6dp"
+
+                        android:text="Profession:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/professionspinner"
+                        android:layout_width="212dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
 
                 <TextView
-                    android:layout_width="212dp"
+                    android:id="@+id/dateofbirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/textviewbg"
+                    android:backgroundTint="#fff"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_today_2423"
+                    android:drawablePadding="5dp"
+                    android:ems="20"
+                    android:foregroundTint="#AA1616"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:shadowColor="#FBFBFB"
+                    android:text="Date Of Birth:"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textColorLink="#FAF3F3"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/textviewbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5.00dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:padding="6dp"
+                        android:paddingTop="5dp"
+                        android:text="Last Blood Donation:"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/bloodspinners"
+                        android:layout_width="186dp"
+                        android:layout_height="55dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/textviewbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:padding="6dp"
+                        android:paddingTop="5dp"
+                        android:text="Last Platelets Donation:"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/plateletsspinners"
+                        android:layout_width="186dp"
+                        android:layout_height="55dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/textviewbg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:padding="6dp"
+                        android:paddingTop="5dp"
+                        android:text="Do you smoke or drink?:"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/smokerspineer"
+                        android:layout_width="186dp"
+                        android:layout_height="55dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastblodddonatedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/textviewbg"
+                    android:backgroundTint="#fff"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_today_2423"
+                    android:drawablePadding="5dp"
+
+                    android:ems="20"
+                    android:foregroundTint="#AA1616"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:shadowColor="#FBFBFB"
+                    android:text="Last blood donated:"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textColorLink="#FAF3F3"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+
+                <Button
+                    android:id="@+id/next2"
+                    android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
-                    android:drawablePadding="3dp"
-                    android:gravity="center_vertical"
-                    android:padding="6dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/inpuut_bg"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/design_default_color_error" />
 
-                    android:text="Profession:"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <Spinner
-                    android:id="@+id/professionspinner"
-                    android:layout_width="212dp"
-                    android:layout_height="55dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="12dp"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/dateofbirth"
-                android:layout_width="wrap_content"
-                android:layout_height="55dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/textviewbg"
-                android:backgroundTint="#fff"
-                android:drawableLeft="@drawable/ic_baseline_calendar_today_2423"
-                android:drawablePadding="5dp"
-                android:ems="20"
-                android:foregroundTint="#AA1616"
-                android:gravity="center_vertical"
-                android:includeFontPadding="false"
-                android:inputType="textPersonName"
-                android:padding="10dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="5dp"
-                android:shadowColor="#FBFBFB"
-                android:text="Date Of Birth:"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/black"
-                android:textColorHint="@color/black"
-                android:textColorLink="#FAF3F3"
-                android:textSize="20sp"
-                android:textStyle="normal|bold" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/textviewbg"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="306dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
-                    android:drawablePadding="5dp"
-                    android:gravity="center_vertical"
-                    android:padding="6dp"
-                    android:paddingTop="5dp"
-                    android:text="Last Blood Donation:"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <Spinner
-                    android:id="@+id/bloodspinners"
-                    android:layout_width="186dp"
-                    android:layout_height="55dp"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/textviewbg"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="306dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
-                    android:drawablePadding="5dp"
-                    android:gravity="center_vertical"
-                    android:padding="6dp"
-                    android:paddingTop="5dp"
-                    android:text="Last Platelets Donation:"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <Spinner
-                    android:id="@+id/plateletsspinners"
-                    android:layout_width="186dp"
-                    android:layout_height="55dp"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/textviewbg"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="306dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:layout_marginStart="5dp"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_baseline_add_circle_2424"
-                    android:drawablePadding="5dp"
-                    android:gravity="center_vertical"
-                    android:padding="6dp"
-                    android:paddingTop="5dp"
-                    android:text="Do you smoke or drink?:"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <Spinner
-                    android:id="@+id/smokerspineer"
-                    android:layout_width="186dp"
-                    android:layout_height="55dp"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/lastblodddonatedate"
-                android:layout_width="wrap_content"
-                android:layout_height="55dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/textviewbg"
-                android:backgroundTint="#fff"
-                android:drawableLeft="@drawable/ic_baseline_calendar_today_2423"
-                android:drawablePadding="5dp"
-
-                android:ems="20"
-                android:foregroundTint="#AA1616"
-                android:gravity="center_vertical"
-                android:includeFontPadding="false"
-                android:inputType="textPersonName"
-                android:padding="10dp"
-                android:shadowColor="#FBFBFB"
-                android:text="Last blood donated:"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/black"
-                android:textColorHint="@color/black"
-                android:textColorLink="#FAF3F3"
-                android:textSize="20sp"
-                android:textStyle="normal|bold" />
-
-            <Button
-                android:id="@+id/next2"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="30dp"
-                android:background="@drawable/inpuut_bg"
-                android:text="Next"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                app:backgroundTint="@color/design_default_color_error" />
-
         </LinearLayout>
-    </LinearLayout>
-<RelativeLayout>-->
+    <RelativeLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

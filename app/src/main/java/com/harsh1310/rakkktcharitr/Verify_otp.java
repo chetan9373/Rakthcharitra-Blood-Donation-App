@@ -1,8 +1,5 @@
 package com.harsh1310.rakkktcharitr;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -27,27 +27,28 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class Verify_otp extends AppCompatActivity {
-  FirebaseAuth  mAuth;
+    FirebaseAuth mAuth;
     Button verifybtn;
-EditText otptext;
-String otp;
-TextView resernotp;
+    EditText otptext;
+    String otp;
+    TextView resernotp;
     private String verificationId;
-ProgressDialog progressDialog;
+    ProgressDialog progressDialog;
     ArrayList<String> list;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_otp);
-     //   Intent intent = getIntent();
-         list = (ArrayList<String>) getIntent().getSerializableExtra("key8");
+        //   Intent intent = getIntent();
+        list = (ArrayList<String>) getIntent().getSerializableExtra("key8");
 
-        verifybtn=findViewById(R.id.buttonget_otp);
-        otptext=findViewById(R.id.otptext);
-     resernotp=findViewById(R.id.resendotp);
+        verifybtn = findViewById(R.id.buttonget_otp);
+        otptext = findViewById(R.id.otptext);
+        resernotp = findViewById(R.id.resendotp);
         mAuth = FirebaseAuth.getInstance();
-        progressDialog=new ProgressDialog(this);
-     resernotp.setOnClickListener(v->resendotpfn());
+        progressDialog = new ProgressDialog(this);
+        resernotp.setOnClickListener(v -> resendotpfn());
         verifybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,7 +65,7 @@ ProgressDialog progressDialog;
     }
 
     private void resendotpfn() {
-        Toast.makeText(getApplicationContext(),"Otp Sent",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Otp Sent", Toast.LENGTH_SHORT).show();
         sendVerificationCode(list.get(13));
 
     }
@@ -80,15 +81,14 @@ ProgressDialog progressDialog;
                             progressDialog.dismiss();
 
 
-
-
                             Intent i = new Intent(Verify_otp.this, register_page3.class);
-                            i.putExtra("key3",list);
+                            i.putExtra("key3", list);
                             startActivity(i);
                             finish();
                         } else {
                             progressDialog.dismiss();
-                            Toast.makeText(Verify_otp.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(Verify_otp.this, task.getException().getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                            Log.d("errorMessage", task.getException().getMessage());
                         }
                     }
                 });
@@ -127,11 +127,13 @@ ProgressDialog progressDialog;
                 verifyCode(code);
             }
         }
-    @Override
+
+        @Override
         public void onVerificationFailed(FirebaseException e) {
             Toast.makeText(Verify_otp.this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
     };
+
     private void verifyCode(String code) {
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, code);
         signInWithCredential(credential);

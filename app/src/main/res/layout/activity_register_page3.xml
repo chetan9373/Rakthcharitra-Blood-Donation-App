@@ -117,9 +117,6 @@
                 android:background="@drawable/custom_spinner" />
 
 
-
-
-
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/next3"
                 android:layout_width="220dp"

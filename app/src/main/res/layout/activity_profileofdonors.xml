@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/bcgn"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcgn">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView"
@@ -28,26 +27,20 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="36dp"
                 android:background="@drawable/spiral"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 android:gravity="center"
                 android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints">
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/dprof1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:layout_weight="1" />
 
-
-                    android:layout_weight="1"
-
-                    />
             </LinearLayout>
-
-
-
 
 
             <TextView
@@ -59,49 +52,45 @@
                 android:fontFamily="@font/rubik_medium"
                 android:textColor="@color/red"
                 android:textSize="25sp"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/propic"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/propic" />
 
             <TextView
                 android:id="@+id/donor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:hint="@string/donor"
-
-
                 android:fontFamily="@font/rubik_medium"
+                android:hint="@string/donor"
                 android:textColorHint="@color/red"
                 android:textSize="30sp"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dname1"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dname1" />
 
 
             <EditText
                 android:id="@+id/dtype1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
-
-
-                android:textColorHint="@color/red"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_edittext_white"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_regular"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
                 android:padding="16dp"
                 android:singleLine="true"
                 android:textAlignment="center"
                 android:textColor="@color/red"
-                android:fontFamily="@font/rubik_regular"
-                android:elevation="5dp"
+                android:textColorHint="@color/red"
                 android:textSize="18sp"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/custom_edittext_white"
                 app:layout_constraintTop_toBottomOf="@id/donor"
-                tools:ignore="RtlSymmetry,TextFields"
-                android:importantForAutofill="no" />
+                tools:ignore="RtlSymmetry,TextFields" />
 
 
             <LinearLayout
@@ -110,43 +99,42 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginBottom="170dp"
-                android:padding="5dp"
-                android:elevation="5dp"
                 android:background="@drawable/my_ripple_effect"
-                app:layout_constraintVertical_bias="0.1"
-                app:layout_constraintTop_toBottomOf="@id/dtype1"
+                android:elevation="5dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/dtype1"
+                app:layout_constraintVertical_bias="0.1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:paddingStart="10dp"
                     android:layout_marginStart="5dp"
-                    android:gravity="center"
                     android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
                     android:text="@string/ugender"
                     android:textColor="@color/red"
                     android:textSize="16sp"
-                    tools:ignore="RtlSymmetry"
-                    />
+                    tools:ignore="RtlSymmetry" />
 
                 <TextView
                     android:id="@+id/dgender1"
 
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/rubik_medium"
-
-                    android:gravity="center"
                     android:layout_marginStart="80dp"
 
+                    android:background="@drawable/custom_edittext_white"
+                    android:elevation="5dp"
+
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
                     android:textColor="@color/red"
-                    android:elevation="5dp"
-                    android:background="@drawable/custom_edittext_white"
                     android:textSize="17sp"
                     tools:ignore="HardcodedText" />
                 android:importantForAutofill="no" />
@@ -160,43 +148,39 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="200dp"
 
-                android:padding="5dp"
-                android:elevation="5dp"
                 android:background="@drawable/my_ripple_effect"
-                app:layout_constraintVertical_bias="0.1"
-                app:layout_constraintTop_toBottomOf="@id/pcont"
+                android:elevation="5dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/pcont"
+                app:layout_constraintVertical_bias="0.1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:paddingStart="10dp"
                     android:layout_marginStart="5dp"
-                    android:gravity="center"
                     android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
                     android:text="@string/uavailable"
                     android:textColor="@color/red"
                     android:textSize="16sp"
-                    tools:ignore="RtlSymmetry"
-                    />
+                    tools:ignore="RtlSymmetry" />
 
                 <TextView
                     android:id="@+id/davailable1"
-
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/rubik_medium"
-
-                    android:gravity="center"
                     android:layout_marginStart="55dp"
-
+                    android:background="@drawable/custom_edittext_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
                     android:textColor="@color/red"
-                    android:elevation="5dp"
-                    android:background="@drawable/custom_edittext_white"
                     android:textSize="17sp"
                     tools:ignore="HardcodedText" />
                 android:importantForAutofill="no" />
@@ -210,44 +194,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="250dp"
-
-                android:padding="5dp"
-                android:elevation="5dp"
                 android:background="@drawable/my_ripple_effect"
-                app:layout_constraintVertical_bias="0.1"
-                app:layout_constraintTop_toBottomOf="@id/pgen"
+                android:elevation="5dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/pgen"
+                app:layout_constraintVertical_bias="0.1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:paddingStart="10dp"
                     android:layout_marginStart="5dp"
-                    android:gravity="center"
                     android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
                     android:text="@string/uphone"
                     android:textColor="@color/red"
                     android:textSize="16sp"
-                    tools:ignore="RtlSymmetry"
-                    />
+                    tools:ignore="RtlSymmetry" />
 
                 <TextView
                     android:id="@+id/dcontact1"
-
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/rubik_medium"
-
-                    android:gravity="center"
                     android:layout_marginStart="50dp"
-
+                    android:background="@drawable/custom_edittext_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
                     android:textColor="@color/red"
-                    android:elevation="5dp"
-                    android:background="@drawable/custom_edittext_white"
                     android:textSize="17sp"
                     tools:ignore="HardcodedText" />
                 android:importantForAutofill="no" />
@@ -260,44 +239,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="180dp"
-
-                android:padding="5dp"
-                android:elevation="5dp"
                 android:background="@drawable/my_ripple_effect"
-                app:layout_constraintVertical_bias="0.1"
-                app:layout_constraintTop_toBottomOf="@id/pav"
+                android:elevation="5dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/pav"
+                app:layout_constraintVertical_bias="0.1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:paddingStart="10dp"
                     android:layout_marginStart="5dp"
-                    android:gravity="center"
                     android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
                     android:text="@string/ulocation"
                     android:textColor="@color/red"
                     android:textSize="16sp"
-                    tools:ignore="RtlSymmetry"
-                    />
+                    tools:ignore="RtlSymmetry" />
 
                 <TextView
                     android:id="@+id/dLocation1"
-
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/rubik_medium"
-
-                    android:gravity="center"
                     android:layout_marginStart="70dp"
-
+                    android:background="@drawable/custom_edittext_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
                     android:textColor="@color/red"
-                    android:elevation="5dp"
-                    android:background="@drawable/custom_edittext_white"
                     android:textSize="17sp"
                     tools:ignore="HardcodedText" />
                 android:importantForAutofill="no" />
@@ -310,44 +284,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="150dp"
-
-                android:padding="5dp"
-                android:elevation="5dp"
                 android:background="@drawable/my_ripple_effect"
-                app:layout_constraintVertical_bias="0.1"
-                app:layout_constraintTop_toBottomOf="@id/ploc"
+                android:elevation="5dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/ploc"
+                app:layout_constraintVertical_bias="0.1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:paddingStart="10dp"
                     android:layout_marginStart="5dp"
-                    android:gravity="center"
                     android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
                     android:text="@string/upick"
                     android:textColor="@color/red"
                     android:textSize="16sp"
-                    tools:ignore="RtlSymmetry"
-                    />
+                    tools:ignore="RtlSymmetry" />
 
                 <TextView
                     android:id="@+id/drop1"
-
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/rubik_medium"
-
-                    android:gravity="center"
                     android:layout_marginStart="35dp"
-
+                    android:background="@drawable/custom_edittext_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
                     android:textColor="@color/red"
-                    android:elevation="5dp"
-                    android:background="@drawable/custom_edittext_white"
                     android:textSize="17sp"
                     tools:ignore="HardcodedText" />
                 android:importantForAutofill="no" />
@@ -356,365 +325,351 @@
             </LinearLayout>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/sendmsg"
                 android:layout_width="220dp"
                 android:layout_height="48dp"
-                android:text="@string/send"
-                android:elevation="5dp"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="20sp"
-                android:fontFamily="@font/rubik_medium"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/custom_button_red"
-                app:layout_constraintStart_toStartOf="parent"
+                android:elevation="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ppick"/>
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ppick" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bcgn"
-    >
-
-
-    <ScrollView
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bcgn"
+        >
 
-        <LinearLayout
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="324dp"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/_5sdp"
-                android:paddingRight="@dimen/_5sdp">
-
-
-                <LinearLayout
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginLeft="82dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginEnd="36dp"
-                    android:gravity="center"
-                    android:background="@drawable/profilef"
-                    android:orientation="horizontal">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/dprof1"
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:layout_marginTop="25dp"
-                        android:layout_weight="1" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/dname1"
-                        android:layout_width="match_parent"
-                        android:layout_height="55dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginBottom="10dp"
-
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textAlignment="center"
-                        android:textAllCaps="true"
-                        android:textColor="@color/browser_actions_text_color"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="16dp"
-                        android:gravity="center"
-                        android:text="DONOR TYPE"
-                        android:textAlignment="center"
-                        android:textColor="@color/design_default_color_error"
-                        android:textSize="28sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/_5sdp"
-                android:paddingRight="@dimen/_5sdp"
-                android:background="#51D4DAD9">
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="325dp"
-                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="324dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/dtype1"
-                        android:layout_width="300dp"
-                        android:layout_height="35dp"
-                        android:layout_gravity="center|center_horizontal"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp">
 
 
-                        android:layout_marginEnd="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/textviewbg"
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="82dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="36dp"
                         android:gravity="center"
-                        android:paddingLeft="15dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="5dp"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
+                        android:background="@drawable/profilef"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/dprof1"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dname1"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="10dp"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/browser_actions_text_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center"
+                            android:text="DONOR TYPE"
+                            android:textAlignment="center"
+                            android:textColor="@color/design_default_color_error"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:background="#51D4DAD9">
+
+                    <LinearLayout
+                        android:layout_width="325dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/dtype1"
+                            android:layout_width="300dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center|center_horizontal"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
 
 
-                <LinearLayout
-                    android:layout_width="320dp"
-                    android:layout_height="37dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textviewbg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
 
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:orientation="horizontal">
+                    </LinearLayout>
 
-                    <TextView
 
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="         Gender"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" />
 
-                    <TextView
-                        android:id="@+id/dgender1"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/textviewbg"
-                        android:paddingLeft="15dp"
-                        android:paddingTop="5dp"
 
-                        android:paddingBottom="5dp"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="37dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="         Gender"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dgender1"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textviewbg"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="37dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="         Contact"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dcontact1"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textviewbg"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="37dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="         Availability"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/davailable1"
+                            android:layout_width="143dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textviewbg"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="37dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="         Location"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dLocation1"
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textviewbg"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="37dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="         Pick up/Drop"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/drop1"
+                            android:layout_width="152dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textviewbg"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/sendmsg"
+
+                        android:layout_width="325dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/inpuut_bg"
+                        android:text="Send Message"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:backgroundTint="?attr/colorPrimarySurface"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
                 </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="320dp"
-                    android:layout_height="37dp"
-
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="         Contact"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dcontact1"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/textviewbg"
-                        android:paddingLeft="15dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="320dp"
-                    android:layout_height="37dp"
-
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="         Availability"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/davailable1"
-                        android:layout_width="143dp"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/textviewbg"
-                        android:paddingLeft="15dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="320dp"
-                    android:layout_height="37dp"
-
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="         Location"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dLocation1"
-                        android:layout_width="125dp"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/textviewbg"
-                        android:paddingLeft="15dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="320dp"
-                    android:layout_height="37dp"
-
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="         Pick up/Drop"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/drop1"
-                        android:layout_width="152dp"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/textviewbg"
-                        android:paddingLeft="15dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/sendmsg"
-
-                    android:layout_width="325dp"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/inpuut_bg"
-                    android:text="Send Message"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:visibility="visible"
-                    app:backgroundTint="?attr/colorPrimarySurface"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-
             </LinearLayout>
-        </LinearLayout>
 
-    </ScrollView>
+        </ScrollView>
 
-</RelativeLayout>-->
+    </RelativeLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

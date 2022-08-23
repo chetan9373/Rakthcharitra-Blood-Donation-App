@@ -18,6 +18,7 @@ public class bloddgrpadapterspinner  extends ArrayAdapter<grpmodel> {
     public bloddgrpadapterspinner(Context context, ArrayList<grpmodel> countryList) {
         super(context, 0, countryList);
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

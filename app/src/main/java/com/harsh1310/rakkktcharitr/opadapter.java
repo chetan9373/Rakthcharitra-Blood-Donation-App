@@ -35,7 +35,6 @@ public class opadapter extends ArrayAdapter<opmodel> {
             );
         }
 
-
         TextView textViewName = convertView.findViewById(R.id.text_view_name1);
 
         opmodel currentItem = getItem(position);

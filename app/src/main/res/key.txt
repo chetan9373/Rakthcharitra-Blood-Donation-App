@@ -1,0 +1,13 @@
+USER_NAME
+USER_EMAIL
+USER_PHONE
+USER_PINCODE
+USER_GENDER
+USER_BLOODGROUP
+
+editor.putString("USER_PROFESSION", professionstring);
+editor.putString("USER_DOB", dobDate);
+editor.putString("USER_LASTBLOODDONATESTATUS", lastbdstring);
+editor.putString("USER_LASTPLATELETSSTATUS", last_ptstring);
+editor.putString("USER_SMOKE_STATUS", smoketext);
+editor.putString("USER_BLOODDONATEDATE", lastDonateDate);

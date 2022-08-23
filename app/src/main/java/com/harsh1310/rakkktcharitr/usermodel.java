@@ -1,9 +1,9 @@
 package com.harsh1310.rakkktcharitr;
 
 public class usermodel {
-    String email, name,phone,availability,add,gender,pic,allergy,disease,op,pickup,grp,pincode, dtype,id,profession;
-    public usermodel()
-    {
+    String email, name, phone, availability, add, gender, pic, allergy, disease, op, pickup, grp, pincode, dtype, id, profession;
+
+    public usermodel() {
 
     }
 
@@ -12,21 +12,22 @@ public class usermodel {
         return id;
     }
 
-    public usermodel(String name, String phone, String grp, String add, String gender, String pic, String allergy, String disease, String op, String availability, String pickup, String pincode, String dtype, String id,String profession) { this.grp=grp;
+    public usermodel(String name, String phone, String grp, String add, String gender, String pic, String allergy, String disease, String op, String availability, String pickup, String pincode, String dtype, String id, String profession) {
+        this.grp = grp;
         this.name = name;
         this.phone = phone;
         this.availability = availability;
         this.add = add;
-        this.gender=gender;
-        this.pic=pic;
-        this.allergy=allergy;
-        this.disease=disease;
-        this.id=id;
-        this.op=op;
-        this.pincode=pincode;
-        this.pickup=pickup;
-       this.dtype= dtype;
-       this.profession=profession;
+        this.gender = gender;
+        this.pic = pic;
+        this.allergy = allergy;
+        this.disease = disease;
+        this.id = id;
+        this.op = op;
+        this.pincode = pincode;
+        this.pickup = pickup;
+        this.dtype = dtype;
+        this.profession = profession;
 
     }
 
